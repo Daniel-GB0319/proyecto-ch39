@@ -6,7 +6,7 @@ Proyecto integrador de Generation MX - CH39
 (Como tarea hagan un pull para bajar cambios de github a sus compus, pongan su nombre en la lista
  y hagan un push dejando mensaje en el commit. no vayan a romper el repo jaja)
 - González Barrientos Geovanni Daniel    
-- nombre
+- Eduardo López Murillo
 - nombre
 - nombre
 - nombre
