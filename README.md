@@ -7,7 +7,7 @@ Proyecto integrador de Generation MX - CH39
  y hagan un push dejando mensaje en el commit. no vayan a romper el repo jaja)
 - González Barrientos Geovanni Daniel    
 - Eduardo López Murillo
-- nombre
+- Montserrat Pérez García
 - nombre
 - nombre
 - nombre
