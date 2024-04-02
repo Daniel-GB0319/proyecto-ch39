@@ -2,7 +2,7 @@
 Proyecto integrador de Generation MX - CH39 
 
 
-## Integrantes Team 4 "Gaiden Code Developers"
+## Integrantes Team 4 "Code Gaiden"
 
 ## Descripción del proyecto
 
