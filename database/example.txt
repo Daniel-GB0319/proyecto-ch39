@@ -1,0 +1,4 @@
+Aquí van los scripts sql para la base de datos, aunque nose si despues nos dejen usar un ORM para 
+manejar la base desde el back. 
+
+Podriamos manejar la base en MySQL con un contenedor de Docker para configurar rápido.
