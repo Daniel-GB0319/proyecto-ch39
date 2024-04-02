@@ -5,13 +5,13 @@ Proyecto integrador de Generation MX - CH39
 ## Integrantes Team 4 "Code Gaiden"
 (Como tarea hagan un pull para bajar cambios de github a sus compus, pongan su nombre en la lista
  y hagan un push dejando mensaje en el commit. no vayan a romper el repo jaja)
-    - González Barrientos Geovanni Daniel
-    -
-    -
-    -
-    -
-    -
-    -
+- González Barrientos Geovanni Daniel    
+- nombre
+- nombre
+- nombre
+- nombre
+- nombre
+- nombre
 
 
 ## Descripción del proyecto
