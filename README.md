@@ -1,7 +1,7 @@
 # proyecto-ch39 <--- Aquí va el name del proyecto xd
 Proyecto integrador de Generation MX - CH39 
 
-
+![Code-Gaiden](Code-Gaiden.jpg){width="256" height="256"}
 ## Integrantes Team 4 "Code Gaiden"
 (Como tarea hagan un pull para bajar cambios de github a sus compus, pongan su nombre en la lista
  y hagan un push dejando mensaje en el commit. no vayan a romper el repo jaja)
