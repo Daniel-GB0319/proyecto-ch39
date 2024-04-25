@@ -40,7 +40,7 @@ Comandos útiles:
 - César Adair Aguilar Perfecto
 - (Noe)
 - Juan Pablo Piña Suárez
-- (Edgar)
+- Edgar Alejandro Luna Celis
 
 
 ## Descripción del proyecto
