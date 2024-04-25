@@ -39,7 +39,7 @@ Comandos útiles:
 - (Lino)
 - César Adair Aguilar Perfecto
 - (Noe)
-- (Juan)
+- Juan Pablo Piña Suárez
 - (Edgar)
 
 
