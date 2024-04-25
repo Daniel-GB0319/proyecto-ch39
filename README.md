@@ -40,7 +40,7 @@ Comandos útiles:
 - (Adair)
 - (Noe)
 - (Juan)
-- (Edgar)
+- Edgar Alejandro Luna Celis
 
 
 ## Descripción del proyecto
