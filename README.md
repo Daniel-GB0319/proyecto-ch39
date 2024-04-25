@@ -38,7 +38,7 @@ Comandos útiles:
 - Montserrat Pérez García
 - (Lino)
 - (Adair)
-- (Noe)
+- (Mauricio Noe Guzman Martinez)
 - (Juan)
 - (Edgar)
 
