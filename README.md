@@ -35,7 +35,7 @@ Comandos útiles:
 
 - Geovanni Daniel González Barrientos     
 - Eduardo López Murillo
-- Montserrat Pérez García
+- Montserrat Pérez García (Monttze)
 - (Lino)
 - (Adair)
 - (Noe)
