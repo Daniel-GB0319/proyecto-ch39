@@ -33,7 +33,7 @@ Comandos útiles:
     - ```git push -u origin <nombre-de-sus-ramas>```     
 
 
-- Geovanni Daniel González Barrientos     
+- Geovanni Daniel González Barrientos  xd   
 - Eduardo López Murillo
 - Montserrat Pérez García (Monttze)
 - (Lino)
