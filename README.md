@@ -1,34 +1,74 @@
-# proyecto-ch39 <--- Aquí va el name del proyecto xd
-Proyecto integrador de Generation MX - CH39 
+# Barro.On
+(colocar logo de la e-commerce)
+
+## Indice
+- [Integrantes](#integrantes-team-4-code-gaiden)
+- [Descripción del proyecto](#descripción-del-proyecto)
+- [Requisitos del sistema](#requisitos-del-sistema)
+- [Funcionamiento](#funcionamiento)
+- [Notas y consideraciones](#notas-y-consideraciones)
+- [Contactanos](#contactanos)
 
 ![Code-Gaiden](Code-Gaiden.jpg)
 ## Integrantes Team 4 "Code Gaiden"
+<<<<<<< HEAD
 (Como tarea hagan un pull para bajar cambios de github a sus compus, pongan su nombre en la lista
  y hagan un push dejando mensaje en el commit. no vayan a romper el repo jaja)
 - González Barrientos Geovanni Daniel    
 - Eduardo López Murillo :)
+=======
+![Ninja-01|50](https://github.com/Daniel-GB0319/proyecto-ch39/assets/83619266/003f3b5f-9c20-4c2a-b13c-8ebba2910f5b)
+
+
+(Como ejercicio hagan un pull del main a sus ramas para bajar cambios de Github a sus computadoras, pongan su nombre en la lista
+ y hagan un push dejando mensaje en el commit. Una vez que sus cambios aparezcan en sus ramas en Github, hagan pull request para agregar al
+ main. no vayan a romper el repo jaja)
+
+Comandos útiles:
+1. Para ver en que rama se encuentran actualmente. También aquí pueden ver el estatus de sus archivos modificados o ramas. 
+    - ``` git status ```
+2. Para cambiar de rama.
+    - ```git checkout <nombre-de-sus-ramas>``` 
+3. para bajar las actualizaciones mas recientes del main a sus ramas.
+    - ```git pull origin main``` 
+4. Para agregar los cambios realizados al Staging Area (Area de preparación).
+    - ```git add .``` 
+5. Para guardar los cambios realizados (snapshot).
+    - ```git commit -m "<mensaje-del-commit>"``` 
+6. Para subir los cambios en Github.
+    - ```git push -u origin <nombre-de-sus-ramas>```     
+
+
+- Geovanni Daniel González Barrientos     
+- Eduardo López Murillo :)
 - Montserrat Pérez García
-- nombre
-- nombre
-- nombre
-- nombre
+- (Lino)
+- (Adair)
+- (Noe)
+- (Juan)
+- (Edgar)
 
 
 ## Descripción del proyecto
-pues la descripción
+Barro.On es una e-commerce dedicada a ... (completar xd) 
 
-## Requisítos del sistema
+## Requisitos del sistema
 (Lista de dependencias, programas, etc.)
 - Sistema Operativo Windows 10+, MacOS y GNU/Linux kernel 5.15+ (verificar xd)
 - Navegador Google Chrome, Microsoft Edge ()
+
 ## Funcionamiento
- 
-ejemplo de código en Python (Poner como se levanta el sistema)
+ (Poner como levantar el sistema o como se usa)
+
+ejemplo de código en Python 
 ```python
 mensaje = "mundo xd"
 print(f"Hola {mensaje}")
 ```
 
-## Notas y consideraciones
+## Notas y consideraciones 
 No hay reembolso si falla el sistema jaja
+
+## Contactanos
+Para contactarnos puedes mandar un email a ... (checar)
 
