@@ -37,9 +37,9 @@ Comandos útiles:
 - Eduardo López Murillo
 - Montserrat Pérez García
 - (Lino)
-- (Adair)
+- César Adair Aguilar Perfecto
 - (Noe)
-- (Juan)
+- Juan Pablo Piña Suárez
 - Edgar Alejandro Luna Celis
 
 
