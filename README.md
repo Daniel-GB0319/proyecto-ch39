@@ -37,7 +37,7 @@ Comandos útiles:
 - Eduardo López Murillo
 - Montserrat Pérez García
 - (Lino)
-- (César Adair Aguilar Perfecto)
+- César Adair Aguilar Perfecto
 - (Noe)
 - (Juan)
 - (Edgar)
