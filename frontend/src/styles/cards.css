@@ -1,0 +1,48 @@
+
+/*--Arreglo grip para 8 cards de 4X4 --*/
+.contenedorHorizontal {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.contenedorHorizontal div{
+    
+}
+/*--Aquí acaba arreglo grip para 8 cards de 4X4 --*/
+
+
+/* Clases para modificar card */
+.card{
+    margin: 20px; 
+    border: 1px solid rgb(226, 218, 218);
+    padding: 20px;
+    
+}
+
+.card-img-top{
+    display: block;
+    margin: 5px auto 20px;
+    width: 90%; 
+    border-radius: 0% 0% 50% 50%;
+
+}
+
+.card-body{
+    text-align: center;
+    
+      
+
+  }
+
+.card-title{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+
+.card-prices{
+    color: rgb(111, 107, 107);
+    font-size: 18px;
+}
+/* Aquí acaba clases para modificar card */
