@@ -1,0 +1,77 @@
+/* estilos main */
+main {
+    display: flex;
+    flex-direction: row;
+}
+/* estilos sidebar */
+.sideBar{
+    display:flex;
+    justify-content: space-aroundgit ;
+    align-items: center;
+    align-content: center;
+
+    /* tamaño de la card */
+    width: 310px;
+    height: 460px;
+    margin:none;
+    border: 3px  solid #000000;  
+    border-radius: 20px;
+}
+/* Aqui se encuentra los estilos del sidebar se utilizo h6 20px */
+.sideBar h6{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size:16px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+/* foto de perfil */
+#profile-picture{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid #000000;
+    border-radius: 100%;
+}
+
+/* tamaño de form */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 751px;
+    height: 660px;
+    border: 3px solid #000000;
+    }
+/*  */
+.card--Menu{
+
+}
+.form-floating mb-3{
+
+}
+
+.form-floating mb-4{
+
+}
+
+/* solo es temporal luego se borra */
+.button-cancel{
+    width: 160px;
+    height: 60px;
+    background-color:#ACBE24 ;
+    color:#000000;
+    border: none;
+    border-radius: 20px;
+}
+
+.button-save{
+    background-color:#ACBE24 ;
+    color:#000000;
+    border: none;
+    border-radius: 20px;
+    width: 160px;
+    height: 60px;
+}
