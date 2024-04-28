@@ -18,7 +18,7 @@
 jgs      (_,'*/
 
 
-.h1 {
+h1 {
     color: #000;
     font-family: Ubuntu;
     font-size: 68px;
@@ -28,7 +28,7 @@ jgs      (_,'*/
     letter-spacing: 0.1px;
 }
 
-.h2 {
+h2 {
     color: #000;
     font-family: Ubuntu;
     font-size: 40px;
@@ -37,7 +37,7 @@ jgs      (_,'*/
     line-height: normal;
 }
 
-.h3 {
+h3 {
     color: #000;
     font-family: Ubuntu;
     font-size: 32px;
@@ -46,7 +46,7 @@ jgs      (_,'*/
     line-height: normal;
 }
 
-.h4 {
+h4 {
     color: #000;
     font-family: Ubuntu;
     font-size: 28px;
@@ -55,7 +55,7 @@ jgs      (_,'*/
     line-height: normal;
 }
 
-.h5{
+h5{
     color: #000;
     font-family: Ubuntu;
     font-size: 25px;
@@ -64,7 +64,7 @@ jgs      (_,'*/
     line-height: normal;
 }
 
-.h6{
+h6{
     color: #000;
     font-family: "Open Sans";
     font-size: 20px;
@@ -75,7 +75,7 @@ jgs      (_,'*/
 
 }
 
-.p {
+p {
 
 color: #000;
 font-family: "Open Sans";
@@ -97,28 +97,85 @@ letter-spacing: 0.1px;
     justify-content: center;
 }
 
-.contenido_abuelo {
-    display: grid;
+.contenido_abuelo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido_madre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(216, 120, 42);
+    max-width: 1300px;
+}
+
+.acerca_d {
+    display: flex;
+    width: 780px;
+    height: 418px;
+    padding: 20px 20px 143px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #F5E6C7;
+}
+
+.mision_ {
+    display: flex;
+    width: 80.8125rem;
+    height: 24.375rem;
+    padding: 1.25rem 1.25rem 8.9375rem 1.25rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    background: #F5E6C7;
+}
+
+.mision_1 {
+    display: flex;
+    width: 45.8125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex-shrink: 0;
+
+}
+
+.img_prueba {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+
+
+    /* display: grid;
     box-sizing: border-box;
     background-color: rgb(226, 125, 43);
     margin: auto;
     justify-content: center;
-    max-width: 900px;
-    justify-items: center;
+    max-width: 1440px;
+    justify-items: center;  */
 
 }
 
-.contenido_madre {
+/* .contenido_madre {
     display: grid;
     box-sizing: border-box;
     background-color: blueviolet;
     grid-template-columns: 1fr 1fr;
     margin: auto;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1440px;
 
-}
-.contenido_hija{
+} */
+/* .contenido_hij{
     background-color: blue;
     padding: 10px;
     margin: 10px;
@@ -126,5 +183,5 @@ letter-spacing: 0.1px;
     color:aliceblue;
     font-size: 40px;
 
-}
+} */
 
