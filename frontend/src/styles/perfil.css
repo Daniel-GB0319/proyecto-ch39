@@ -1,15 +1,14 @@
 /* estilos main */
 main {
     display: flex;
-    flex-direction:flex start;
+    flex-direction:column;
 }
 /* estilos sidebar */
 .sideBar{
     display:flex;
-    justify-content: space-aroundgit ;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
-
     /* tamaño de la card */
     width: 310px;
     height: 460px;
