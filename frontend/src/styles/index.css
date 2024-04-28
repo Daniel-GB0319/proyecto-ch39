@@ -1,0 +1,130 @@
+/*.contenido_total {
+    background-color: aquamarine;
+
+}*/
+
+/* `;-.          ___,
+  `.`\_...._/`.-"`
+    \        /      ,
+    /()   () \    .' `-._
+   |)  .    ()\  /   _.'
+   \  -'-     ,; '. <
+    ;.__     ,;|   > \
+   / ,    / ,  |.-'.-'
+  (_/    (_/ ,;|.<`
+    \    ,     ;-`
+     >   \    /
+    (_,-'`> .'
+jgs      (_,'*/
+
+
+.h1 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.h2 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.h3 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h4 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h5{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h6{
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 0.1px;
+
+}
+
+.p {
+
+color: #000;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 111.111% */
+letter-spacing: 0.1px;
+
+}
+
+
+
+
+
+
+.navbar navbar-expand-lg bg-body-tertiary {
+    display: flex;
+    justify-content: center;
+}
+
+.contenido_abuelo {
+    display: grid;
+    box-sizing: border-box;
+    background-color: rgb(226, 125, 43);
+    margin: auto;
+    justify-content: center;
+    max-width: 900px;
+    justify-items: center;
+
+}
+
+.contenido_madre {
+    display: grid;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    justify-content: center;
+    max-width: 900px;
+
+}
+.contenido_hija{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border: solid rgb(0, 0, 0) 2px;
+    color:aliceblue;
+    font-size: 40px;
+
+}
+
