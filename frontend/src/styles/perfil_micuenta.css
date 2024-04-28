@@ -1,0 +1,18 @@
+main {
+    display: flex ;
+    flex-direction: flex start;
+}
+
+.sidebar.card--menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Tamaño de la card*/
+
+    width: 310 px;
+    height: 460 px;
+    margin: 10px;
+    border: 3px solid black;
+    border-radius: 20 px;
+}
