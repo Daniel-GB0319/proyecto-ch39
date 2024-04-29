@@ -32,19 +32,55 @@
 
 }
 
-   
-   
 
+/* Sección del Footer*/
 
+.footer-style { /*Cambia fondo del footer en general*/
+    background-color: #363131;
+    color: white;
+    width: 100%;
+    height: fit-content;
+}
 
+.section-title { /*Cambia los titulos de las secciones*/
+    border-bottom: 2px solid white;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: Ubuntu;
+    margin-bottom: 10px; 
+}
 
+.footer-title { /* Cambia el titulo del footer*/
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: Ubuntu;
+}
 
+.list-style { /*Cambia el formato de las secciones*/
+    list-style-type: disc;
+    color: white;
+    font-size: 20px;
+    font-family: Ubuntu;
+    text-decoration: none;
+    text-align: center;
+}
 
-    
+.white-link { /*Formato de los links en las secciones*/
+    color: white;
+}
 
+.white-text { /* Texto para el correo de contacto*/
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: Ubuntu;
+}
 
+.nav-item {
+    margin-bottom: 5px;
+}
 
-
-
-
-/*footer
+.white-border { /* Linea superior del copyright*/
+    border-top: 2px solid white;
+}
