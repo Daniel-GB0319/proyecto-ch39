@@ -10,10 +10,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    
     <main>
-        <!--Menu lateral inicio-->
-        <article class="sideBar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                        <!--Menu lateral inicio-->
+        <!-- <article class="sideBar">
             <section>
                 <section class="card--Menu">
                     <h1>Datos Generales</h1>
@@ -22,10 +24,29 @@
                     <h4>Metodos de Pago</h4>
                 </section>
             </section>
-        </article>
+        </article> -->
+
+        <div class="card">
+            <div class="card-body" style="width: 20rem;height: 20rem;">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Datos Generales</li>
+                        <li class="list-group-item">Cuenta y seguridad</li>
+                    </ul>
+                    <div class="card-header">
+                        Mis direcciones
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Métodos de pago</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+            </div>
         <!--Menu lateral final-->
 
-        <!--Boton de añadir método de pago-->
+            <div class="col-lg-7">
+                <!--Boton de añadir método de pago-->
         <article>
             <section>
                 <button class="button--change">Añadir Método de Pago</button>
@@ -34,7 +55,7 @@
 
         <h1 class="payment">Metodos de Pago</h1><!--Aqui empieza el formulario-card-->
         <img src="https://pngimg.com/uploads/credit_card/credit_card_PNG9.png"
-            alt="Icono de tarjeta de credito"><!--Icono de metodos de pago-->
+            alt="Icono de tarjeta de credito" class="img-thumbnail rounded-circle border border-5" width="200px"><!--Icono de metodos de pago-->
 
                 <article><!--Inicio de formulario-->
                     <section>
@@ -124,6 +145,12 @@
 
 
 
+            </div>
+    </div>
+
+
+        
+        
     </main>
 
 
