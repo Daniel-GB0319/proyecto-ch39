@@ -1,21 +1,22 @@
-/* estilos main */
-main {
-    display: flex;
-    flex-direction:column;
-}
+
 /* estilos sidebar */
+/*
 .sideBar{
     display:flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    /* tamaño de la card */
     width: 310px;
     height: 460px;
     margin:none;
     border: 3px  solid #000000;  
     border-radius: 20px;
 }
+*/
+.tarjeta-menu
+{
+    
+}   
 /* Aqui se encuentra los estilos del sidebar se utilizo h6 20px */
 .sideBar h6{
     font-family: "Open Sans", sans-serif;
