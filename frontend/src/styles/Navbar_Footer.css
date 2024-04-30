@@ -1,0 +1,86 @@
+/*Navbar*/
+.navbarbg {
+    background-color: #A67F34;
+} 
+#navbrcolorletras {
+    color: white;
+    display: grid;
+        grid-template-columns: repeat( 2,141px); 
+        font-size: 25px;
+}
+#botonbuscarcolor {
+   color: Black;
+   background-color: #BACC33;
+   border:none;
+   box-shadow: 4px 5px 5px 3px rgba(0, 0, 0, 0.1);
+   display:flex ;
+   justify-content: space-between; 
+   align-items:center;
+   border-radius: 20px;
+}
+
+#inputbusquedablanco {
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.carritoicon{
+    display: grid;
+        grid-template-columns: repeat( 1,100px); 
+        font-size: 25px;
+        justify-content: start; 
+        
+
+}
+
+
+/* Sección del Footer*/
+
+.footer-style { /*Cambia fondo del footer en general*/
+    background-color: #363131;
+    color: white;
+    width: 100%;
+    height: fit-content;
+}
+
+.section-title { /*Cambia los titulos de las secciones*/
+    border-bottom: 2px solid white;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: Ubuntu;
+    margin-bottom: 10px; 
+}
+
+.footer-title { /* Cambia el titulo del footer*/
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: Ubuntu;
+}
+
+.list-style { /*Cambia el formato de las secciones*/
+    list-style-type: disc;
+    color: white;
+    font-size: 20px;
+    font-family: Ubuntu;
+    text-decoration: none;
+    text-align: center;
+}
+
+.white-link { /*Formato de los links en las secciones*/
+    color: white;
+}
+
+.white-text { /* Texto para el correo de contacto*/
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: Ubuntu;
+}
+
+.nav-item {
+    margin-bottom: 5px;
+}
+
+.white-border { /* Linea superior del copyright*/
+    border-top: 2px solid white;
+}
