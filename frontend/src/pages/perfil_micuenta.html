@@ -13,12 +13,12 @@
 
 <body>
     <!-- navbar -->
-
-
     <main>
-
-        <!--Menu lateral inicio-->
-        <article class="sideBar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                 <!--Menu lateral inicio-->
+        <!-- <article class="sideBar">
             <section>
                 <section class="card--Menu">
                     <h1>Datos Generales</h1>
@@ -27,75 +27,96 @@
                     <h4>Metodos de Pago</h4>
                 </section>
             </section>
-        </article>
-        <!--Menu lateral final-->
+        </article> -->
 
-        <!--Boton de editar dirección-->
-        <article>
-            <section>
-                <button class="button--change">Cambiar contraseña</button>
-            </section>
-        </article>
-
-        <h1 class="myAccount">Mi cuenta</h1><!--Aqui empieza el formulario-card-->
-        <img src="https://toppng.com/uploads/preview/mail-icon-11549825367za0blj7xnt.png" alt="Icono de perfil"><!--Icono de mi cuenta-->
-
-        <article>
-            <section>
-                <div class="form-floating mb-3">
-                    <h1></h1>
-                    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com"
-                        disabled>
-                    <label for="floatingInputDisabled">Correo Electrónico </label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"
-                        disabled></textarea>
-                    <label for="floatingTextareaDisabled">Correo Alternativo</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <div class="form-floating mb-4">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"
-                            disabled></textarea>
-                        <label for="floatingTextareaDisabled" for="password" type="hide">Contraseña</label for="password">
+        <div class="card border border-black rounded-4 mt-5">
+            <div class="card-body" style="width:310px;height:459px;">
+                <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow" style="width:220px;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Datos Generales</li>
+                    </ul>
+                    <div class="card-header">
+                        Cuenta y seguridad
                     </div>
-            </section>
-        </article>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Mis direcciones</li>
+                        <li class="list-group-item">Métodos de pago</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+        <!--Menu lateral final-->   
+                </div>
+                <div class="col-lg-7 ">
+                    <!--Boton de editar dirección-->
+        <div class="card justify-content center border border-black rounded-4 mt-5">
+            <div class="card-body">
+                <article>
+                    <section>
+                        <button class="button--change">Cambiar contraseña</button>
+                    </section>
+                </article>
 
-        <!--Inicio de botones-->
-        <article>
-            <section>
-                <button class="button-cancel">Cancelar</button>
-                <button class="button-save">Guardar</button>
-            </section>
-        </article>
-        <!--Fin de botones-->
+                <h1 class="myAccount">Mi cuenta</h1><!--Aqui empieza el formulario-card-->
+                <img src="https://toppng.com/uploads/preview/mail-icon-11549825367za0blj7xnt.png" alt="Icono de perfil" class="img-thumbnail rounded-circle border border-5" width="200px"><!--Icono de mi cuenta-->
 
-        <!--Dispositivos conectados-->
-        <article>
-            <section>
-                <h1 class="devices">Dispositivos conectados</h1>
-                <hr>
-            </section>
-        </article>
+                <article>
+                    <section>
+                        <div class="form-floating mb-3">
+                            <h1></h1>
+                            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com"
+                                disabled>
+                            <label for="floatingInputDisabled">Correo Electrónico </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"
+                                disabled></textarea>
+                            <label for="floatingTextareaDisabled">Correo Alternativo</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"
+                                    disabled></textarea>
+                                <label for="floatingTextareaDisabled" for="password" type="hide">Contraseña</label for="password">
+                            </div>
+                    </section>
+                </article>
 
-        <!--Cerrar todas las sesiones-->
-        <article>
-            <section>
-                <button class="log-out">Cerrar todas las sesiones</button>
-            </section>
-        </article>
+                <!--Inicio de botones-->
+                <article>
+                    <section>
+                        <button class="button-cancel">Cancelar</button>
+                        <button class="button-save">Guardar</button>
+                    </section>
+                </article>
+                <!--Fin de botones-->
 
+                <!--Dispositivos conectados-->
+                <article>
+                    <section>
+                        <h1 class="devices">Dispositivos conectados</h1>
+                        <hr>
+                    </section>
+                </article>
 
+                <!--Cerrar todas las sesiones-->
+                <article>
+                    <section>
+                        <button class="log-out">Cerrar todas las sesiones</button>
+                    </section>
+                </article>
+            </div>
+        </div>
+                </div>
+        </div>
 
+        
 
-
+        
     </main>
 
 
 <!-- footer -->
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
