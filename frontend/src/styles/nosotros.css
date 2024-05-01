@@ -72,7 +72,7 @@ body {
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
 
-    background-color: #ffffff;
+    background-color: #ff0000;
     max-width: 1440px;
     margin: auto;
     gap: 100px;
@@ -85,14 +85,13 @@ body {
     
 .madre {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    background-color: #F5E6C7;
+    grid-template-columns: repeat(4, 1fr);    background-color: #F5E6C7;
     align-items: center;
     align-content: center;
     margin:auto;
     max-width: auto;
     @media (min-width: 760px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);;
     }
     
 
@@ -112,7 +111,19 @@ img {
     height: auto;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
 
+.cards > *{
+    background-color: #5D7BE2;
+    padding: 20px;
+
+}
 
 /* formula con flex
 .madre {
