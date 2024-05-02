@@ -36,7 +36,7 @@ Comandos útiles:
 - Geovanni Daniel González Barrientos  xd   
 - Eduardo López Murillo
 - Montserrat Pérez García (Monttze)
-- (Lino)
+- Lino Alberto Aguilar Cano
 - César Adair Aguilar Perfecto
 - (Noe)
 - Juan Pablo Piña Suárez
