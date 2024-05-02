@@ -1,0 +1,152 @@
+h1 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.texto-h2 {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5{
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h6{
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 0.1px;
+
+}
+
+p {
+
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 111.111% */
+letter-spacing: 0.1px;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin:0;
+}
+.abuelo {
+    /* aca se define las principales medidas de contenedor */
+    display: grid; 
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+
+    background-color: #ffffff;
+    max-width: 1440px;
+    margin: auto;
+    gap: 100px;
+    padding: 0px;
+
+}
+    
+.madre {     /*Contenedor base para meter toda clase de elementos, incluyendo más contenedores*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    background-color: #F5E6C7;
+    align-items: start;
+    align-content: start;
+    margin:auto;
+    max-width: 100%;
+    padding: 25px;
+    @media (max-width: 750px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100vw;
+    }
+}
+    .madre > * {     /*Para cada uno de los elementos madre*/
+        max-width: 100%;
+
+    
+
+}
+
+
+
+    
+    /*Estilos para las cards, pure-infinitebrutal-infinit-responsiv*/
+.integrantes {
+    padding: 10px;    
+    gap: 15px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+        @media (max-width: 950px) {
+        grid-template-columns: repeat(2, 1fr);
+        
+    
+            @media (max-width: 550px) {
+                grid-template-columns: repeat(1, 1fr);
+                max-width: 100vw;}
+            }
+        
+    }
+    
+
+.hijo {
+    width: 100%;
+
+    
+
+}
+
+.img-main {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+
+}
+
+.cards {
+    gap: 20px;
+}
+
+.cards > *{
+    background-color: #5D7BE2;
+    padding: 20px;
+
+
+}
+
+.col {
+ text-align: justify;
+}

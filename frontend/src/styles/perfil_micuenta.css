@@ -1,18 +1,66 @@
+/* Estilos para el main */
 main {
-    display: flex ;
-    flex-direction: flex start;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px; /* ajusta según necesites */
 }
 
-.sidebar.card--menu {
+/* Estilos para el sidebar */
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 310px;
+    height: 460px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    margin-right: 20px; /* separación entre el sidebar y el formulario */
+}
+
+.sideBar h1,
+.sideBar h2,
+.sideBar h3,
+.sideBar h4 {
+    margin: 15px;
+}
+
+.sideBar hr {
+    width: 75%;
+    border: 3px solid #000000;
+    margin: 10px 0;
+}
+
+/* Estilos para la sección de foto de perfil */
+.profile-picture-section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    /*Tamaño de la card*/
+/* Estilos para la foto de perfil */
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    background-color: #E9AD39;
+}
 
-    width: 310 px;
-    height: 460 px;
-    margin: 10px;
-    border: 3px solid black;
-    border-radius: 20 px;
+/* Estilos para el formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 751px;
+    height: auto; /* ajusta según el contenido */
+    border: 3px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Estilos para los botones */
+button {
+    margin-top: 20px;
 }
