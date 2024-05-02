@@ -1,0 +1,113 @@
+
+h1 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+h2 {
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5{
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h6{
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 0.1px;
+
+}
+
+p {
+
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 111.111% */
+letter-spacing: 0.1px;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin:0;
+}
+
+.abuelo {
+    /* aca se define las principales medidas de contenedor */
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    background-color: #ff0909;
+    max-width: 1440px;
+    margin: auto;
+    gap: 100px;
+    padding: 0px;
+
+}
+    
+.madre {     /*Contenedor base para meter toda clase de elementos, incluyendo más contenedores*/
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) minmax(500px, 3fr);
+    background-color: #F5E6C7;
+    align-items: start;
+    align-content: start;
+    padding: 25px;
+    gap: 25px;
+    }
+
+
+
+    .madre > * { 
+        border: 1px solid black; 
+        /*Para cada uno de los elementos madre*/
+            align-items: start;
+
+
+}
+
+.menu_left {
+    max-width: 250px;
+    min-height: 400px;
+}
+
+.contenido_principal {
+    min-width: 500px;
+    max-width: 900px;
+    min-height: 400px;
+}
