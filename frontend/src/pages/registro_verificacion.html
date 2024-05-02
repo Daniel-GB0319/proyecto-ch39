@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Verificación</title>
     <!-- conexión con la api de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <!-- reset CSS -->
     <link rel="stylesheet" href="../styles/reset.css" type="text/css">
     <!-- conexión con la hoja CSS de perfil -->
-    <link rel="stylesheet" href="../styles/perfil.css" type="text/css">
+    <link rel="stylesheet" href="../styles/registo_verificacion.css" type="text/css">
     <!-- API BS 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -30,10 +30,10 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+
     <!-- navbar inicio -->
     <nav class="navbar navbar-expand-lg  navbarbg">
         <div class="container-fluid">
@@ -99,110 +99,38 @@
     </nav>
     <!-- navbar  fin-->
 
-    <!--main-->
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <!--Menu lateral inicio-->
-                <div class="col-lg-3">
 
-                    <div class="card border border-black rounded-4 mt-5">
-                        <div class="card-body" style="width:310px;height:459px;">
-                            <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow"
-                                style="width:220px;">
-                                <div class="card-header">
-                                    Datos Generales
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cuenta y seguridad</li>
-                                    <li class="list-group-item">Mis direcciones</li>
-                                    <li class="list-group-item">Métodos de pago</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Menu lateral final-->
+<!--Inicio de formulario-->
+<main>
 
-                <!--Incio del formulario-->
-                <div class="col-lg-7">
-                    <div class="card justify-content center border border-black rounded-4 mt-5">
-                        <div class="card-body ">
-                            <article class="form ">
-                                <img src="https://vectorified.com/images/profile-picture-icon-27.png"
-                                    alt="Icono de perfil"
-                                    class="img-thumbnail rounded-circle border border-2 border-black" width="200px">
-                                <!-- Text form -->
-                                <section>
+    <article class="Form--register">
 
-                                    <!-- entrada nombre -->
-                                    <div class="form-floating mb-3">
-                                        <h1></h1>
-                                        <input type="email" class="form-control" id="floatingInputDisabled"
-                                            placeholder="name@example.com" disabled>
-                                        <label for="floatingInputDisabled">Nombre </label>
-                                    </div>
+        <h2 class="Verify--title">
+            Verifica la dirección de correo electrónico
+        </h2>
 
-                                    <!-- entrada apellido paterno -->
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextareaDisabled" disabled></textarea>
-                                        <label for="floatingTextareaDisabled">Apellido Paterno</label>
-                                    </div>
+        <h3 class="Verify--email">
+            Para verificar tu correo electrónico, hemos enviado un código a (correo)
+        </h3>
 
-                                    <!-- apellido materno -->
-                                    <div class="form-floating mb-3">
-                                        <div class="form-floating mb-4">
-                                            <textarea class="form-control" placeholder="Leave a comment here"
-                                                id="floatingTextareaDisabled" disabled></textarea>
-                                            <label for="floatingTextareaDisabled">Apellido Materno</label>
-                                        </div>
-                                        <!-- fecha de nacimiento -->
-                                        <div class="form-floating mb-4">
-                                            <div class="form-floating mb-5">
-                                                <textarea class="form-control" placeholder="Leave a comment here"
-                                                    id="floatingTextareaDisabled" disabled></textarea>
-                                                <label for="floatingTextareaDisabled">Fecha de Nacimiento</label>
-                                            </div>
+        <h4>Introducir código</h4>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com"
+                disabled>
+            <label for="floatingInputDisabled">Código</label>
+        </div>
+        
+        <section class="button--verify">
+            <button>
+                Verificar
+            </button>
+        </section>
+        
+    </article>
 
-                                            <div class="form-floating mb-6">
-                                                <!-- Sexo -->
-                                                <div class="form-floating mb-4">
-                                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                                        id="floatingTextareaDisabled" disabled></textarea>
-                                                    <label for="floatingTextareaDisabled">Sexo</label>
-                                                </div>
-                                                <!-- telefono -->
-                                                <div class="form-floating mb-7">
-                                                    <div class="form-floating mb-5">
-                                                        <textarea class="form-control"
-                                                            placeholder="Leave a comment here"
-                                                            id="floatingTextareaDisabled" disabled></textarea>
-                                                        <label for="floatingTextareaDisabled">Teléfono</label>
-                                                    </div>
-                                                    <div class="form-floating mb-5">
-                                                    </div>
-                                </section>
-                                <!-- aquí va -->
+</main>
+<!--Fin de formulario-->
 
-                                <!--Fin del formulario-->
-
-                                <!--Inicio de botones-->
-                                <article>
-
-
-                                    <!-- aquí van dos botones  (reemplazar despues de diseñar)-->
-                                    <section>
-                                        <button class="button-cancel">Cancelar</button>
-                                        <button class="button-save">Guardar</button>
-                                    </section>
-                                </article>
-                                <!--Fin de botones-->
-                        </div>
-                    </div>
-    </main>
-    </div>
-    </div>
     <!-- footer -->
     <div class="footer-style">
         <footer class="pt-2 text-center">
@@ -298,8 +226,8 @@
         </footer>
     </div>
 
-    <!-- scripts -->
-    <script src="./src/scripts/perfil.js"></script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
