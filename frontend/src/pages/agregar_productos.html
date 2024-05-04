@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Agregar productos</title>
     <!-- conexión con la api de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <!-- reset CSS -->
     <link rel="stylesheet" href="../styles/reset.css" type="text/css">
     <!-- conexión con la hoja CSS de perfil -->
-    <link rel="stylesheet" href="../styles/perfil.css" type="text/css">
+    <link rel="stylesheet" href="../styles/agregar_productos.css" type="text/css">
     <!-- API BS 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -30,7 +30,6 @@
         rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -99,110 +98,68 @@
     </nav>
     <!-- navbar  fin-->
 
-    <!--main-->
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <!--Menu lateral inicio-->
-                <div class="col-lg-3">
 
-                    <div class="card border border-black rounded-4 mt-5 ">
-                        <div class="card-body" style="width: 60px;;height:200px;">
-                            <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow"
-                                style="width:220px;">
-                                <div class="card-header">
-                                    Datos Generales
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Cuenta y seguridad</li>
-                                    <li class="list-group-item">Mis direcciones</li>
-                                    <li class="list-group-item">Métodos de pago</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <div class="col-3">
+        <!--Menu lateral inicio-->
+        <div class="card">
+            <div class="card-body" style="width: 20rem;height: 20rem;">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Inventario</li>
+                        <li class="list-group-item">Estado de pedidos</li>
+                        <li class="list-group-item">Comentarios</li>
+                        <li class="list-group-item">Disputas</li>
+                    </ul>
                 </div>
-                <!--Menu lateral final-->
-
-                <!--Incio del formulario-->
-                <div class="col-lg-7">
-                    <div class="card justify-content center border border-black rounded-4 mt-5" style="height: 750px;width: 600px;">
-                        <div class="card-body ">
-                            <article class="form ">
-                                <img class="Icono-Perfil" src="https://vectorified.com/images/profile-picture-icon-27.png"
-                                    alt="Icono de perfil"
-                                    class="img-thumbnail rounded-circle border border-2 border-black" width="200px" style="display:flex; align-items:center" >
-                                <!-- Text form -->
-                                <section>
-
-                                    <!-- entrada nombre -->
-                                    <div class="form-floating mb-3">
-                                        <h1></h1>
-                                        <input type="email" class="form-control" id="floatingInputDisabled"
-                                            placeholder="name@example.com" disabled>
-                                        <label for="floatingInputDisabled">Nombre </label>
-                                    </div>
-
-                                    <!-- entrada apellido paterno -->
-                                    <div class="form-floating mb-3">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextareaDisabled" disabled></textarea>
-                                        <label for="floatingTextareaDisabled">Apellido Paterno</label>
-                                    </div>
-
-                                    <!-- apellido materno -->
-                                    <div class="form-floating mb-3">
-                                        <div class="form-floating mb-4">
-                                            <textarea class="form-control" placeholder="Leave a comment here"
-                                                id="floatingTextareaDisabled" disabled></textarea>
-                                            <label for="floatingTextareaDisabled">Apellido Materno</label>
-                                        </div>
-                                        <!-- fecha de nacimiento -->
-                                        <div class="form-floating mb-4">
-                                            <div class="form-floating mb-5">
-                                                <textarea class="form-control" placeholder="Leave a comment here"
-                                                    id="floatingTextareaDisabled" disabled></textarea>
-                                                <label for="floatingTextareaDisabled">Fecha de Nacimiento</label>
-                                            </div>
-
-                                            <div class="form-floating mb-6">
-                                                <!-- Sexo -->
-                                                <div class="form-floating mb-4">
-                                                    <textarea class="form-control" placeholder="Leave a comment here"
-                                                        id="floatingTextareaDisabled" disabled></textarea>
-                                                    <label for="floatingTextareaDisabled">Sexo</label>
-                                                </div>
-                                                <!-- telefono -->
-                                                <div class="form-floating mb-7">
-                                                    <div class="form-floating mb-5">
-                                                        <textarea class="form-control"
-                                                            placeholder="Leave a comment here"
-                                                            id="floatingTextareaDisabled" disabled></textarea>
-                                                        <label for="floatingTextareaDisabled">Teléfono</label>
-                                                    </div>
-                                                    <div class="form-floating mb-5">
-                                                    </div>
-                                </section>
+            </div>
+        </div>
+    </div>
 
 
-                                <!--Fin del formulario-->
 
-                                <!--Inicio de botones-->
-                                <article>
+    <!--Inicio de formulario-->
+    <img src="..." class="img-thumbnail" alt="...">
+    <main>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre del producto</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Aqui va el nombre">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Importe</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Cuánto cuesta?">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Cuántos tienes?">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Descuento/opcional</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tu descuento">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Etiquetas</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Etiquetas">
+        </div>
+
+        <!--Inicio de botones-->
+        <article>
 
 
-                                    <!-- aquí van dos botones  (reemplazar despues de diseñar)-->
-                                    <section>
-                                        <button class="button-cancel">Cancelar</button>
-                                        <button class="button-save">Guardar</button>
-                                    </section>
-                                </article>
-                                <!--Fin de botones-->
-                        </div>
-                    </div>
+            <!-- aquí van dos botones  (reemplazar despues de diseñar)-->
+            <section>
+                <button class="button-store">Añadir a tienda</button>
+                <button class="button-goback">Regresar al inventario</button>
+            </section>
+        </article>
+        <!--Fin de botones-->
+
     </main>
-    </div>
-    </div>
+    <!--Fin de formulario-->
+
     <!-- footer -->
     <div class="footer-style">
         <footer class="pt-2 text-center">
@@ -298,8 +255,7 @@
         </footer>
     </div>
 
-    <!-- scripts -->
-    <script src="./src/scripts/perfil.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
