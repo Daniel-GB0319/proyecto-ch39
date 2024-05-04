@@ -13,110 +13,84 @@
     border-radius: 20px;
 }
 */
-.col-lg-7
-{
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos del sidebar */
+.col-lg-3 {
     padding: 0 0 50px 0;
-}   
-/* Aqui se encuentra los estilos del sidebar se utilizo h6 20px */
-.sideBar h6{
+}
+
+.col-lg-3 {
+    padding: 0 0 50px 0;
+}
+
+.sidebar-card {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 220px;
+}
+
+.sidebar-card .card-header {
     font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size:16px;
-    margin-top:20px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 0;
 }
 
-/* sección de foto de perfil */
-.Icono-Perfil /*Tamaño de la imagen ajustado*/
-{
+.sidebar-list .list-group-item {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos de la tarjeta del perfil */
+.Card--profile {
     display: flex;
-    height: 15%;
-    width: 15%;
-    margin: 20px;
     flex-direction: column;
     align-items: center;
-}
-/* Sección de editar foto de perfil */
-#edit-profile-picture
-{
-    display: inline-block;
-    width: 75px;
-    height: 75px;
-    padding: 20px;
-    top: 90px;
-    right: 60px;
-
-}
-/* foto de perfil */
-#profile-picture{
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    border: 3px solid #000000;
-    border-radius: 100%;
-    background-color: #E9AD39;
-}
-/* editar foto de perfil */
-
-
-
-/* tamaño de form */
-/* .form{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 751px;
-    height: 660px;
+    width: 70%; /* Ancho relativo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
     border: 3px solid #000000;
-    } */
-.sideBar{
-    display: inline-flex;
-    justify-content: center ;
+    padding-bottom: 40px; /* Espacio en la parte inferior */
+}
+
+/* Estilos del icono-perfil */
+.Icono-Perfil {
+    width: 100px; /* Ancho del icono */
+    height: 100px; /* Alto del icono */
+    margin: 20px auto; /* Centrar horizontalmente */
+    display: block; /* Convertir a bloque para centrar */
+}
+
+/* Estilos de los botones */
+.buttons {
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    align-content: center;
-}
-    /* Menu */
-.card--Menu{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center ;
-    align-items: stretch;
-    align-content: center;
+    justify-content: space-between;
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin-top: 20px; /* Espacio superior */
 }
 
-.card--Menu hr {
-    width:75%;
-    border: 3px solid #000000;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-}
-
-.form-floating mb-3{
-
-}
-
-.form-floating mb-4{
-
-}
-
-/* solo es temporal luego se borra */
-.button-cancel{
+.button-cancel,
+.button-save {
     width: 160px;
     height: 60px;
-    background-color:#ACBE24 ;
-    color:#000000;
+    background-color: #ACBE24;
+    color: #000000;
     border: none;
     border-radius: 20px;
 }
 
-.button-save{
-    background-color:#ACBE24 ;
-    color:#000000;
-    border: none;
-    border-radius: 20px;
-    width: 160px;
-    height: 60px;
+.button-save {
+    margin-right: 10px;
+}
+
+/* Espaciado entre formulario y footer */
+main {
+    margin-bottom: 40px; /* Espacio en la parte inferior */
 }
