@@ -96,10 +96,14 @@ body {
     .madre > * {     /*Para cada uno de los elementos madre*/
         max-width: 100%;
 
-    
-
 }
 
+/* Saludos ahora los estilos de las cards estaran disponibles inline */
+.card-prop
+{
+    background: rgb(50,68,232);
+    background: linear-gradient(315deg, rgba(50,68,232,1) 47%, rgba(253,29,29,1) 98%); 
+}
 
 
     
