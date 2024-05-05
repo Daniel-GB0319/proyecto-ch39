@@ -101,8 +101,8 @@ body {
 /* Saludos ahora los estilos de las cards estaran disponibles inline */
 .card-prop
 {
-    background: rgb(50,68,232);
-    background: linear-gradient(315deg, rgba(50,68,232,1) 47%, rgba(253,29,29,1) 98%); 
+    background: rgb(244,238,227);
+    background: linear-gradient(315deg, rgba(244,238,227,1) 47%, rgba(162,128,58,1) 100%); 
 }
 
 
