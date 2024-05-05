@@ -1,0 +1,32 @@
+.sup-bar{
+    background-color: #b9cd40;
+}
+
+
+/* .abuelo { */
+    /* aca se define las principales medidas de contenedor */
+/* 
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    background-color: #ff0909;
+    max-width: 1440px;
+    margin: auto;
+    gap: 100px;
+    padding: 0px;
+
+} */
+
+.madre {     /*Contenedor base para meter toda clase de elementos, incluyendo más contenedores*/
+    /* display: grid;
+    grid-template-columns: minmax(400px,2fr) minmax(200px, 1fr);
+    background-color: #F5E6C7;
+    align-items: start;
+    align-content: start;
+    padding: 25px;
+    gap: 25px; */
+    }
+
+
+
