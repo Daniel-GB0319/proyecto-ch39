@@ -26,13 +26,12 @@ body {
     font-size: 16px;
 }
 
-.myAccount{
-    display: flex;
-    align-items: center;
+.myAccount {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 36px; /* Tamaño del título */
+    font-weight: bold;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
 }
 
 .img-email {
@@ -67,6 +66,7 @@ body {
 /* Estilos de los botones */
 .buttons-container {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center; /* Centrar los botones horizontalmente */
     gap: 10px; /* Espacio entre botones */
     width: 100%; /* Ancho completo */
