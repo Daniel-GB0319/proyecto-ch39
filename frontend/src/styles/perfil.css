@@ -55,6 +55,7 @@ body {
     padding: 20px; /* Espaciado interno */
     border: 3px solid #000000;
     padding-bottom: 40px; /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
 }
 
 /* Estilos del icono-perfil */
