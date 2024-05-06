@@ -8,7 +8,7 @@ h1 {
     letter-spacing: 0.1px;
 }
 
-h2 {
+.texto-h2 {
     font-family: Ubuntu;
     font-size: 40px;
     font-style: normal;
@@ -66,56 +66,81 @@ body {
     margin:0;
 }
 .abuelo {
-    /* No modificar la siguientes propiedades */
+    /* aca se define las principales medidas de contenedor */
     display: grid; 
     grid-auto-rows: auto;
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
 
-    background-color: #ff0000;
+    background-color: #ffffff;
     max-width: 1440px;
     margin: auto;
     gap: 100px;
     padding: 0px;
 
-    @media (min-width: 760px) {
-        padding: 75px;
-        }
 }
     
-.madre {
+.madre {     /*Contenedor base para meter toda clase de elementos, incluyendo más contenedores*/
     display: grid;
-    grid-template-columns: repeat(4, 1fr);    background-color: #F5E6C7;
-    align-items: center;
-    align-content: center;
+    grid-template-columns: repeat(2, 1fr);    background-color: #F5E6C7;
+    align-items: start;
+    align-content: start;
     margin:auto;
-    max-width: auto;
-    @media (min-width: 760px) {
-        grid-template-columns: repeat(4, 1fr);;
+    max-width: 100%;
+    padding: 25px;
+    @media (max-width: 750px) {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100vw;
+    }
+}
+    .madre > * {     /*Para cada uno de los elementos madre*/
+        max-width: 100%;
+
+}
+
+/* Saludos ahora los estilos de las cards estaran disponibles inline */
+.card-prop
+{
+    background: rgb(244,238,227);
+    background: linear-gradient(315deg, rgba(244,238,227,1) 47%, rgba(162,128,58,1) 100%); 
+}
+
+
+    
+    /*Estilos para las cards, pure-infinitebrutal-infinit-responsiv*/
+.integrantes {
+    padding: 10px;    
+    gap: 15px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+        @media (max-width: 950px) {
+        grid-template-columns: repeat(2, 1fr);
+        
+    
+            @media (max-width: 550px) {
+                grid-template-columns: repeat(1, 1fr);
+                max-width: 100vw;}
+            }
+        
     }
     
 
-
-}
-
 .hijo {
-    max-width: 400px;
-    object-fit: contain;
+    width: 100%;
+
     
 
 }
 
-img {
+.img-main {
     max-width: 100%;
     max-height: 100%;
     height: auto;
+    width: auto;
+
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    align-content: center;
     gap: 20px;
 }
 
@@ -123,85 +148,9 @@ img {
     background-color: #5D7BE2;
     padding: 20px;
 
-}
-
-/* formula con flex
-.madre {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    gap: 1em;
-    background-color: #F5E6C7;
-    max-width: 1440px;
-    padding: 20px
 
 }
 
-.madre > :first-child {
-    flex-basis: 400px;
-    flex-grow: 9999;
+.col {
+ text-align: justify;
 }
-
-.madre > :last-child {
-    
-    flex-basis: 300px;
-    flex-grow: 1;
-}
-@media (max-width: 768px) {
-    .madre {
-
-        display: flex;
-        flex-wrap: wrap;
-        align-items: start;
-        gap: 1em;
-        background-color: #F5E6C7;
-        max-width: 100%;
-        padding: 20px
-    
-    }
-    .madre > :first-child {
-        flex-basis: 100%;
-        flex-grow: 1;
-    }
-
-    .madre > :last-child {
-        flex-basis: 100%;
-        flex-grow: 1;
-    }
-}
-*/
-
-
-
-
-
-    /* display: grid;
-    box-sizing: border-box;
-    background-color: rgb(226, 125, 43);
-    margin: auto;
-    justify-content: center;
-    max-width: 1440px;
-    justify-items: center;  */
-
-
-/* .contenido_madre {
-    display: grid;
-    box-sizing: border-box;
-    background-color: blueviolet;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    justify-content: center;
-    max-width: 1440px;
-
-} */
-/* .contenido_hij{
-    background-color: blue;
-    padding: 10px;
-    margin: 10px;
-    border: solid rgb(0, 0, 0) 2px;
-    color:aliceblue;
-    font-size: 40px;
-
-} */
-
