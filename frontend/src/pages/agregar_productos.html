@@ -71,8 +71,8 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="buscar" id="inputbusquedablanco"
-                        placeholder="Buscar en Barro.On..." aria-label="Buscar">
+                    <input class="form-control me-2" type="buscar" id="input-buscar" placeholder="Buscar en Barro.On..."
+                        aria-label="Buscar">
                     <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
                 </form>
                 <!--Código para icono de perfil-->
@@ -97,13 +97,14 @@
         </div>
     </nav>
     <!-- navbar  fin-->
-
+    
+    <div class="row mt-4">
 
     <div class="col-3">
         <!--Menu lateral inicio-->
-        <div class="card">
+        <div class="card border border-1 border-black rounded-4">
             <div class="card-body" style="width: 20rem;height: 20rem;">
-                <div class="card" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Inventario</li>
                         <li class="list-group-item">Estado de pedidos</li>
@@ -114,50 +115,70 @@
             </div>
         </div>
     </div>
-
-
-
-    <!--Inicio de formulario-->
-    <img src="..." class="img-thumbnail" alt="...">
+    <!--Inicio de formulario
+        ¿la imagen de que era? xd
+    -->
+    <div class="col-7">
+    <div class="card rounded-5 ">
+    <div class="card-body border border-1 border-black rounded-5  ">
+    <img src="" class="img-thumbnail" alt="...">
     <main>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre del producto</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Aqui va el nombre">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Importe</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Cuánto cuesta?">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Cuántos tienes?">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Descuento/opcional</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tu descuento">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Etiquetas</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Etiquetas">
-        </div>
+        <form>
+            <fieldset>
+                <legend>Información del producto</legend>
 
-        <!--Inicio de botones-->
-        <article>
+                <div class="mb-3">
+                    <label for="input--nombre" class="form-label">Nombre del producto</label>
+                    <input type="text" class="form-control" id="input--nombre"
+                        placeholder="Ingresa el nombre del producto" required>
+                </div>
 
+                <div class="mb-3">
+                    <label for="input--descripcion" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="input--descripcion" rows="3"
+                        placeholder="Agrega una breve descripción del producto" required></textarea>
+                </div>
 
-            <!-- aquí van dos botones  (reemplazar despues de diseñar)-->
-            <section>
-                <button class="button-store">Añadir a tienda</button>
-                <button class="button-goback">Regresar al inventario</button>
-            </section>
-        </article>
-        <!--Fin de botones-->
+                <div class="mb-3">
+                    <label for="input--precio" class="form-label">Precio Unitario</label>
+                    <input type="number" class="form-control" id="input--precio" placeholder="Ingresa el costo"
+                        required>
+                </div>
 
+                <div class="mb-3">
+                    <label for="input--cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="input--cantidad"
+                        placeholder="Ingresa la cantidad que necesitas" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="input--descuento" class="form-label">Descuento (opcional)</label>
+                    <input type="number" class="form-control" id="input--descuento" placeholder="Ingresa descuento">
+                </div>
+
+                <div class="mb-3">
+                    <label for="select--categoria" class="form-label">Categoría</label>
+                    <select class="form-select" aria-label="Default select example" id="select--categoria" required>
+                        <option selected>Selecciona una categoría ...</option>
+                        <option value="joyeria">Joyeria</option>
+                        <option value="utilitario">Utilitario</option>
+                        <option value="arteObjeto">Arte Objeto</option>
+                        <option value="floreros">Floreros</option>
+                        <option value="velas">Velas</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="mb-3">
+                <button  class="boton--ad" type="submit" id="btn--crearProducto" aria-label="Añadir a tienda">Añadir a tienda</button>
+                <button  class="boton--reg" type="button" id="btn--regresar" aria-label="Regresar al inventario">Regresar al inventario</button>
+            </div>
+        </form>
     </main>
+</div>
+</div>
+</div>
+</div>
     <!--Fin de formulario-->
 
     <!-- footer -->
@@ -255,10 +276,11 @@
         </footer>
     </div>
 
-
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="../scripts/tienda.js" type="text/javascript"></script>
 </body>
 
 </html>
