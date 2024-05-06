@@ -1,0 +1,9 @@
+.boton--ad, 
+.boton--reg{
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+}
