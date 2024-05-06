@@ -1,0 +1,112 @@
+/* Estilos para el main */
+body {
+    font-family: 'Open Sans', sans-serif; /* Corregido para usar la fuente Open Sans */
+}
+
+.col-lg-3 {
+    padding: 0 0 50px 0;
+}
+
+.sidebar-card {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 220px;
+}
+
+.sidebar-card .card-header {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar-list .list-group-item {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.button--change {
+    width: auto; /* Ancho automático */
+    height: 60px;
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin: 20px auto; /* Centrado horizontal */
+}
+
+/* Estilos de la tarjeta del perfil */
+.Card--profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* Ancho relativo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    border: 3px solid #000000;
+    padding-bottom: 40px; /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.img-email {
+    width: 100px; /* Ancho del icono */
+    height: 100px; /* Alto del icono */
+    margin: 20px auto; /* Centrado horizontal */
+    display: block; /* Convertir a bloque para centrar */
+}
+
+.devices {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los botones */
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centrar los botones horizontalmente */
+    gap: 10px; /* Espacio entre botones */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin: 20px auto; /* Centrar y espacio entre el formulario y los botones */
+}
+
+.log-out,
+.button-cancel,
+.button-save,
+.button--adress,
+.edit--button {
+    width: 160px; /* Ancho de los botones */
+    height: 60px; /* Alto de los botones */
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    display: block; /* Convertir a bloque */
+    margin: 20px auto; /* Margen automático para centrar horizontalmente */
+}
+
+.button--adress {
+    margin-top: 0; /* Eliminar margen superior para que esté alineado con el formulario */
+}
+
+/* Espacio en blanco después del hr */
+hr + article {
+    margin-top: 20px;
+}
+
+/* Espaciado entre formulario y footer */
+main {
+    margin-bottom: 50px; /* Espacio en la parte inferior */
+}

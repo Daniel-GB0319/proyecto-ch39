@@ -31,6 +31,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg  navbarbg">
@@ -130,56 +131,63 @@
                                 </section>
                             </article>
 
-                            <h1 class="myAccount">Mi cuenta</h1><!--Aqui empieza el formulario-card-->
-                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Femail-icon-free%2Femail-icon-free-0.jpg&f=1&nofb=1&ipt=0c3fb2ef35f79fdd7ae4540f761bc28fe6f59140c39116b73640e47e85ffc556&ipo=images"
-                                alt="Icono de email" class="img-email" ><!--Icono de mi cuenta-->
+                            <!--Aqui empieza el formulario-card-->
+                            <div class="col-lg-7">
+                                <div class="Card--profile  border-black rounded-4 mt-5">
+                                    <div class="card-body ">
+                                        <article class="form ">
+                                            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Femail-icon-free%2Femail-icon-free-0.jpg&f=1&nofb=1&ipt=0c3fb2ef35f79fdd7ae4540f761bc28fe6f59140c39116b73640e47e85ffc556&ipo=images"
+                                                alt="Icono de email" class="img-email"><!--Icono de mi cuenta-->
+                                            <section>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Correo
+                                                        Electrónico</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Correo
+                                                        Alternativo</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label">Contraseña</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1">
+                                                </div>
+                                            </section>
+                                        </article>
 
-                            <article>
-                                <section>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Correo
-                                            Electrónico</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1">
+
+                                            <!--Inicio de botones-->
+                                            <article class="buttons-container">
+                                                <section>
+                                                    <button class="button-cancel">Cancelar</button>
+                                                    <button class="button-save">Guardar</button>
+                                                </section>
+                                            </article>
+                                            <!--Fin de botones-->
+
+                                            <!--Dispositivos conectados-->
+                                            <article>
+                                                <section>
+                                                    <h1 class="devices">Dispositivos conectados</h1>
+                                                    <hr>
+                                                </section>
+                                            </article>
+
+                                            <!--Cerrar todas las sesiones-->
+                                            <article>
+                                                <section>
+                                                    <button class="log-out">Cerrar todas las sesiones</button>
+                                                </section>
+                                            </article>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Correo
-                                            Alternativo</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                                    </div>
-                                </section>
-                            </article>
-
-                            <!--Inicio de botones-->
-                <article class="buttons-container">
-                    <section>
-                        <button class="button-cancel">Cancelar</button>
-                        <button class="button-save">Guardar</button>
-                    </section>
-                </article>
-<!--Fin de botones-->
-
-                            <!--Dispositivos conectados-->
-                            <article>
-                                <section>
-                                    <h1 class="devices">Dispositivos conectados</h1>
-                                    <hr>
-                                </section>
-                            </article>
-
-                            <!--Cerrar todas las sesiones-->
-                            <article>
-                                <section>
-                                    <button class="log-out">Cerrar todas las sesiones</button>
-                                </section>
-                            </article>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
 
 

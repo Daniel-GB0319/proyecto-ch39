@@ -7,6 +7,10 @@ body {
     padding: 0 0 50px 0;
 }
 
+.col-lg-3 {
+    padding: 0 0 50px 0;
+}
+
 .sidebar-card {
     border: 1px solid black;
     background-color: yellow;
@@ -20,26 +24,30 @@ body {
 }
 
 .sidebar-list .list-group-item {
-    display: flex;
-    align-items: center;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
 }
 
-.myAccount {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 36px; /* Tamaño del título */
-    font-weight: bold;
+.button--change{
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+    width: auto; /* Ancho automático */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 200px; /* Margen automático a la izquierda */
 }
 
-.img-email {
-    width: 100px; /* Ancho del icono */
-    height: 100px; /* Alto del icono */
-    margin: 20px auto; /* Centrar horizontalmente */
-    display: block; /* Convertir a bloque para centrar */
-}
+
 
 /* Estilos de la tarjeta del perfil */
 .Card--profile {
@@ -49,29 +57,50 @@ body {
     justify-content: center;
     width: 70%; /* Ancho relativo del formulario */
     max-width: 600px; /* Ancho máximo del formulario */
-    margin: 50px auto; /* Centrar horizontalmente y separación del footer */
+    margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px; /* Espaciado interno */
     border: 3px solid #000000;
     padding-bottom: 40px; /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
 }
 
-.myAccount {
+.img-email {
+    width: 100px; /* Ancho del icono */
+    height: 100px; /* Alto del icono */
+    margin: 20px auto; /* Centrar horizontalmente */
+    display: block; /* Convertir a bloque para centrar */
+}
+
+
+.devices{
     font-family: "Ubuntu", sans-serif;
-    font-size: 36px; /* Tamaño del título */
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+    margin-bottom: 20px;
 }
 
 /* Estilos de los botones */
 .buttons-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center; /* Centrar los botones horizontalmente */
     gap: 10px; /* Espacio entre botones */
     width: 100%; /* Ancho completo */
     max-width: 400px; /* Ancho máximo de los botones */
     margin: 20px auto; /* Centrar y espacio entre el formulario y los botones */
+}
+
+.log-out {
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    display: block; /* Convertir a bloque */
+    margin: 0 auto; /* Margen automático para centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
 }
 
 .button-cancel,
