@@ -4,8 +4,8 @@
 } 
 #navbrcolorletras {
     color: white;
-    display: grid;
-        grid-template-columns: repeat( 2,141px); 
+    grid-template-columns: ;
+
         font-size: 25px;
 }
 #botonbuscarcolor {
