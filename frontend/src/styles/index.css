@@ -1,0 +1,53 @@
+
+/* Botones */
+.button--change {
+    width: auto;
+    /* Ancho automático para el botón */
+    height: 60px;
+    /* Alto de los botones */
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.container-new-product {
+    background-color: brown;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Clases para el carrusel*/
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 3em;
+    color: black;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+}
