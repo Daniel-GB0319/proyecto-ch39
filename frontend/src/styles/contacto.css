@@ -1,3 +1,7 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /* Estilos del formulario */
 form {
     margin-top: 50px;
@@ -11,18 +15,82 @@ form {
     margin-bottom: 20px;
 }
 
+.Contact--card{
+    display: flex;
+    flex-direction: column;
+}
+
+.Imag-barro{
+    width: 100%;
+}
+
+.Card-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 70%; /* Ancho relativo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding-bottom: 40px; /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
+    margin-top: 40px;
+}
+
+
+
 /* Estilos del artículo del logo */
-.Logo.Barro.On {
-    text-align: center;
+.Logo-Barro-On {
+    width: 50%;
+    height: 50%;
+    margin: 20px auto;
+    display: block;
+    
+}
+
+.Logo-Code-gaiden {
+    width: 25%;
+    height: 25%;
+    margin: 20px auto;
+    display: block;
 }
 
 /* Estilos del botón de contacto */
 .button-contact {
+    display: block;
     width: 160px;
     height: 60px;
     background-color: #ACBE24;
     color: #000;
     border: none;
     border-radius: 20px;
-    margin-top: 20px;
+    margin: 20px auto; /* centrar horizontalmente */
+    line-height: 60px; /* centrar verticalmente */
+    text-align: center; /* centrar contenido horizontalmente */
+}
+
+.button-contact-gaiden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background-color: #ACBE24;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    margin: 20px auto; /* centrar horizontalmente */
+    line-height: 60px; /* centrar verticalmente */
+    text-align: center; /* centrar contenido horizontalmente */
+}
+
+
+
+
+main {
+    margin-bottom: 40px; /* Espacio en la parte inferior */
 }
