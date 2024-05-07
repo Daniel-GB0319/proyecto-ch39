@@ -1,0 +1,192 @@
+/*.contenido_total {
+    background-color: aquamarine;
+
+}*/
+
+h1 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+h2 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h3 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h4 {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h6{
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 0.1px;
+
+}
+
+p {
+
+color: #000;
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 111.111% */
+letter-spacing: 0.1px;
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.abuelo {
+    background-color: blue;
+
+    }
+.madre {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    align-items: start;
+    align-content: start;
+    background-color: #F5E6C7;
+    max-width: 1440px;
+    padding: 20px;
+    gap: 20px;
+    margin: auto;
+
+}
+
+.hijo {
+    max-width: 760px;
+    object-fit: contain;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+
+
+/* formula con flex
+.madre {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 1em;
+    background-color: #F5E6C7;
+    max-width: 1440px;
+    padding: 20px
+
+}
+
+.madre > :first-child {
+    flex-basis: 400px;
+    flex-grow: 9999;
+}
+
+.madre > :last-child {
+    
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+@media (max-width: 768px) {
+    .madre {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 1em;
+        background-color: #F5E6C7;
+        max-width: 100%;
+        padding: 20px
+    
+    }
+    .madre > :first-child {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+
+    .madre > :last-child {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+}
+*/
+
+
+
+
+
+    /* display: grid;
+    box-sizing: border-box;
+    background-color: rgb(226, 125, 43);
+    margin: auto;
+    justify-content: center;
+    max-width: 1440px;
+    justify-items: center;  */
+
+
+/* .contenido_madre {
+    display: grid;
+    box-sizing: border-box;
+    background-color: blueviolet;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    justify-content: center;
+    max-width: 1440px;
+
+} */
+/* .contenido_hij{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border: solid rgb(0, 0, 0) 2px;
+    color:aliceblue;
+    font-size: 40px;
+
+} */
+
