@@ -45,8 +45,10 @@ h6{
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 100% */
+    line-height: 25px; /* 100% */
     letter-spacing: 0.1px;
+    padding-top: 10px;
+    
 
 }
 
@@ -62,47 +64,120 @@ letter-spacing: 0.1px;
 }
 
 body {
-    box-sizing: border-box;
-    margin:0;
+    
+    margin: 0;
 }
+
 .abuelo {
     /* aca se define las principales medidas de contenedor */
     display: grid; 
     grid-auto-rows: auto;
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
-
     background-color: #ffffff;
     max-width: 1440px;
     margin: auto;
-    gap: 100px;
     padding: 0px;
-
 }
+
+.video_ {
+    display: grid;
+    grid-template-columns: minmax(100px,100%);
+    justify-items: center;
+    padding: 25px 15px;
+    margin: 0px 30px;
+    
+    border-radius: 10px;
+    background-color: #F5E6C7;
+    
+
+    @media (max-width: 750px) {
+        grid-template-columns: minmax(20px,1fr);
+        margin: 30px 12px;
+
+        
+    }
+}
+.video_ > * {
+    
+    text-align: center;
+
+    min-width: 60%;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.video_ > :nth-child(3) {
+    
+    min-height: 370px;  /* Codeo pro, el tercer elemento ocupa 2 filas */
+    @media (max-width: 750px) {
+        min-width: 70%;
+        max-width: 100%;
+        min-height: 100%;
+
+
+}}
+
+.equipo_code {
+    display: grid;
+    grid-template-columns: minmax(100px,100%);
+    justify-items: center;
+    padding: 25px 15px;
+    margin: 25px 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #b6995b, #e0d6b7);
+    @media (max-width: 750px) {
+        grid-template-columns: minmax(20px,1fr);
+        margin: 30px 12px;
+
+        
+    }
+}
+
     
 .madre {     /*Contenedor base para meter toda clase de elementos, incluyendo más contenedores*/
     display: grid;
-    grid-template-columns: repeat(2, 1fr);    background-color: #F5E6C7;
+    grid-template-columns: minmax(100px,1fr) minmax(100px, 1fr);
+    background-color: #F5E6C7;
     align-items: start;
     align-content: start;
-    margin:auto;
-    max-width: 100%;
-    padding: 25px;
+    justify-items: center;
+    margin: 70px 30px;
+    max-width: 100vw;
+    padding: 25px 15px;
+    border-radius: 10px;
+
+    box-sizing: border-box;
     @media (max-width: 750px) {
-        grid-template-columns: repeat(1, 1fr);
-        max-width: 100vw;
+        grid-template-columns: minmax(20px,1fr);
+        margin: 30px 12px;
+
+        
     }
 }
-    .madre > * {     /*Para cada uno de los elementos madre*/
-        max-width: 100%;
+    .madre > * {  /*Para cada uno de los elementos madre*/
+        padding: 15px;
+        
+        
+
+
+
 
 }
+
+.hijo > * {
+    max-width: 100%;
+    margin: 0;
+    max-height: 500px;
+
+}
+
 
 /* Saludos ahora los estilos de las cards estaran disponibles inline */
 .card-prop
 {
-    background: rgb(50,68,232);
-    background: linear-gradient(315deg, rgba(50,68,232,1) 47%, rgba(253,29,29,1) 98%); 
+    background: rgb(244,238,227);
+    background: linear-gradient(315deg, rgba(244,238,227,1) 47%, rgba(162,128,58,1) 100%); 
 }
 
 
@@ -123,34 +198,18 @@ body {
             }
         
     }
-    
 
-.hijo {
-    width: 100%;
 
-    
 
-}
 
-.img-main {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
 
-}
+
 
 .cards {
     gap: 20px;
 }
 
-.cards > *{
-    background-color: #5D7BE2;
-    padding: 20px;
-
-
-}
 
 .col {
- text-align: justify;
-}
+text-align: justify;
+} 

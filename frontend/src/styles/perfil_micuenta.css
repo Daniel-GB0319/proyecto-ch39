@@ -1,66 +1,135 @@
 /* Estilos para el main */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 50px; /* ajusta según necesites */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Estilos para el sidebar */
-.sideBar {
+.col-lg-3 {
+    padding: 0 0 50px 0;
+}
+
+.col-lg-3 {
+    padding: 0 0 50px 0;
+}
+
+.sidebar-card {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 220px;
+}
+
+.sidebar-card .card-header {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar-list .list-group-item {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.button--change{
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+    width: auto; /* Ancho automático */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 200px; /* Margen automático a la izquierda */
+}
+
+
+
+/* Estilos de la tarjeta del perfil */
+.Card--profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 310px;
-    height: 460px;
-    border: 3px solid #000000;
-    border-radius: 20px;
-    margin-right: 20px; /* separación entre el sidebar y el formulario */
-}
-
-.sideBar h1,
-.sideBar h2,
-.sideBar h3,
-.sideBar h4 {
-    margin: 15px;
-}
-
-.sideBar hr {
-    width: 75%;
-    border: 3px solid #000000;
-    margin: 10px 0;
-}
-
-/* Estilos para la sección de foto de perfil */
-.profile-picture-section {
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-/* Estilos para la foto de perfil */
-#profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 70%; /* Ancho relativo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
     border: 3px solid #000000;
-    border-radius: 50%;
-    background-color: #E9AD39;
+    padding-bottom: 40px; /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
 }
 
-/* Estilos para el formulario */
-.form {
+.img-email {
+    width: 100px; /* Ancho del icono */
+    height: 100px; /* Alto del icono */
+    margin: 20px auto; /* Centrar horizontalmente */
+    display: block; /* Convertir a bloque para centrar */
+}
+
+
+.devices{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los botones */
+.buttons-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 751px;
-    height: auto; /* ajusta según el contenido */
-    border: 3px solid #000000;
-    border-radius: 20px;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: center; /* Centrar los botones horizontalmente */
+    gap: 10px; /* Espacio entre botones */
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin: 20px auto; /* Centrar y espacio entre el formulario y los botones */
 }
 
-/* Estilos para los botones */
-button {
+.log-out {
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    display: block; /* Convertir a bloque */
+    margin: 0 auto; /* Margen automático para centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.button-cancel,
+.button-save,
+.log-out {
+    width: 160px; /* Ancho de los botones */
+    height: 60px; /* Alto de los botones */
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+}
+
+.button--change {
+    width: auto; /* Ancho automático para el botón */
+    height: 60px; /* Alto de los botones */
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Espacio entre el botón y el siguiente elemento */
+}
+
+/* Espacio en blanco después del hr */
+hr + article {
     margin-top: 20px;
+}
+
+/* Espaciado entre formulario y footer */
+main {
+    margin-bottom: 50px; /* Espacio en la parte inferior */
 }
