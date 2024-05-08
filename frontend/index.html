@@ -9,6 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
+  <link rel="stylesheet" type="text/css" href="./src/styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="./src/styles/Navbar_Footer.css">
 
 
@@ -80,21 +81,21 @@
   </nav>
   <!-- main -->
 
-  <main> <!-- TODO: AGREGAR LOS ESTILOS Y FUENTES DE LETRAS ESTABLECIDOS -->
+  <main>
     <!-- %%% Sección barro.on y carrusel %%% -->
     <div class="container ">
       <div class="row">
         <div class="col-lg-7">
           <!-- Card sobre barro on -->
-          <section class="py-3 text-center container">
+          <section class="py-3 container">
             <div class="row py-lg-3">
               <div class="col-lg-8 col-md-8 mx-auto py-5">
-                <h1 class="fw-light">BARRO.ON</h1>
-                <p class="lead text-body-secondary">Somos un proyecto de arte decorativo en barro. Nos especializamos en
-                  la creación de piezas únicas y joyería de barro.</p>
+                <h2 class="title--font2">BARRO.ON</h2>
+                <h3 class="title--font3">Somos un proyecto de arte decorativo en barro. Nos especializamos en
+                  la creación de piezas únicas y joyería de barro.</h3>
                 <p>
                   <a href="./src/pages/tienda.html">
-                    <button class="button--change">Visita la tienda</button></a>
+                    <button class="button--change title--font5">Visita la tienda</button></a>
                 </p>
               </div>
             </div>
@@ -112,7 +113,7 @@
                   <div class="card-body">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Cachorrito_husky.jpg" alt="producto"
                       style="width: 215px;height:210px;" class="border border-1 rounded-4 mb-3">
-                    <h5 class="text-center">Joyería</h5>
+                    <h5 class="title--font5 text-center">Joyería</h5>
                   </div>
                 </div>
               </div> <!-- Carousel item -->
@@ -123,7 +124,7 @@
                   <div class="card-body">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Cachorrito_husky.jpg" alt="producto"
                       style="width: 215px;height:210px;" class="border border-1 rounded-4 mb-3">
-                    <h5 class="text-center">Utilitario</h5>
+                    <h5 class="title--font5 text-center">Utilitario</h5>
                   </div>
                 </div>
               </div> <!-- Carousel item -->
@@ -133,7 +134,7 @@
                   <div class="card-body">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Cachorrito_husky.jpg" alt="producto"
                       style="width: 215px;height:210px;" class="border border-1 rounded-4 mb-3">
-                    <h5 class="text-center">Arte Objetos</h5>
+                    <h5 class="title--font5 text-center">Arte Objetos</h5>
                   </div>
                 </div>
               </div> <!-- Carousel item -->
@@ -143,7 +144,7 @@
                   <div class="card-body">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Cachorrito_husky.jpg" alt="producto"
                       style="width: 215px;height:210px;" class="border border-1 rounded-4 mb-3">
-                    <h5 class="text-center">Floreros</h5>
+                    <h5 class="title--font5 text-center">Floreros</h5>
                   </div>
                 </div>
               </div> <!-- Carousel item -->
@@ -153,7 +154,7 @@
                   <div class="card-body">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Cachorrito_husky.jpg" alt="producto"
                       style="width: 215px;height:210px;" class="border border-1 rounded-4 mb-3">
-                    <h5 class="text-center">Velas</h5>
+                    <h5 class="title--font5 text-center">Velas</h5>
                   </div>
                 </div>
               </div> <!-- Carousel item -->
@@ -180,8 +181,8 @@
 
 
     <!-- %%% Sección de últimos productos %%% -->
-    <div class="container-fluid container-new-product py-4 px-1">
-      <h2 class="text-center">Productos</h2>
+    <div class="container-fluid container-new-product py-4 px-auto">
+      <h2 class="title--font2 text-center mb-4">!! PRODUCTOS DESTACADOS !!</h2>
 
       <div id="carousel-newProd" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" id="productos"> <!-- TODO: VERIFICAR QUE JS GENERA CARDS -->
@@ -203,37 +204,102 @@
 
     <!-- %%% Sección compromiso barro %%% -->
     <div class="container-fluid footer-style py-5 px-1 text-center">
-      <h2>Arte sostenible para un hogar ecológico</h2>
+      <h2 class="title--font2">Arte sostenible para un hogar ecológico</h2>
     </div> <!-- Container fluid -->
 
-    <!-- TODO: TERMINAR SECCION DE CATEGORIAS. AHORITA ESTAN TEXTOS DE EJEMPLO DONDE DEBERIAN IR LOS BOTONES -->
+
     <!-- %%% Sección de categorías %%%  -->
-    <div class="container py-5">
-
+    <div class="container-fluid py-3">
+      <h2 class="title--font2 text-center">CATEGORIAS</h2>
       <!-- Primera fila de botones categorías-->
-      <div class="row text-center">
-        <div class="col-lg-4"> <!-- Botón categoría 1 -->
-          <p>Ejemplo 1</p>
-        </div> <!-- Botón categoría 1 -->
+      <div class="row text-center g-4">
+        <div class="col-lg-4 d-flex align-items-stretch"> <!-- Botón categoría Joyeria -->
+          <section class="py-3 text-center container d-flex flex-column justify-content-between">
+            <div class="row py-lg-3">
+              <div class="col-lg-8 col-md-8 mx-auto py-4">
+                <p>
+                  <img src="./public/assets/categoria_ Joyeria.png" alt="Categoria Joyeria"
+                    class="border border-1 rounded-4 mb-2 img-categorias">
+                </p>
+                <p>
+                  <a href="./src/pages/tienda.html">
+                    <button class="button--change title--font5">Joyería</button></a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- Botón categoría Joyeria -->
 
-        <div class="col-lg-4"> <!-- Botón categoría 1 -->
-          <p>Ejemplo 2</p>
-        </div> <!-- Botón categoría 1 -->
+        <div class="col-lg-4 d-flex align-items-stretch"> <!-- Botón categoría Arte-Objeto -->
+          <section class="py-3 text-center container d-flex flex-column justify-content-between">
+            <div class="row py-lg-3">
+              <div class="col-lg-8 col-md-8 mx-auto py-4">
+                <p>
+                  <img src="./public/assets/categoria_ Arte-objeto.png" alt="Categoria Arte Objeto"
+                    class="border border-1 rounded-4 mb-2 img-categorias">
+                </p>
+                <p>
+                  <a href="./src/pages/tienda.html">
+                    <button class="button--change title--font5">Arte-Objeto</button></a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- Botón categoría Arte-Objeto -->
 
-        <div class="col-lg-4"> <!-- Botón categoría 1 -->
-          <p>Ejemplo 3</p>
-        </div> <!-- Botón categoría 1 -->
+        <div class="col-lg-4 d-flex align-items-stretch"> <!-- Botón categoría Floreros -->
+          <section class="py-3 text-center container d-flex flex-column justify-content-between">
+            <div class="row py-lg-3">
+              <div class="col-lg-8 col-md-8 mx-auto py-4">
+                <p>
+                  <img src="./public/assets/categoria_ Floreros.png" alt="Categoria Floreros"
+                    class="border border-1 rounded-4 mb-2 img-categorias">
+                </p>
+                <p>
+                  <a href="./src/pages/tienda.html">
+                    <button class="button--change title--font5">Floreros</button></a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- Botón categoría Floreros -->
       </div> <!-- row primera fila categorías -->
 
       <!-- Segunda fila de botones categorías-->
-      <div class="row text-center">
-        <div class="col-lg-6"> <!-- Botón categoría 1 -->
-          <p>Ejemplo 1</p>
-        </div> <!-- Botón categoría 1 -->
+      <div class="row text-center g-4">
+        <div class="col-lg-6 d-flex align-items-stretch"> <!-- Botón categoría Utilitarios -->
+          <section class="py-3 text-center container d-flex flex-column justify-content-between">
+            <div class="row py-lg-3">
+              <div class="col-lg-8 col-md-8 mx-auto py-4">
+                <p>
+                  <img src="./public/assets/categoria_ Utilitario.png" alt="Categoria Utilitarios"
+                    class="border border-1 rounded-4 mb-2 img-categorias">
+                </p>
+                <p>
+                  <a href="./src/pages/tienda.html">
+                    <button class="button--change title--font5">Utilitarios</button></a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- Botón categoría Utilitarios -->
 
-        <div class="col-lg-6"> <!-- Botón categoría 1 -->
-          <p>Ejemplo 2</p>
-        </div> <!-- Botón categoría 1 -->
+        <div class="col-lg-6 d-flex align-items-stretch"> <!-- Botón categoría Velas -->
+          <section class="py-3 text-center container d-flex flex-column justify-content-between">
+            <div class="row py-lg-3">
+              <div class="col-lg-8 col-md-8 mx-auto py-4">
+                <p>
+                  <img src="./public/assets/categoria_ Velas.png" alt="Categoria Velas"
+                    class="border border-1 rounded-4 mb-2 img-categorias">
+                </p>
+                <p>
+                  <a href="./src/pages/tienda.html">
+                    <button class="button--change title--font5">Velas</button></a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </div> <!-- Botón categoría Velas -->
       </div> <!-- row segunda fila categorías -->
 
     </div> <!-- Container sección categorías -->

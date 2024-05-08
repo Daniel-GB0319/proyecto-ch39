@@ -1,8 +1,6 @@
-
 /* Botones */
 .button--change {
-    width: auto;
-    /* Ancho automático para el botón */
+    width: 190px;
     height: 60px;
     /* Alto de los botones */
     background-color: #ACBE24;
@@ -13,12 +11,17 @@
 }
 
 .container-new-product {
-    background-color: brown;
-    color: white;
+    background-color: #F5E6C7;
+    color: black;
     width: 100%;
     height: auto;
 }
 
+/* Tamaño de imágenes en categorías (porcentaje con respecto a su contenedor) */
+.img-categorias {
+    width: 60%;
+    height: auto;
+}
 
 /* Clases para el carrusel*/
 .carousel-caption {
@@ -26,18 +29,20 @@
     z-index: 10;
 }
 
-
+/* Color de texto en botones */
 .carousel-control-prev,
 .carousel-control-next {
     color: black;
 }
 
-
+/* Icono de botones carrusel cuando no esta puntero encima */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none;
 }
 
+
+/* Icono de botones carrusel cuando está puntero encima */
 .carousel-control-prev-icon:after,
 .carousel-control-next-icon:after {
     content: '>';
@@ -48,6 +53,8 @@
     border-radius: 10px;
 }
 
+
+/* Icono de botón atrás / anterior */
 .carousel-control-prev-icon:after {
     content: '<';
 }
