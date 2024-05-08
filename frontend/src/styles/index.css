@@ -19,8 +19,19 @@
 
 /* Tamaño de imágenes en categorías (porcentaje con respecto a su contenedor) */
 .img-categorias {
-    width: 60%;
-    height: auto;
+    width: 260px;
+    height: 360px;
+}
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}
+
+.carousel-inner{
+    display: flex;
+    margin: auto;
+    padding: 0 100px;
 }
 
 /* Clases para el carrusel*/
