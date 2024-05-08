@@ -72,15 +72,56 @@ function getValue(id) {
           `;
         document.getElementById("productos").appendChild(card);
       });
+      
     }
+
+    
+  function mostrarProductosConsola() {
+    const productos = JSON.parse(localStorage.getItem("productos"));
+    console.log(productos);
+  }
   } // mostrarProductos
   
   
   // Función para modificar información de un producto
-  function modificarProducto() {} // modificarProducto
+  function modificarProducto(id, nuvevoNombre, nuevoPrecio, nuevaDescripción, nuevoDescuento, nuevaCantidad
+    , nuevaCategoria, nuevaImagen) {
+      //Buscar el producto por su ID
+      const productos = JSON.parse(localStorage.getItem("productos"));
+      const producto = productos.find((producto) => producto.id === id);
+      //Si el producto existe, modificar sus propiedades
+      if (producto) {
+        const nombre = document.getElementById("nombre");
+        const precio = document.getElementById("precio");
+        const descripcion = document.getElementById("descripcion");
+        const descuento = document.getElementById("descuento");
+        const cantidad = document.getElementById("cantidad");
+        const categoria = document.getElementById("categoria");
+        const imagen = document.getElementById("imagen");
+      }
+      // Almacenar los productos modificados en localstorage
+      localStorage.setItem("productos", JSON.stringify(productos));
+      alert("Producto modificado con éxito");
+    } // modificarProducto
   
   // Función para eliminar un producto
-  function eliminarProducto() {} // eliminarProducto
+  function eliminarProducto(id) {
+    let productos = JSON.parse(localStorage.getItem("productos")) || [];
+
+    //Verificar si el producto con el ID proporcionado existe en la lista
+    const productoExistente = productos.find((producto) => producto.id === id);
+    if (!productoExistente) {
+      alert("El producto con el ID proporcionado no existe");
+      return;
+    }
+
+    //Filtrar la lista de productos para eliminar el producto con el ID proporcionado
+    productos = productos.filter((producto) => producto.id!== id);
+
+    //Guardar la lista actualizada de productos en el localStogare
+    localStorage.setItem("productos", JSON.stringify(productos));
+    alert("Producto eliminado con éxito");
+  } // eliminarProducto
   
   // funcion para mostrar contenido de prodcutos en consola
   function mostrarProductosConsola() {
