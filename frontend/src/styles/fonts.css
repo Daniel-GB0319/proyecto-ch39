@@ -1,5 +1,7 @@
+
+
 /*Hay 5 tamaños de letra para título 68, 40, 32, 28, 25*/
-.title--font1 { /*----h1----*/
+.title--font1 {
     color: #000;
     font-family: Ubuntu;
     font-size: 68px;
@@ -8,7 +10,7 @@
     line-height: normal;
     letter-spacing: 0.1px;
 }
-.title--font2 {/*----h2----*/
+.title--font2 {
     font-family: Ubuntu;
     font-size: 40px;
     font-style: normal;
@@ -16,7 +18,7 @@
     line-height: normal;
 }
 
-.title--font3{ /*----h3----*/
+.title--font3{
     font-family: Ubuntu;
     font-size: 32px;
     font-style: normal;
@@ -24,7 +26,7 @@
     line-height: normal;
 }
 
-.title--font4{ /*-----h4----*/
+.title--font4{
     font-family: Ubuntu;
     font-size: 28px;
     font-style: normal;
@@ -32,7 +34,7 @@
     line-height: normal;
 }
 
-.title--font5{ /*----h5----*/
+.title--font5{
     font-family: Ubuntu;
     font-size: 25px;
     font-style: normal;
@@ -41,7 +43,7 @@
 }
 
 /*Tipografía para contenido son 3 tamaños 20, 18 y 16*/
-.body--font1{ /*----H6----*/
+.body--font1{
     font-family: "Open Sans";
     font-size: 20px;
     font-style: normal;
@@ -51,7 +53,7 @@
 
 }
 
-.body--font2 { /*----P----*/
+.body--font2 {
 
 font-family: "Open Sans";
 font-size: 18px;
@@ -62,7 +64,7 @@ letter-spacing: 0.1px;
 
 }
 
-.body--font3{ /*----SMALL----*/
+.body--font3{
     font-family: "Open Sans";
     font-size: 20px;
     font-style: normal;
