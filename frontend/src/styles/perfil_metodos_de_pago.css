@@ -29,7 +29,7 @@ body {
     font-size: 16px;
 }
 
-.button--change{
+.btn--añadirpago{
     width: 160px;
     height: 60px;
     background-color: #ACBE24;
@@ -47,12 +47,14 @@ body {
     margin-top: 20px; /* Espacio superior */
     margin-left: 200px; /* Margen automático a la izquierda */
 }
-
 .Image-preview {
-    width: 100px auto; /* Ancho del icono */
-    height: 100px auto; /* Alto del icono */
+    width: 300px; /* Ancho del contenedor */
+    height: 300px; /* Alto del contenedor */
     margin: 20px auto; /* Centrar horizontalmente */
-    display: block; /* Convertir a bloque para centrar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Estilos de la tarjeta del perfil */
@@ -85,6 +87,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 200px;
     width: 100%; /* Ancho completo */
     max-width: 400px; /* Ancho máximo de los botones */
     margin-top: 20px; /* Espacio superior */
@@ -99,7 +102,7 @@ h3 {
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
-    margin: 0 auto 20px auto;
+    
 }
 
 /* Espaciado entre formulario y footer */
