@@ -4,13 +4,19 @@
     background-color:#f3e6c8 !important;
 }
 
-.card-body--prop
-{
-   
-}
-
 .active-prop
 {
     background-color: yellow !important; 
     color: black !important; 
+}
+
+.btn-prop
+{
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24 !important;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin: 10px; /* Espacio entre los botones */
 }
