@@ -74,7 +74,7 @@ body {
 /* Estilos de los botones */
 .buttons-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; /* Centrar los botones horizontalmente */
     gap: 10px; /* Espacio entre botones */
     width: 100%; /* Ancho completo */

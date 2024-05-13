@@ -51,7 +51,7 @@ body {
     width: 300px; /* Ancho del contenedor */
     height: 300px; /* Alto del contenedor */
     margin: 20px auto; /* Centrar horizontalmente */
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;

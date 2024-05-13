@@ -29,6 +29,10 @@ body {
     font-size: 16px;
 }
 
+.Info-product{
+    text-align: center;
+}
+
 .Image-preview {
     width: 100px; /* Ancho del icono */
     height: 100px; /* Alto del icono */
@@ -47,16 +51,17 @@ body {
 }
 
 .buttons {
+    text-align: center; /* Centrar horizontalmente los elementos */
     width: 100%; /* Ancho completo */
     max-width: 400px; /* Ancho máximo de los botones */
     margin: 20px auto; /* Centrado horizontal */
     font-family: "Open Sans", sans-serif;
-    text-align: center; /* Centrar horizontalmente los elementos */
 }
 
 .boton--ad, 
 .boton--reg {
-    width: 160px;
+    display: inline-block;
+    min-width: 100px; /* Ancho mínimo */
     height: 60px;
     background-color: #ACBE24;
     color: #000000;
@@ -64,6 +69,7 @@ body {
     border-radius: 20px;
     margin: 10px; /* Espacio entre los botones */
 }
+
 
 /* Espaciado entre formulario y footer */
 main {
