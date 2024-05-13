@@ -1,7 +1,13 @@
 .card--prop
 {
-    max-width: 1400px;
+    max-width:965px;
+    max-height:215px ;
     background-color:#f3e6c8 !important;
+}
+.img-prop
+{
+    width:105px !important;
+    height:150px !important;
 }
 
 .active-prop
@@ -21,7 +27,25 @@
     margin: 10px; /* Espacio entre los botones */
 }
 
+ montse
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
 }
+
+.text-prop-card {
+    margin: 0px !important;
+}
+
+.btn-prop-card
+{
+    width: 160px;
+    height: 60px;
+    background-color: #ACBE24 !important;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin:10px 10px  !important;
+    ma
+}
+ main
