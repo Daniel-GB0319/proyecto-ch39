@@ -70,6 +70,12 @@ body {
     margin: 10px; /* Espacio entre los botones */
 }
 
+.active-prop
+{
+    background-color: yellow !important; 
+    color: black !important; 
+}
+
 
 /* Espaciado entre formulario y footer */
 main {
