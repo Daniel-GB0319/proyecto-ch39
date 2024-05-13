@@ -1,0 +1,33 @@
+
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenedor .mercancia {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    
+    transition: .3s;
+}
+  .contenedor .mercancia .Product{
+    max-width: 200px;
+    padding: 10%;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 13px;
+    padding: 20px;
+    transition: .3s;
+}
+.img-item{
+    all:180px;
+    width: 150px;
+    
+}
