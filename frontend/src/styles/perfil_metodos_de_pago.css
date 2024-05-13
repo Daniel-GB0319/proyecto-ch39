@@ -52,7 +52,6 @@ body {
     height: 300px; /* Alto del contenedor */
     margin: 20px auto; /* Centrar horizontalmente */
     display: block;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
