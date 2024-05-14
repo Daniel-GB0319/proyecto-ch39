@@ -199,12 +199,6 @@ body {
         
     }
 
-
-
-
-
-
-
 .cards {
     gap: 20px;
 }
@@ -213,3 +207,8 @@ body {
 .col {
 text-align: justify;
 } 
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}

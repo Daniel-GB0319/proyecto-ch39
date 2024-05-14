@@ -6,35 +6,58 @@ body {
 .Form--register {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%; /* Ancho relativo del formulario */
-    max-width: 600px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px; /* Espaciado interno */
     border: 1px solid #000000;
+    border-radius: 10px;
     padding-bottom: 40px; /* Espacio en la parte inferior */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
+    /*width: auto; /* Ancho automático basado en el contenido */
+}
+.Form--registerr { /*Se usó para alinear el formulario*/
+    display:flex;
+    /*flex-direction: column;*/
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    padding-bottom: 50px; /* Espacio en la parte inferior */
+    /*width: auto; /* Ancho automático basado en el contenido */
+    
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%; /* Ancho completo */
-    max-width: 400px; /* Ancho máximo de los botones */
+    /*align-items: center;
+    text-align: center;*/
     margin-top: 20px; /* Espacio superior */
+    /*flex-shrink: 0; /* Evita que el botón se reduzca */
+    /*width: auto; /* Ancho automático basado en el contenido */
+    
+
 }
 
 .button--register{
     width: 160px;
     height: 60px;
-    background-color: #ACBE24;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    /*text-align:center;*/
+    height: 50px;
     border: none;
+    
     border-radius: 20px;
+    box-shadow: 4px 5px 5px 3px rgba(0, 0, 0, 0.1);
     margin-top: 10px; /* Espacio entre los botones */
+    margin-left:90px;
+    margin-bottom: 10px;
+    padding: 20px 20px 20px 20px;
+    width: auto; /* Ancho automático basado en el contenido */
 }
 
 
@@ -42,4 +65,9 @@ body {
 main {
     margin-top: 40px; /* Espacio en la parte superior */
     margin-bottom: 40px; /* Espacio en la parte inferior */
+}
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
 }
