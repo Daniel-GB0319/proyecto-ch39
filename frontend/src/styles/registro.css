@@ -6,11 +6,10 @@ body {
 .Form--register {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px; /* Espaciado interno */
     border: 1px solid #000000;
+    border-radius: 10px;
     padding-bottom: 40px; /* Espacio en la parte inferior */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
     /*width: auto; /* Ancho automático basado en el contenido */
@@ -20,7 +19,7 @@ body {
     /*flex-direction: column;*/
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px; /* Espaciado interno */
-    padding-bottom: 40px; /* Espacio en la parte inferior */
+    padding-bottom: 50px; /* Espacio en la parte inferior */
     /*width: auto; /* Ancho automático basado en el contenido */
     
 }
@@ -28,8 +27,8 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /*align-items: center;
+    text-align: center;*/
     margin-top: 20px; /* Espacio superior */
     /*flex-shrink: 0; /* Evita que el botón se reduzca */
     /*width: auto; /* Ancho automático basado en el contenido */
@@ -48,16 +47,17 @@ body {
     display: flex;
     flex-direction:row;
     align-items: center;
-    text-align:center;
+    /*text-align:center;*/
     height: 50px;
     border: none;
+    
     border-radius: 20px;
+    box-shadow: 4px 5px 5px 3px rgba(0, 0, 0, 0.1);
     margin-top: 10px; /* Espacio entre los botones */
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left:90px;
     margin-bottom: 10px;
     padding: 20px 20px 20px 20px;
-    /*width: auto; /* Ancho automático basado en el contenido */
+    width: auto; /* Ancho automático basado en el contenido */
 }
 
 
