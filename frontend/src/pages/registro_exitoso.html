@@ -33,68 +33,62 @@
 </head>
 <body>
     <!-- navbar inicio -->
-    <nav class="navbar navbar-expand-lg  navbarbg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--Codigo del logo Barro On direccionando al index -->
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/frontend/index.html">
-                        <img src="../../public/assets/Barron On.svg" alt="Logo" width="120"
-                            height="50" class="d-inline-block align-text-top">
-                    </a>
-                </div>
-            </nav>
-            <!--Código de las secciones en las que se divide el navbar-->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="/frontend/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="buscar" id="inputbusquedablanco"
-                        placeholder="Buscar en Barro.On..." aria-label="Buscar">
-                    <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
-                </form>
-                <!--Código para icono de perfil-->
-                <nav class="navbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="./perfil.html">
-                            <img src="../../public/assets/iconoperfilnavbar.webp" alt="Logo" width="50" height="50"
-                                class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-                <!--Código para icono de carrito-->
-                <nav class="navbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" id="carritoicon" href="./carrito.html">
-                            <img src="../../public/assets/iconocarritonavbar.webp" alt="Logo" width="55" height="50"
-                                class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </nav>
+   
+<nav class="navbar navbar-expand-lg navbarbg">
+    <div class="container-fluid">
+  
+      <!-- Botón de hamburguesa para pantallas pequeñas -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Logo -->
+      <a class="navbar-brand" href="../frontend/index.html">
+        <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+      </a>
+  
+      <!-- Secciones del navbar -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+  
+        <!-- Formulario de búsqueda -->
+        <form class="d-flex" role="buscar">
+          <input class="form-control me-2" type="buscar" id="inputbusquedablanco" placeholder="Buscar en Barro.On..."
+            aria-label="Buscar">
+          <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
+        </form>
+  
+        <!-- Icono de perfil -->
+        <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
+          <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+        </a>
+  
+        <!-- Icono de carrito -->
+        <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
+          <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+        </a>
+      </div>
+    </div>
+  </nav>
+      <!-- Barra con texto -->
+      <div class="barra-verde text-center" style="background-color: #BACC33 ">
+        <p>Registro Exitoso</p>
+      </div>
+    </div>
     <!-- navbar  fin-->
 
     <main>
@@ -205,6 +199,7 @@
         </footer>
     </div>
 
+    <script src="../scripts/registro_exitoso.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
