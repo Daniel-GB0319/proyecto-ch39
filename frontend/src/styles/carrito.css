@@ -1,3 +1,9 @@
+ montse
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}
+
 
 .img{
 width: 30%;
@@ -52,3 +58,4 @@ all: 180px;
 
 
  
+ main

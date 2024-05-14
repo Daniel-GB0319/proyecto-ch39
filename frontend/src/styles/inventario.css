@@ -27,6 +27,12 @@
     margin: 10px; /* Espacio entre los botones */
 }
 
+ montse
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}
+
 .text-prop-card {
     margin: 0px !important;
 }
@@ -42,3 +48,4 @@
     margin:10px 10px  !important;
     ma
 }
+ main

@@ -110,3 +110,8 @@ hr + article {
 main {
     margin-bottom: 50px; /* Espacio en la parte inferior */
 }
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}
