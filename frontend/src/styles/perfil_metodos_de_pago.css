@@ -108,3 +108,8 @@ h3 {
 main {
     margin-bottom: 40px; /* Espacio en la parte inferior */
 }
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}
