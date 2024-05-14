@@ -91,23 +91,23 @@
 <main>
 <img src="../../public/assets/Fondo-contacto-Bon.png" alt="banner-barroOn" class="Imag-barro">
 <article class="Contact--card">
+  
   <section class="Card-contact">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" >
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email/Correo Electrónico</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" >
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Compañia/Organización</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" >
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Dejanos tu Mensaje</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" >
-    </div>
+    <!-- en "tucorreogmail" poner el correo al que se quiere mandar el mensaje -->
+    <form action="https://formsubmit.co/tucorreo@gmail.com" method="POST">
+      <label for="Nombre" class="form-label">Nombre</label>
+      <input type="text" name="name" class="form-control" id="exampleFormControlInput1" />
+
+      <label for="email" class="form-label">Email/Correo electrónico</label>
+      <input type="email" name="email" class="form-control" id="exampleFormControlInput1" />
+
+      <label for="subject" class="form-label">Asunto</label>
+      <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" />
+
+      <label for="comments" class="form-label">Dejanos tu Mensaje</label>
+      <textarea name="comments" id="" cols="52" rows="5"></textarea>
+      
+    </form>
   </section>
     <!--Fin de formulario-->
       <section class="Logo-Barro-On">
@@ -118,7 +118,10 @@
     <!--Inicio de botones-->
     <article>
       <section>
-          <button class="button-contact">Contacto</button>
+        <input type="submit" class="button-contact" value="Enviar" />
+        <!-- poner aquí la dirección que da al ejecutarlo en Live server -->
+        <input type="hidden" name="_next" value="poner aquí la dirección que da al ejecutarlo en Live server">
+        <input type="hidden" name="_captcha" value="false">         
       </section>
     </article>
   <!--Fin de botones-->
@@ -130,7 +133,10 @@
 
     <article>
       <section>
-          <button class="button-contact-gaiden">Contacto Code Gaiden</button>
+        <input type="submit" class="button-contact" value="Enviar" />
+        <!-- poner aquí la dirección que da al ejecutarlo en Live server -->
+        <input type="hidden" name="_next" value="poner aquí la dirección que da al ejecutarlo en Live server">
+        <input type="hidden" name="_captcha" value="false">         
       </section>
     </article>
 
