@@ -28,10 +28,27 @@ body {
     font-size: 16px;
 }
 
+/* Estilos para la tarjeta del perfil */
+.Card--profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* Ancho relativo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border: 3px solid #000000; /* Borde sólido de color negro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+
 .button--change{
     width: 160px;
     height: 60px;
-    background-color: #ACBE24;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -47,30 +64,12 @@ body {
     margin-left: 200px; /* Margen automático a la izquierda */
 }
 
-
-
-/* Estilos de la tarjeta del perfil */
-.Card--profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 70%; /* Ancho relativo del formulario */
-    max-width: 600px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centrar horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    border: 3px solid #000000;
-    padding-bottom: 40px; /* Espacio en la parte inferior */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
-}
-
 .img-email {
     width: 100px; /* Ancho del icono */
     height: 100px; /* Alto del icono */
     margin: 20px auto; /* Centrar horizontalmente */
     display: block; /* Convertir a bloque para centrar */
 }
-
 
 .devices{
     font-family: "Ubuntu", sans-serif;
@@ -94,7 +93,10 @@ body {
 .log-out {
     width: 160px;
     height: 60px;
-    background-color: #ACBE24;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -108,7 +110,10 @@ body {
 .log-out {
     width: 160px; /* Ancho de los botones */
     height: 60px; /* Alto de los botones */
-    background-color: #ACBE24;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -117,7 +122,10 @@ body {
 .button--change {
     width: auto; /* Ancho automático para el botón */
     height: 60px; /* Alto de los botones */
-    background-color: #ACBE24;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -125,11 +133,14 @@ body {
 }
 
 /* Espacio en blanco después del hr */
-hr + article {
-    margin-top: 20px;
-}
+
 
 /* Espaciado entre formulario y footer */
 main {
     margin-bottom: 50px; /* Espacio en la parte inferior */
+}
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
 }

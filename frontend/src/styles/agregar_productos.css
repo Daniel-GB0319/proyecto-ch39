@@ -29,6 +29,10 @@ body {
     font-size: 16px;
 }
 
+.Info-product{
+    text-align: center;
+}
+
 .Image-preview {
     width: 100px; /* Ancho del icono */
     height: 100px; /* Alto del icono */
@@ -47,25 +51,41 @@ body {
 }
 
 .buttons {
+    text-align: center; /* Centrar horizontalmente los elementos */
     width: 100%; /* Ancho completo */
     max-width: 400px; /* Ancho máximo de los botones */
     margin: 20px auto; /* Centrado horizontal */
     font-family: "Open Sans", sans-serif;
-    text-align: center; /* Centrar horizontalmente los elementos */
 }
 
 .boton--ad, 
 .boton--reg {
-    width: 160px;
+    display: inline-block;
+    min-width: 100px; /* Ancho mínimo */
     height: 60px;
-    background-color: #ACBE24;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
     margin: 10px; /* Espacio entre los botones */
 }
 
+.active-prop
+{
+    background-color: yellow !important; 
+    color: black !important; 
+}
+
+
 /* Espaciado entre formulario y footer */
 main {
     margin-bottom: 40px; /* Espacio en la parte inferior */
+}
+
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
 }

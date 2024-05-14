@@ -1,0 +1,56 @@
+.card--prop
+{
+    max-width:965px;
+    max-height:215px ;
+    background-color:#f3e6c8 !important;
+}
+.img-prop
+{
+    width:105px !important;
+    height:150px !important;
+}
+
+.active-prop
+{
+    background-color: yellow !important; 
+    color: black !important; 
+}
+
+.btn-prop
+{
+    width: 160px;
+    height: 60px;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    color: #000000;
+    border: none;
+    border-radius: 10px black !important;
+    margin: 10px; /* Espacio entre los botones */
+}
+
+ montse
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+    font-size: 24px;
+    color: black;
+}
+
+.text-prop-card {
+    margin: 0 0 10px !important;
+}
+
+.btn-prop-card
+{
+    width: 160px;
+    height: 60px;
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin:10px 10px  !important;
+    
+}

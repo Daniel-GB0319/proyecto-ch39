@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cuenta</title>
+        <title>Inicia Sesión Cuenta</title>
+        <link rel="icon" type="image/jpg" href="../../public/assets/RedBarron.svg"/>
         <!-- conexión con la api de google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,68 +33,61 @@
     </head>
 <body>
     <!-- navbar inicio -->
-    <nav class="navbar navbar-expand-lg  navbarbg">
+    <nav class="navbar navbar-expand-lg navbarbg">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--Codigo del logo Barro On direccionando al index -->
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/frontend/index.html">
-                        <img src="../../public/assets/Barron On.svg" alt="Logo" width="120"
-                            height="50" class="d-inline-block align-text-top">
-                    </a>
-                </div>
-            </nav>
-            <!--Código de las secciones en las que se divide el navbar-->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="/frontend/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="buscar" id="inputbusquedablanco"
-                        placeholder="Buscar en Barro.On..." aria-label="Buscar">
-                    <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
-                </form>
-                <!--Código para icono de perfil-->
-                <nav class="navbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="./perfil.html">
-                            <img src="../../public/assets/iconoperfilnavbar.webp" alt="Logo" width="50" height="50"
-                                class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-                <!--Código para icono de carrito-->
-                <nav class="navbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" id="carritoicon" href="./carrito.html">
-                            <img src="../../public/assets/iconocarritonavbar.webp" alt="Logo" width="55" height="50"
-                                class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-            </div>
+      
+          <!-- Botón de hamburguesa para pantallas pequeñas -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Logo -->
+          <a class="navbar-brand" href="../frontend/index.html">
+            <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+          </a>
+      
+          <!-- Secciones del navbar -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+      
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex" role="buscar">
+              <input class="form-control me-2" type="buscar" id="inputbusquedablanco" placeholder="Buscar en Barro.On..."
+                aria-label="Buscar">
+              <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
+            </form>
+      
+            <!-- Icono de perfil -->
+            <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
+              <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+            </a>
+      
+            <!-- Icono de carrito -->
+            <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
+              <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+            </a>
+          </div>
         </div>
-    </nav>
+      </nav>
+          <!-- Barra con texto -->
+          <div class="barra-verde text-center" style="background-color: #BACC33 ">
+            <p>Inicia Sesión Cuenta </p>
+          </div>
+        </div>
     <!-- navbar  fin-->
 
 <!--Inicio de formulario-->
@@ -113,10 +107,11 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" >
             </div>
 
-            <section class="button--continue">
-                <button>
+            <section>
+                <a href="">
+                <button class="button--continue">
                     Iniciar sesión
-                </button>
+                </button></a>
             </section>
 
             <div class="form-check">

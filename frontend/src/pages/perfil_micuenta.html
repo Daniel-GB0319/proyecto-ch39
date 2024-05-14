@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cuenta</title>
+    <link rel="icon" type="image/jpg" href="../../public/assets/RedBarron.svg"/>
     <!-- conexión con la api de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,68 +35,61 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg  navbarbg">
+    <nav class="navbar navbar-expand-lg navbarbg">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!--Codigo del logo Barro On direccionando al index -->
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html">
-                        <img src="../../public/assets/Barron On.svg" alt="Logo" width="120"
-                            height="50" class="d-inline-block align-text-top">
-                    </a>
-                </div>
-            </nav>
-            <!--Código de las secciones en las que se divide el navbar-->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./src/pages/tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./src/pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="./src/pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="buscar" id="inputbusquedablanco"
-                        placeholder="Buscar en Barro.On..." aria-label="Buscar">
-                    <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
-                </form>
-                <!--Código para icono de perfil-->
-                <nav class="navbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="./src/pages/perfil.html">
-                            <img src="../../public/assets/iconoperfilnavbar.webp" alt="Logo" width="50" height="50"
-                                class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-                <!--Código para icono de carrito-->
-                <nav class="navbar ">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" id="carritoicon" href="./src/pages/carrito.html">
-                            <img src="../../public/assets/iconocarritonavbar.webp" alt="Logo" width="55" height="50"
-                                class="d-inline-block align-text-top">
-                        </a>
-                    </div>
-                </nav>
-            </div>
+      
+          <!-- Botón de hamburguesa para pantallas pequeñas -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Logo -->
+          <a class="navbar-brand" href="../frontend/index.html">
+            <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+          </a>
+      
+          <!-- Secciones del navbar -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+      
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex" role="buscar">
+              <input class="form-control me-2" type="buscar" id="inputbusquedablanco" placeholder="Buscar en Barro.On..."
+                aria-label="Buscar">
+              <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
+            </form>
+      
+            <!-- Icono de perfil -->
+            <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
+              <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+            </a>
+      
+            <!-- Icono de carrito -->
+            <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
+              <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+            </a>
+          </div>
         </div>
-    </nav>
+      </nav>
+          <!-- Barra con texto -->
+          <div class="barra-verde text-center" style="background-color: #BACC33 ">
+            <p>Mi Cuenta</p>
+          </div>
+        </div>
 
     <!--main-->
     <main>
@@ -121,20 +115,18 @@
                     </div>
                     <!--Menu lateral final-->
                 </div>
-                <div class="col-lg-7 ">
-                    <!--Boton de editar dirección-->
-                    <div class="card justify-content center border border-black rounded-4 mt-5">
-                        <div class="card-body">
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="Card--profile border border-black rounded-4 mt-5">
+                <div class="card-body ">
                             <article>
                                 <section>
-                                    <button class="button--change">Cambiar contraseña</button>
+                                    <button class="button--change" type="button" id="btn--cambiar">Cambiar contraseña</button>
                                 </section>
                             </article>
 
                             <!--Aqui empieza el formulario-card-->
-                            <div class="col-lg-7">
-                                <div class="Card--profile  border-black rounded-4 mt-5">
-                                    <div class="card-body ">
                                         <article class="form ">
                                             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Femail-icon-free%2Femail-icon-free-0.jpg&f=1&nofb=1&ipt=0c3fb2ef35f79fdd7ae4540f761bc28fe6f59140c39116b73640e47e85ffc556&ipo=images"
                                                 alt="Icono de email" class="img-email"><!--Icono de mi cuenta-->
@@ -143,19 +135,19 @@
                                                     <label for="exampleFormControlInput1" class="form-label">Correo
                                                         Electrónico</label>
                                                     <input type="email" class="form-control"
-                                                        id="exampleFormControlInput1">
+                                                        id="input--email" placeholder="Ingresa un correo">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label">Correo
                                                         Alternativo</label>
                                                     <input type="email" class="form-control"
-                                                        id="exampleFormControlInput1">
+                                                        id="input--email1" placeholder="Ingresa un correo alternativo">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label">Contraseña</label>
-                                                    <input type="email" class="form-control"
-                                                        id="exampleFormControlInput1">
+                                                    <input type="password" class="form-control"
+                                                        id="input--contraseña" placeholder="Ingresa una contraseña">
                                                 </div>
                                             </section>
                                         </article>
@@ -164,8 +156,8 @@
                                             <!--Inicio de botones-->
                                             <article class="buttons-container">
                                                 <section>
-                                                    <button class="button-cancel">Cancelar</button>
-                                                    <button class="button-save">Guardar</button>
+                                                    <button class="button-cancel" type="button" id="btn--cancelar">Cancelar</button>
+                                                    <button class="button-save" tye="button" id="btn--guardar">Guardar</button>
                                                 </section>
                                             </article>
                                             <!--Fin de botones-->
@@ -181,14 +173,15 @@
                                             <!--Cerrar todas las sesiones-->
                                             <article>
                                                 <section>
-                                                    <button class="log-out">Cerrar todas las sesiones</button>
+                                                    <button class="log-out" type="button" id="btn--cerrar">Cerrar todas las sesiones</button>
                                                 </section>
                                             </article>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                </div>
 
 
 
