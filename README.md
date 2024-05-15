@@ -1,68 +1,82 @@
 # Barro.On
-(colocar logo de la e-commerce)
+![Logo de Barro.On](/frontend/public/assets/barro-Photoroom.png-Photoroom.png)
+
+<p align="justify">Barro.on es una plataforma de comercio electrónico que nace de la pasión por experimentar el proceso de producción de piezas de barro, fomentando un ambiente de aprendizaje y creación colectiva.</p>
+
+<p align="justify">Nos definimos como una comunidad de artesanos apasionados por la cerámica, dedicados a la creación y venta en línea de joyería de barro y piezas únicas de cerámica. Además, ofrecemos talleres para compartir nuestro amor por el arte del barro.</p>
+
+<p align="justify">A pesar de la calidad de nuestras creaciones, enfrentamos el desafío de la limitada visibilidad en nuestros puntos de venta. Por ello, estamos en la búsqueda constante de expandir nuestra presencia y llegar a nuevos públicos a través de nuestra tienda en línea. Al mismo tiempo, aspiramos a difundir más ampliamente la misión y los valores que definen a nuestra pequeña empresa.</p>
+
 
 ## Indice
-- [Integrantes](#integrantes-team-4-code-gaiden)
 - [Descripción del proyecto](#descripción-del-proyecto)
-- [Requisitos del sistema](#requisitos-del-sistema)
+  - [Diseño de la interfaz](#diseño-de-interfaz)
+  - [Tecnologías utilizadas](#tecnologias-utilizadas)
+  - [Metodología utilizada](#metodologia-utilizada)   
+- [Integrantes del equipo](#integrantes-del-equipo-de-desarrollo-code-gaiden-developers)
+- [Requisitos mínimos del sistema](#requisítos-mínimos-del-sistema)
+  - [Hardware](#hardware)
+  - [Software](#software)  
 - [Funcionamiento](#funcionamiento)
 - [Notas y consideraciones](#notas-y-consideraciones)
 - [Contactanos](#contactanos)
 
 
-## Integrantes Team 4 "Code Gaiden"
-![Ninja-01|50](https://github.com/Daniel-GB0319/proyecto-ch39/assets/83619266/003f3b5f-9c20-4c2a-b13c-8ebba2910f5b)
+## Descripción del proyecto
+### Diseño de interfaz
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+<p align="justify">Barro.on es más que una simple comunidad de artesanos; es un testimonio del poder de la tecnología moderna y la creatividad humana. Nuestra plataforma de comercio electrónico, meticulosamente diseñada con <b>Figma</b>, es el resultado de un proceso cuidadoso de visualización y perfeccionamiento de la experiencia del usuario.</p>
 
 
-(Como ejercicio hagan un pull del main a sus ramas para bajar cambios de Github a sus computadoras, pongan su nombre en la lista
- y hagan un push dejando mensaje en el commit. Una vez que sus cambios aparezcan en sus ramas en Github, hagan pull request para agregar al
- main. no vayan a romper el repo jaja)
-
-Comandos útiles:
-1. Para ver en que rama se encuentran actualmente. También aquí pueden ver el estatus de sus archivos modificados o ramas. 
-    - ``` git status ```
-2. Para cambiar de rama.
-    - ```git checkout <nombre-de-sus-ramas>``` 
-3. para bajar las actualizaciones mas recientes del main a sus ramas.
-    - ```git pull origin main``` 
-4. Para agregar los cambios realizados al Staging Area (Area de preparación).
-    - ```git add .``` 
-5. Para guardar los cambios realizados (snapshot).
-    - ```git commit -m "<mensaje-del-commit>"``` 
-6. Para subir los cambios en Github.
-    - ```git push -u origin <nombre-de-sus-ramas>```     
+### Tecnologias utilizadas
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+<p align="justify">El sitio web, construido con una combinación de <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b>, ofrece una interfaz de usuario rica y dinámica. Con el uso de <b>Bootstrap 5</b>, garantizamos un diseño receptivo que se ve y funciona bien en una variedad de dispositivos. En el lado del servidor, <b>Spring Boot</b> maneja las solicitudes y respuestas, mientras que <b>MySQL</b> gestiona nuestra base de datos. Estos componentes tecnológicos, trabajando en conjunto, nos permiten ofrecer una experiencia de compra en línea segura, eficiente y agradable.</p>
 
 
-- Geovanni Daniel González Barrientos  xd   
+### Metodologia utilizada
+![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
+<p align="justify">En Barro.on, adoptamos la metodología Scrum para la gestión de nuestro proyecto, lo que refleja nuestra creencia en la eficiencia y la adaptabilidad. Este enfoque ágil nos permitió trabajar en ciclos cortos y regulares, conocidos como ‘sprints’, facilitando una rápida adaptación a los cambios y una mejora continua. Con el apoyo de <b>Jira</b>, una herramienta de gestión de proyectos, pudimos organizar nuestras tareas, seguir el progreso y colaborar de manera efectiva. Gracias a Scrum y Jira, hemos logrado entregar un producto de alta calidad que refleja las necesidades y deseos de nuestros clientes.</p>
+
+
+<p align="justify">Esperamos que disfrutes de la experiencia de Barro.on tanto como nosotros disfrutamos creándola.</p>
+
+
+## Integrantes del equipo de desarrollo (Code Gaiden Developers)
+<img src="/frontend/public/assets/Ninja-01.webp" alt="Logo Code Gaiden" width="300px"/>
+
+El equipo de desarrollo de esta plataforma esta compuesto por los siguientes integrantes:
+
+- Geovanni Daniel González Barrientos   
 - Eduardo López Murillo
-- Montserrat Pérez García (Monttze)
+- Montserrat Pérez García
 - Lino Alberto Aguilar Cano
 - César Adair Aguilar Perfecto
-- (Noe)
+- Noe
 - Juan Pablo Piña Suárez
 - Edgar Alejandro Luna Celis
 
 
-## Descripción del proyecto
-Barro.On es una e-commerce dedicada a ... (completar xd) 
+## Requisítos mínimos del sistema
+Para asegurar un funcionamiento óptimo de nuestra ecommerce, sugerimos cumplir con los sigueintes requisitos mínimos:
 
-## Requisitos del sistema
-(Lista de dependencias, programas, etc.)
-- Sistema Operativo Windows 10+, MacOS y GNU/Linux kernel 5.15+ (verificar xd)
-- Navegador Google Chrome, Microsoft Edge ()
+### Hardware
+- Procesador Intel Core i5-2500k / AMD Ryzen 7 1700 o superior que incluya soporte para SSE33.
+- 2GB de RAM (8GB de RAM recomendados).
+
+### Software
+- Sistema Operativo: Windows 10+ / MacOS Catalina 10.15+ / Linux 64-bit (Ubuntu 18.04+, Debian 10+, openSUSE 15.5+, Fedora Linux 38+ o similares) / iOS 14.0+ / Android 8.0+ .
+- Navegador web: Google Chrome / Microsoft Edge / Mozilla Firefox / Apple Safari o similares. Recomendamos siempre utilizar la última versión disponible de su navegador web favorito.
+
 
 ## Funcionamiento
- (Poner como levantar el sistema o como se usa)
+Para utilizar nuestra plataforma, puede visitar nuestro [Sitio Web Oficial](https://cdn.dribbble.com/users/10336/screenshots/2607763/404-chicken.gif) en su navegador web de confianza desde cualquier computadora de escritorio o dispositivo movil compatible.
 
-ejemplo de código en Python 
-```python
-mensaje = "mundo xd"
-print(f"Hola {mensaje}")
-```
+Si desea realizar... (OPCIONES PARA DESARROLLADORES)<!-- PONER OPCIONES PARA DESARROLLADORES (GIT CLONE, ABRIR INDEX.HTML, INSTALAR MYSQL, ETC) --> 
+
 
 ## Notas y consideraciones 
-No hay reembolso si falla el sistema jaja
+<p align="justify">El uso de esta plataforma se proporciona ‘tal cual’, sin garantía de ningún tipo, ya sea expresa o implícita. Esto incluye, pero no se limita a, las garantías implícitas de comerciabilidad, idoneidad para un propósito particular y no infracción. En ningún caso, los propietarios o colaboradores de la plataforma serán responsables de cualquier reclamo, daño u otra responsabilidad, ya sea en una acción de contrato, agravio o de otro tipo, que surja de, esté en conexión con el software o el uso u otros tratos en el software.</p> (CHECAR)
+
 
 ## Contactanos
-Para contactarnos puedes mandar un email a ... (checar)
-
+Para contactarnos puedes mandar un email a ... (BARRO ON Y CODE GAIDEN)
