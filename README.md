@@ -15,6 +15,8 @@
   - [Metodología utilizada](#metodologia-utilizada)   
 - [Integrantes del equipo](#integrantes-del-equipo-de-desarrollo-code-gaiden-developers)
 - [Requisitos mínimos del sistema](#requisítos-mínimos-del-sistema)
+  - [Hardware](#hardware)
+  - [Software](#software)  
 - [Funcionamiento](#funcionamiento)
 - [Notas y consideraciones](#notas-y-consideraciones)
 - [Contactanos](#contactanos)
