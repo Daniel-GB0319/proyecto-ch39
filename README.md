@@ -51,7 +51,7 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
 - Montserrat Pérez García
 - Lino Alberto Aguilar Cano
 - César Adair Aguilar Perfecto
-- Noe
+- Mauricio Noe Guzman Martinez
 - Juan Pablo Piña Suárez
 - Edgar Alejandro Luna Celis
 
