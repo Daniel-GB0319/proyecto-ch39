@@ -37,9 +37,9 @@ function validarFormulario() {
 function mostrarError(mensaje) {
     // Crea alerta de Bootstrap
     let alerta = '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
-                 mensaje +
-                 '  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
-                 '</div>';
+                mensaje +
+                '  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                '</div>';
 
     // agregar la alerta al div con el id 'alertas'
     document.getElementById('alertas').innerHTML = alerta;
