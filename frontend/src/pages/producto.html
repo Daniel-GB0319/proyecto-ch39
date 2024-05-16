@@ -8,10 +8,21 @@
 <link rel="icon" type="image/jpg" href="public/assets/RedBarron.svg"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./src/styles/index.css">
-<link rel="stylesheet" type="text/css" href="./src/styles/fonts.css">
+
+
+<link rel="stylesheet" type="text/css" href="../../src/styles/fonts.css">
 <link rel="stylesheet" type="text/css" href="../styles/Navbar_Footer.css">
+<link rel="stylesheet" type="text/css" href="../styles/producto.css">
+
+
 
 </head>
 
@@ -79,29 +90,48 @@
 <div class="abuelo">
 
     <!-- LA CLASE MADRE ES PARA ELEMENTOS COMPLETOS, COMO ELEMENTOS BOOTSTRAP, FORMULARIOS, CAJAS, ETC -->
-    <div class="madre"  >
-        <div class="menu_left">
-        <!-- Aca meten el formulario-->
-        <!-- Madre es un contener, sus hijos son elementos del contenedor -->
-            <p> SOY UN MENU </p>
-        </div>
-    
-        <div class="contenido_principal">       
-        <!-- Aca meten el formulario-->
-        <!-- Madre es un contenedor, sus hijos son elementos del contenedor -->
-            <p > soy un formulario </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut voluptate deserunt laborum ex non eveniet maxime, amet explicabo dignissimos ipsa consequatur aliquid sit atque. Fuga, blanditiis unde. Expedita, dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolores distinctio beatae quaerat molestiae accusantium. Totam fugit, itaque aut omnis neque, reiciendis libero ab labore, soluta tempora odit esse est!</p>
-        </div>
-    </div>
+    <div class="madre">
+        <div class="izquierda">
+            <!-- Imagen principal -->
+            <div class="principal-container">
+                <button id="prev-button" class="nav-button"><</button>
+                <img src="" alt="Imagen Principal" id="principal-img" class="principal">
+                <button id="next-button" class="nav-button">></button>
+            </div>
+            
+            <!-- Imágenes pequeñas -->
+            <div class="sub-images">
+                <img src="https://via.placeholder.com/150" alt="Imagen 1" class="sub-image">
+                <img src="https://via.placeholder.com/300" alt="Imagen 2" class="sub-image">
+                <img src="https://via.placeholder.com/200" alt="Imagen 3" class="sub-image">
+                <img src="https://via.placeholder.com/250" alt="Imagen 4" class="sub-image">
+                <img src="https://via.placeholder.com/350" alt="Imagen 5" class="sub-image">
+                <img src="https://via.placeholder.com/400" alt="Imagen 6" class="sub-image">
 
+            </div>
+        </div>      
+        <div class="derecha">
+            <!-- Información derecha -->
+            <h2 class="title--font2">Pieza de barro esmaltado</h2>
+            <h4 class="title--font4">$350.00</h4>
+            <div class="body--font1">
+                Stock: <span class="cantidad">10</span>
+            </div>
+            <div class="selector-cantidad">
+                <button class="btn-decremento">-</button>
+                <input type="number" class="input-cantidad" value="1" min="1" max="10">
+                <button class="btn-incremento">+</button>
+            </div>
+            <p class="body--font2"> Descripcion_ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel error sequi consequuntur nostrum id accusamus tempora? Commodi quas similique modi eum deserunt assumenda animi! Laborum, sapiente reiciendis. Aspernatur, architecto totam.</p>
+            <div class="caja_btn">
+                <button class="button--change title--font5">Comprar</button>
+                <button class="button--change2 title--font5">Agregar a carrito</button>
+            </div>
+            </div>
+    </div>
+    
 </div>
 
-
-
-
-
-
-    <!-- footer -->
 
     <!-- footer -->
     <div class="footer-style">
@@ -199,11 +229,14 @@
     </div>
 
     <!-- scripts -->
-    <script src="./src/scripts/nosotros.js"></script>
+    <script src="../../src/scripts/producto.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
 </body>
+
+
+
 
 </html>
