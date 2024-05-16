@@ -1,0 +1,310 @@
+/*Hay 5 tamaños de letra para título 68, 40, 32, 28, 25*/
+.title--font1 { /*----h1----*/
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+.title--font2 {/*----h2----*/
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title--font3{ /*----h3----*/
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title--font4{ /*-----h4----*/
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title--font5{ /*----h5----*/
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Tipografía para contenido son 3 tamaños 20, 18 y 16*/
+.body--font1{ /*----H6----*/
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 0.1px;
+
+}
+
+.body--font2 { /*----P----*/
+
+font-family: "Open Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 111.111% */
+letter-spacing: 0.1px;
+
+}
+
+.body--font3{ /*----SMALL----*/
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: 0.1px;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin:0;
+}
+
+.abuelo {
+    /* aca se define las principales medidas de contenedor */
+    display: grid; 
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    grid-auto-columns: 2fr;
+    background-color: #ffffff;
+    max-width: 1440px;
+    padding: 0px;
+    margin:auto;
+}
+
+    /*Contenedor base para meter toda clase de elementos, incluyendo más contenedores*/
+/* .madre {     
+    display: grid;
+    grid-template-columns: minmax(100px,1fr) minmax(100px, 1fr);
+    background-color: #ffffff;
+    align-items: start;
+    align-content: start;
+    justify-items: start;
+    margin: 70px 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    @media (max-width: 750px) {
+        grid-template-columns: minmax(20px,1fr);
+        margin: 30px 12px;
+
+        
+    }
+}
+    .madre > * {  /*Para cada uno de los elementos madre
+        padding: 15px;
+        max-width: 100%;
+        min-width: 100%;
+*/
+    
+.madre {     
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    align-items: start;
+    align-content: start;
+    justify-items: start;
+    margin: 4vh 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+    .madre {
+        grid-template-columns: 1fr;
+        margin: 30px 12px;
+    }
+}
+
+.madre > * {
+    padding: 15px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.izquierda > * {
+    max-width: 100%;
+    height: 100%;
+}
+
+.izquierda > *{
+    max-width: 100%;
+    height: 100%;
+}
+
+.derecha > * {
+    margin-bottom: 15px;
+    gap:10px;
+}
+
+.principal-container {
+    position: relative;
+    text-align: center;
+}
+
+.principal {
+    width: 100%;
+}
+
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F5E6C7;
+    color: rgb(17, 4, 4);
+    border: none;
+    padding: 36px 18px;
+    cursor: pointer;
+    
+}
+
+#prev-button {
+    left: 0;
+}
+
+#next-button {
+    right: 0;
+}
+
+.sub-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.sub-images > * {
+    max-width: 100%;
+    cursor: pointer;
+}
+    
+
+
+
+.principal {
+    width: 100%;
+
+}
+
+.sub-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;       width: 100%;
+    margin-top: 10px;
+    
+}
+
+.sub-images > * {
+    max-width: 100%;
+    padding: 5px
+}
+
+
+    /* Resto de estilos para las imágenes secundarias */
+
+
+    /* TODO: crea una estilo alocado para los botones del html */ 
+.caja_btn {
+    display: flex;
+
+}
+.caja_btn > * {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+/* agra más estilo a este boton */
+    font-size: 20px;
+    margin-right: 25px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.1px;
+    } 
+
+.caja_btn {
+    display: flex;
+    align-items: start;
+    margin-top: 35px;
+}
+@media (max-width: 550px) {
+    .caja_btn {
+    flex-direction: column;
+    }
+    .caja_btn > *{
+        min-width: 100%;
+        }
+    }
+  /* Botones */
+.button--change {
+    width: 200px;
+    height: 60px;
+    /* Alto de los botones */
+    background-color: #ACBE24;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.button--change2 {
+    width: 250px;
+    height: 60px;
+    /* Alto de los botones */
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+.selector-cantidad {
+display: flex;
+align-items: center;
+}
+
+.btn-decremento,
+.btn-incremento {
+padding: 5px 10px;
+font-size: 16px;
+background-color: #eee;
+border: none;
+cursor: pointer;
+}
+
+.btn-decremento:hover,
+.btn-incremento:hover {
+background-color: #ddd;
+font-weight: bold;
+margin-bottom: 1px;
+}
+
+.input-cantidad {
+width: 50px;
+text-align: center;
+border: 1px solid #ccc;
+margin: 0 5px;
+}
