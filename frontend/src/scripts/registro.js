@@ -1,5 +1,3 @@
-
-
 //Se obtiene el formulario mediante ID 'registroForm' Y preventDefault evita que se comporte por defecto el formulario 
 //(recargar la página y envíar datos al servidor)
 document.getElementById ('registroForm').addEventListener('submit', function(event){
