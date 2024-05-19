@@ -1,3 +1,4 @@
+/*
 // Función para obtener el valor de un elemento por su ID
 
 // Event listener para función crear productos
@@ -134,3 +135,91 @@ function mostrarProductosConsola() {
   const productos = JSON.parse(localStorage.getItem("productos"));
   console.log(productos);
 } // mostrarProductosConsola
+*/
+/*
+const botonesCarro = document.getElementsByClassName("btn-carro");
+
+// Array para almacenar los textos de los botones
+const textosBotones = [];
+
+// Iterar sobre la lista de botones obtenidos
+for (let i = 0; i < botonesCarro.length; i++) {
+    // Obtener el texto del botón y agregarlo al array
+    textosBotones.push(botonesCarro[i].textContent);
+}
+
+// Convertir el array a JSON
+const jsonTextosBotones = JSON.stringify(textosBotones);
+
+// Mostrar el JSON en la consola
+console.log(jsonTextosBotones);*/
+
+
+/*
+// Definimos la función mercancia que manejará la compra del producto
+function mercancia(producto) {
+  // Aquí puedes agregar la lógica para manejar la compra del producto
+  console.log('Producto comprado:', producto);
+  // Por ejemplo, podrías agregar el producto al carrito
+  agregarAlCarrito(producto);
+}
+
+// Función para agregar el producto al carrito (puedes personalizarla según tu lógica)
+function agregarAlCarrito(producto) {
+  // Aquí puedes agregar la lógica para agregar el producto al carrito
+  console.log('Producto agregado al carrito:', producto);
+}
+
+// Obtener una referencia al contenedor que contiene todos los productos
+const contenedorProductos = document.querySelector('.contenedor');
+
+// Asignamos eventos a los botones de comprar
+contenedorProductos.addEventListener('click', function(event) {
+  // Verificar si el elemento clickeado es un botón de comprar
+  if (event.target.classList.contains('btn-carro')) {
+      const producto = {
+          nombre: event.target.parentNode.querySelector('.Nomdelproduct').innerText,
+          precio: parseFloat(event.target.parentNode.querySelector('.precio-product').innerText.replace("$", ""))
+      };
+      // Llamar a la función que maneja la compra, en este caso 'mercancia'
+      mercancia(producto);
+  }
+});
+*/
+// Definimos la función mercancia que manejará la compra del producto
+function mercancia(producto) {
+    // Aquí puedes agregar la lógica para manejar la compra del producto
+    console.log('Producto comprado:', producto);
+    // Por ejemplo, podrías agregar el producto al carrito
+    agregarAlCarrito(producto);
+    // También podrías realizar otras acciones, como actualizar la visualización del carrito
+    actualizarCarrito();
+}
+
+// Función para agregar el producto al carrito (puedes personalizarla según tu lógica)
+function agregarAlCarrito(producto) {
+    // Aquí puedes agregar la lógica para agregar el producto al carrito
+    console.log('Producto agregado al carrito:', producto);
+}
+
+// Función para actualizar la visualización del carrito (puedes personalizarla según tu lógica)
+function actualizarCarrito() {
+    // Aquí puedes agregar la lógica para actualizar la visualización del carrito
+    console.log('Actualizando la visualización del carrito...');
+}
+
+// Obtener una referencia al contenedor que contiene todos los productos
+const contenedorProductos = document.querySelector('.contenedor');
+
+// Asignamos eventos a los botones de comprar
+contenedorProductos.addEventListener('click', function(event) {
+    // Verificar si el elemento clickeado es un botón de comprar
+    if (event.target.classList.contains('btn-carro')) {
+        const producto = {
+            nombre: event.target.parentNode.querySelector('.Nomdelproduct').innerText,
+            precio: parseFloat(event.target.parentNode.querySelector('.precio-product').innerText.replace("$", ""))
+        };
+        // Llamar a la función que maneja la compra, en este caso 'mercancia'
+        mercancia(producto);
+    }
+});
