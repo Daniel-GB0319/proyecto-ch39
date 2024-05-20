@@ -66,7 +66,7 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
 - Juan Pablo Piña Suárez
-  - Correo Electrónico: 
+  - Correo Electrónico: juanpsuarez.pia@gmail.com
   - [Perfil de LinkedIn](https://www.linkedin.com/in/bcjuanpablo/)
 - Edgar Alejandro Luna Celis
   - Correo Electrónico: 
