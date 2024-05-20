@@ -1,16 +1,40 @@
 /* Estilos para el main */
 body {
-    font-family: 'Open Sans', sans-serif; /* Corregido para usar la fuente Open Sans */
+    font-family: 'Open Sans', sans-serif;
+    /* Corregido para usar la fuente Open Sans */
+}
+
+/* Estilos para el main */
+main {
+    display: flex;
+    /* Utiliza flexbox para alinear elementos */
+    justify-content: left;
+    /* Centra horizontalmente */
+    align-items: flex-start;
+    /* Alinea los elementos al inicio verticalmente */
+    margin-top: 20px;
+    /* Agrega un poco de espacio superior */
 }
 
 .col-lg-3 {
-    padding: 0 0 50px 0;
+    margin-right: 20px;
+    /* Agrega espacio a la derecha para separar del menú lateral */
 }
 
+/* Estilos de la tarjeta del menú lateral */
 .sidebar-card {
     border: 1px solid black;
     background-color: yellow;
     width: 220px;
+    margin-top: 20px;
+    /* Agrega espacio superior */
+}
+
+.sidebar-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Alinea el contenido al inicio verticalmente */
 }
 
 .sidebar-card .card-header {
@@ -22,15 +46,20 @@ body {
 .sidebar-list .list-group-item {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    text-align: center;
+    /* Alinea el texto al centro */
+    padding: 10px 0;
+    /* Ajusta el espaciado del elemento de la lista */
 }
 
 .button--change {
-    width: auto; /* Ancho automático */
+    width: auto;
+    /* Ancho automático */
     height: 60px;
     /* botones mejorados */
-    background: rgb(186,204,51) !important;
-    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    background: rgb(186, 204, 51) !important;
+    background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -39,9 +68,12 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
-    max-width: 400px; /* Ancho máximo de los botones */
-    margin: 20px auto; /* Centrado horizontal */
+    align-items: flex-start;
+    /* Alinea los elementos hacia la izquierda */
+    max-width: 400px;
+    /* Ancho máximo de los botones */
+    margin: 20px auto;
+    /* Centrado horizontal */
 }
 
 /* Estilos de la tarjeta del perfil */
@@ -50,20 +82,30 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%; /* Ancho relativo del formulario */
-    max-width: 600px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centrar horizontalmente */
-    padding: 20px; /* Espaciado interno */
+    width: 70%;
+    /* Ancho relativo del formulario */
+    max-width: 600px;
+    /* Ancho máximo del formulario */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    padding: 20px;
+    /* Espaciado interno */
     border: 3px solid #000000;
-    padding-bottom: 40px; /* Espacio en la parte inferior */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding-bottom: 40px;
+    /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Sombra */
 }
 
-.img-email {
-    width: 100px; /* Ancho del icono */
-    height: 100px; /* Alto del icono */
-    margin: 20px auto; /* Centrado horizontal */
-    display: block; /* Convertir a bloque para centrar */
+.img-adress {
+    width: 100px;
+    /* Ancho del icono */
+    height: 100px;
+    /* Alto del icono */
+    margin: 20px auto;
+    /* Centrado horizontal */
+    display: block;
+    /* Convertir a bloque para centrar */
 }
 
 .devices {
@@ -77,12 +119,18 @@ body {
 /* Estilos de los botones */
 .buttons-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrar los botones horizontalmente */
-    gap: 10px; /* Espacio entre botones */
-    width: 100%; /* Ancho completo */
-    max-width: 400px; /* Ancho máximo de los botones */
-    margin: 20px auto; /* Centrar y espacio entre el formulario y los botones */
+    flex-direction: row-reverse;
+    justify-content: center;
+    /* Centrar los botones horizontalmente */
+    gap: 10px;
+    /* Espacio entre botones */
+    width: 100%;
+    /* Ancho completo */
+    max-width: 400px;
+    /* Ancho máximo de los botones */
+    margin: 20px auto;
+    /* Centrar y espacio entre el formulario y los botones */
+    padding: 0 10px 0 10px;
 }
 
 .log-out,
@@ -90,34 +138,108 @@ body {
 .button-save,
 .button--adress,
 .edit--button {
-    width: 160px; /* Ancho de los botones */
-    height: 60px; /* Alto de los botones */
-        /* botones mejorados */
-        background: rgb(186,204,51) !important;
-        background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-        box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    width: 160px;
+    /* Ancho de los botones */
+    height: 60px;
+    /* Alto de los botones */
+    /* botones mejorados */
+    background: rgb(186, 204, 51) !important;
+    background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
-    display: block; /* Convertir a bloque */
-    margin: 20px auto; /* Margen automático para centrar horizontalmente */
+    margin: 20px 20px 20px 20px;
+    /* Margen automático para centrar horizontalmente */
+    padding: 0 10px 0 10px;
 }
 
 .button--adress {
-    margin-top: 0; /* Eliminar margen superior para que esté alineado con el formulario */
+    margin-top: 0;
+    /* Eliminar margen superior para que esté alineado con el formulario */
 }
 
 /* Espacio en blanco después del hr */
-hr + article {
+hr+article {
     margin-top: 20px;
 }
 
 /* Espaciado entre formulario y footer */
 main {
-    margin-bottom: 50px; /* Espacio en la parte inferior */
+    margin-bottom: 50px;
+    /* Espacio en la parte inferior */
 }
 
-.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+.barra-verde {
+    /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
+}
+
+/* Ajustes para el main */
+@media (max-width: 768px) {
+
+    /* Ajustes para el main */
+    main {
+        flex-direction: column;
+        /* Cambiar la dirección a columna */
+        align-items: center;
+        /* Centrar los elementos horizontalmente */
+    }
+
+    /* Ajustes para el menú lateral */
+    .col-lg-3 {
+        width: 100%;
+        /* Ajustar el ancho al 100% */
+        max-width: none;
+        /* Eliminar el ancho máximo */
+        margin-bottom: 20px;
+        /* Agregar espacio inferior */
+    }
+
+    /* Ajustes para el formulario */
+    .Card--profile {
+        width: 100%;
+        /* Ajustar el ancho al 100% */
+        max-width: 100%;
+        /* Ajustar el ancho máximo al 100% */
+        margin-left: 0;
+        /* Ajustar el margen izquierdo a 0 */
+    }
+}
+
+.button--adress {
+    padding: 0 20px; /* Ajustar el padding horizontal */
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+}
+
+
+/* Ajustes para los botones */
+.buttons-container {
+    flex-direction: column;
+    /* Cambiar la dirección a columna */
+    align-items: center;
+    /* Centrar los elementos */
+}
+
+.log-out,
+.button-cancel,
+.button-save,
+.button--adress,
+.edit--button,
+.button--change {
+    width: 100%;
+    /* Ajustar el ancho al 100% */
+    max-width: 100%;
+    /* Ajustar el ancho máximo al 100% */
+}
+
+/* Ajustes para la tarjeta del perfil */
+.Card--profile {
+    width: 100%;
+    /* Ajustar el ancho al 100% */
+    max-width: 100%;
+    /* Ajustar el ancho máximo al 100% */
+    margin: 20px 0;
+    /* Reducir el margen superior e inferior */
 }
