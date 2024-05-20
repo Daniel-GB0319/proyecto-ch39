@@ -18,14 +18,18 @@ body {
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 100%; /* Ancho completo */
     max-width: 400px; /* Ancho máximo de los botones */
+    margin: 20px auto; /* Centrar horizontalmente */
     margin-top: 20px; /* Espacio superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
+
 
 .button--continue,
 .button--create {
@@ -39,6 +43,7 @@ body {
     border: none;
     border-radius: 20px;
     margin-top: 10px; /* Espacio entre los botones */
+    margin: 0 0 0 30px;
 }
 
 .buttons button {
@@ -71,4 +76,30 @@ main {
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .Form--register {
+        width: 90%; /* Reducir el ancho del formulario */
+        max-width: 400px; /* Ajustar el ancho máximo del formulario */
+    }
+
+    .buttons {
+        flex-direction: row; /* Cambiar la dirección de los botones a fila */
+        justify-content: center; /* Centrar los botones horizontalmente */
+    }
+
+    .button--continue,
+    .button--create {
+        margin: 0 10px; /* Añadir espacio entre los botones */
+    }
+
+    .buttons button {
+        width: auto; /* Ancho automático para adaptarse al contenido */
+    }
+
+    .Terms,
+    .You--arenew {
+        margin-top: 20px; /* Añadir espacio entre los elementos */
+    }
 }
