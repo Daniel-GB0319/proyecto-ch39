@@ -1,4 +1,4 @@
-DROP DATABASE barro_db;
+-- DROP DATABASE barro_db;
 
 CREATE DATABASE barro_db;
 
@@ -13,7 +13,7 @@ ap_materno VARCHAR(20) NOT NULL,
 sexo CHAR NOT NULL,
 fec_nac DATE NOT NULL,
 correo VARCHAR(30) NULL,
-contrasena VARCHAR(128) NOT NULL,
+contrasena VARCHAR(20) NOT NULL,
 telefono VARCHAR(15) NOT NULL,
 tipo_usuario VARCHAR(10) NOT NULL,
 PRIMARY KEY (id_usuario)
@@ -37,7 +37,7 @@ FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 
 CREATE TABLE estatus
 (
-id_estatus INT NOT NULL,
+id_estatus INT NOT NULL AUTO_INCREMENT,
 estado VARCHAR(20) NOT NULL,
 descripcion TEXT NOT NULL,
 PRIMARY KEY (id_estatus)
@@ -48,7 +48,7 @@ CREATE TABLE usuario_direcciones
 id_direcciones INT NOT NULL AUTO_INCREMENT,
 calle VARCHAR(20) NOT NULL,
 num_ext INT NOT NULL,
-num_int INT NOT NULL,
+num_int INT,
 colonia VARCHAR(20) NOT NULL,
 municipio VARCHAR(20) NOT NULL,
 ciudad VARCHAR(20) NOT NULL,
@@ -62,11 +62,11 @@ FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 CREATE TABLE usuario_metodos_pago
 (
 id_metodos_pago INT NOT NULL AUTO_INCREMENT,
-tipo VARCHAR(10) NOT NULL,
+tipo VARCHAR(20) NOT NULL,
 numero_tarjeta VARCHAR(16) NOT NULL,
-mes INT NOT NULL,
-anio INT NOT NULL,
-cvv INT NOT NULL,
+mes INT,
+anio INT,
+cvv INT,
 titular VARCHAR(50) NOT NULL,
 dir_facturacion TEXT NOT NULL,
 id_usuario INT NOT NULL,
@@ -77,7 +77,7 @@ FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 CREATE TABLE producto
 (
 id_producto INT NOT NULL AUTO_INCREMENT,
-nombre VARCHAR(20) NOT NULL,
+nombre VARCHAR(30) NOT NULL,
 descripcion TEXT NOT NULL,
 precio DECIMAL(10,2) NOT NULL,
 cantidad INT NOT NULL,
@@ -127,4 +127,3 @@ imagen_url VARCHAR(2083)  NOT NULL,
 PRIMARY KEY (id_imagen, id_producto),
 FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 );
-

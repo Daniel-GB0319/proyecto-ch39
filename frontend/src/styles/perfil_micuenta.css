@@ -7,9 +7,6 @@ body {
     padding: 0 0 50px 0;
 }
 
-.col-lg-3 {
-    padding: 0 0 50px 0;
-}
 
 .sidebar-card {
     border: 1px solid black;
@@ -29,6 +26,14 @@ body {
 }
 
 /* Estilos para la tarjeta del perfil */
+
+.img-email {
+    width: 100px; /* Ancho del icono */
+    height: 100px; /* Alto del icono */
+    margin: 20px auto; /* Centrar horizontalmente */
+    display: block; /* Convertir a bloque para centrar */
+}
+
 .Card--profile {
     display: flex;
     flex-direction: column;
@@ -39,45 +44,9 @@ body {
     padding: 20px; /* Espaciado interno */
     border: 3px solid #000000; /* Borde sólido de color negro */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    margin: 0 auto; /* Centrar horizontalmente */
 }
 
-
-.button--change{
-    width: 160px;
-    height: 60px;
-    /* botones mejorados */
-    background: rgb(186,204,51) !important;
-    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
-    color: #000000;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
-    width: auto; /* Ancho automático */
-    max-width: 400px; /* Ancho máximo de los botones */
-    margin-top: 20px; /* Espacio superior */
-    margin-left: 200px; /* Margen automático a la izquierda */
-}
-
-.img-email {
-    width: 100px; /* Ancho del icono */
-    height: 100px; /* Alto del icono */
-    margin: 20px auto; /* Centrar horizontalmente */
-    display: block; /* Convertir a bloque para centrar */
-}
-
-.devices{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* Estilos de los botones */
 .buttons-container {
@@ -90,8 +59,64 @@ body {
     margin: 20px auto; /* Centrar y espacio entre el formulario y los botones */
 }
 
-.log-out {
-    width: 160px;
+.link-modificar{
+    min-width: 180px; /* Ancho mínimo del botón */
+    width: auto; /* Permite que el ancho del botón se ajuste al tamaño del texto */
+    height: 60px;
+    display: inline-flex; /* Convertir en línea para aplicar alineación vertical */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado del enlace */
+    margin: 0 auto; /* Margen automático para centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    /* botones mejorados */
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+}
+
+.button-save {
+    width: 160px; /* Ancho de los botones */
+    height: 60px; /* Alto de los botones */
+    /* botones mejorados */
+    background: rgb(186,204,51);
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24);
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 60px;  /* Alinea verticalmente el texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+
+
+.link-cancel {
+    width: 160px; /* Mismo ancho que los botones */
+    height: 60px; /* Mismo alto que los botones */
+    display: inline-flex; /* Convertir en línea para aplicar alineación vertical */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado del enlace */
+    margin: 0; /* Eliminar cualquier margen predeterminado */
+    /* botones mejorados */
+    background: rgb(186,204,51);
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24);
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+}
+
+.log-out{
+    min-width: 220px; /* Ancho mínimo del botón */
+    width: auto; /* Permite que el ancho del botón se ajuste al tamaño del texto */
     height: 60px;
     /* botones mejorados */
     background: rgb(186,204,51) !important;
@@ -105,32 +130,34 @@ body {
     margin-top: 20px; /* Espacio superior */
 }
 
-.button-cancel,
-.button-save,
-.log-out {
-    width: 160px; /* Ancho de los botones */
-    height: 60px; /* Alto de los botones */
-    /* botones mejorados */
-    background: rgb(186,204,51) !important;
-    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
-    color: #000000;
-    border: none;
-    border-radius: 20px;
+.imgText-return {
+    display: flex; /* Establece un contenedor flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
 }
 
-.button--change {
-    width: auto; /* Ancho automático para el botón */
-    height: 60px; /* Alto de los botones */
-    /* botones mejorados */
-    background: rgb(186,204,51) !important;
-    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
-    color: #000000;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px; /* Espacio entre el botón y el siguiente elemento */
+.img-return {
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Alto del icono */
+    margin-right: 10px; /* Espacio entre la imagen y el párrafo */
 }
+
+.imgText-return p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+
+.devices{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
 
 /* Espacio en blanco después del hr */
 

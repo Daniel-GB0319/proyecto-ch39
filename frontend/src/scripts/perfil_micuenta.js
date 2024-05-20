@@ -1,69 +1,50 @@
-// función para validar el formulario
-function validarFormulario() {
-    // Obtener los valores de los campos en el formulario
-    let nombre = document.getElementById('nombre');
-    let telefono = document.getElementById('telefono');
-    let email = document.getElementById('email');
-    let contrasena = document.getElementById('contrasena');
 
-    // validar que nombre no esté vacío
-    if (nombre.trim() === '') {
-        mostrarError('Ingresar nombre completo');
-        return false;
-    }
+// Estos valores tienen que venir de las variables de la página de registro o de la base de datos; se almacenan cuando creamos una cuenta.
 
-    // validar que la contraseña tenga al menos 7 caracteres
-    if (contrasena.length < 7) {
-        mostrarError('La contraseña debe tener al menos 7 caracteres.');
-        return false;
-    }
 
-    // Crear un objeto JSON con los campos del usuario
-    let usuario = {
-        nombre: nombre,
-        telefono: telefono,
-        email: email,
-        contrasena: contrasena
-    };
+let nomRegistro = "Compradror1";
+let corrRegistro= "comprador1@gmail.com";
+let contraRegistro = "Comprador1";
 
-    // se maneja objeto JSON (para ser enviado a un servidor por ejemplo)
-    enviarDatosUsuario(usuario);
 
-    // devolver true para enviar el formulario
-    return true;
+
+// Mostrar los datos correspondientes en la card de perfil_micuenta
+
+///////////Campo nombre de usuario
+let nomPerCue = document.getElementById("nombrePerfilCuenta");
+nomPerCue.value = nomRegistro; // Asignando el valor de la variable.
+
+///////////Campo correo electrónico
+let corrPerCue = document.getElementById("emailPerfilCuenta");
+corrPerCue.value = corrRegistro; // Asignando el valor de la variable.
+
+///////////Campo contraseña
+let contraPerCue = document.getElementById("contraPerfilCuenta");
+contraPerCue.value = contraRegistro; // Asignando el valor de la variable.
+
+
+// Función que modifica la información del perfil al precionar el botón de modificar
+
+function modificarInformacion() {
+    //Modifica campo nombre de usuario
+    nomRegistro = document.getElementById("nombrePerfilCuenta");
+    nomRegistro = nomPerCue.value ; // Asignando el valor de la variable.
+    //Modifica campo nombre de usuario
+    corrRegistro = document.getElementById("emailPerfilCuenta");
+    corrRegistro = corrPerCue.value ; // Asignando el valor de la variable.
+    //Modifica campo nombre de usuario
+    contraRegistro = document.getElementById("contraPerfilCuenta");
+    contraRegistro = contraPerCue.value ; // Asignando el valor de la variable.
+    alert("Información modificada");
+    console.log(nomRegistro); //Es para verificar que guardo los cambios
+    console.log(corrRegistro); //Es para verificar que guardo los cambios
+    console.log(contraRegistro); //Es para verificar que guardo los cambios
+    return nomRegistro;
+    
 }
 
-// función que muestra errores
-function mostrarError(mensaje) {
-    // Crea alerta de Bootstrap
-    let alerta = '<div class="alert alert-danger alert-dismissible fade show" role="alert">' +
-                mensaje +
-                '  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
-                '</div>';
-
-    // agregar la alerta al div con el id 'alertas'
-    document.getElementById('alertas').innerHTML = alerta;
+/*
+function regresar(){
+    window.location.href = "/frontend/index.html";
 }
-
-// función para enviar los datos del usuario a un servidor
-function enviarDatosUsuario(usuario) {
-
-    // se envía  objeto JSON utilizando fetch:
-    fetch('url_del_servidor', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(usuario)
-    })
-    .then(response => {
-        if (response.ok) {
-            console.log('Datos de usuario enviados correctamente');
-        } else {
-            console.error('Error al enviar datos de usuario');
-        }
-    })
-    .catch(error => {
-        console.error('Error al enviar datos de usuario:', error);
-    });
-}
+*/
