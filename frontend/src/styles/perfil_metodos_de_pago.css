@@ -119,3 +119,41 @@ main {
     font-size: 24px;
     color: black;
 }
+
+@media only screen and (max-width: 768px) {
+    .Card--profile {
+        width: 90%; /* Ancho relativo del formulario */
+        max-width: 400px; /* Ancho máximo del formulario */
+    }
+
+    .Image-preview {
+        width: 80%; /* Ancho del contenedor */
+        height: auto; /* Altura automática */
+    }
+
+    .btn--añadirpago {
+        margin-left: auto; /* Centrar el botón horizontalmente */
+        margin-right: auto; /* Centrar el botón horizontalmente */
+    }
+
+    h3 {
+        font-size: 24px; /* Reducir tamaño del título */
+        margin-bottom: 10px; /* Reducir espacio entre el título y el formulario */
+    }
+
+    .buttons {
+        flex-direction: column; /* Cambiar la disposición a columna */
+        align-items: center; /* Centrar los botones horizontalmente */
+        justify-content: center; /* Centrar los botones verticalmente */
+        padding: 0; /* Eliminar el relleno */
+    }
+
+    .delete {
+        width: 100%; /* Ancho completo */
+        max-width: 280px; /* Ancho máximo de los botones */
+    }
+
+    main {
+        margin-bottom: 20px; /* Reducir espacio en la parte inferior */
+    }
+}

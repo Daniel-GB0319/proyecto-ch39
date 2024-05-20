@@ -154,11 +154,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
 /* Espacio en blanco después del hr */
 
 
@@ -170,4 +165,31 @@ main {
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
+}
+
+@media only screen and (max-width: 380px) {
+    .Card--profile {
+        width: 90%; /* Cambia el ancho relativo */
+        max-width: 300px; /* Cambia el ancho máximo */
+    }
+
+    .Icono-Perfil {
+        width: 60px; /* Cambia el ancho del icono */
+        height: 60px; /* Cambia el alto del icono */
+    }
+
+    .buttons-container {
+        flex-direction: column; /* Cambia la dirección de la disposición a columna */
+        align-items: center; /* Centra horizontalmente los botones */
+        margin-top: 20px; /* Agrega margen superior para centrar verticalmente */
+    }
+
+    .link-modificar,
+    .button-save,
+    .link-cancel,
+    .log-out {
+        width: 100%; /* Ancho completo para que ocupen todo el ancho disponible */
+        max-width: 280px; /* Ancho máximo para evitar que los botones sean demasiado anchos */
+        margin-bottom: 10px; /* Agrega espacio entre los botones */
+    }
 }

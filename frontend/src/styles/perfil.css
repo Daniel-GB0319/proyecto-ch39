@@ -103,3 +103,15 @@ main {
     font-size: 24px;
     color: black;
 }
+
+@media only screen and (max-width: 768px) {
+    .Card--profile {
+        width: 90%; /* Cambia el ancho relativo */
+        max-width: 400px; /* Cambia el ancho máximo */
+    }
+
+    .Icono-Perfil {
+        width: 80px; /* Cambia el ancho del icono */
+        height: 80px; /* Cambia el alto del icono */
+    }
+}

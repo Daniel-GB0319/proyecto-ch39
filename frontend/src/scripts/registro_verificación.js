@@ -3,17 +3,12 @@ function generarCodigo() {
     return Math.floor(100000 + Math.random() * 900000);
 }
 
-// Constantes de validación
-const valid = document.getElementsByClassName("verify-control")[0]; // Seleccionar el primer elemento de la colección
-const codigoInput = document.getElementById("codigo-input"); // Campo de entrada para el código de verificación
+// Obtener referencias a los elementos
+const valid = document.querySelector(".verify-control");
+const codigoInput = document.getElementById("codigo-input");
+const buttonVerify = document.getElementById("b-verify");
 
-let codigoGenerado = generarCodigo(); // Generar el código al inicio
-
-// Función para validar el código ingresado con el generado
-function validarCódigoIngresado() {
-    const codigoIngresado = codigoInput.value;
-    return codigoGenerado === parseInt(codigoIngresado); // Convertir el valor ingresado a entero para comparar
-}
+let codigoGenerado; // Variable para almacenar el código generado
 
 // Función para mostrar la alerta y solicitar el código
 function mostrarAlerta() {
@@ -30,14 +25,24 @@ function mostrarAlerta() {
     codigoInput.style.display = "block";
 }
 
+// Desactivar el botón al mostrar el nuevo código
+buttonVerify.disabled = true;
+
+// Función para validar el código ingresado
+function validarCodigoIngresado() {
+    const codigoIngresado = parseInt(codigoInput.value, 10);
+    return codigoGenerado === codigoIngresado;
+}
+
 // Agregar un evento de clic al elemento de validación
 valid.addEventListener("click", mostrarAlerta);
 
-// Agregar un evento de cambio al campo de entrada para validar el código ingresado
+// Agregar un evento de entrada al campo de entrada para validar el código ingresado y habilitar el botón
 codigoInput.addEventListener("input", () => {
-    if (validarCódigoIngresado()) {
-        alert("Código correcto. ¡Bienvenido!");
+    if (validarCodigoIngresado()) {
+        buttonVerify.disabled = false;
     } else {
-        alert("Código incorrecto. Por favor, inténtalo de nuevo.");
+        buttonVerify.disabled = true;
     }
 });
+
