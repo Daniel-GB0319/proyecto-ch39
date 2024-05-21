@@ -3,22 +3,19 @@ function generarCodigo() {
     return Math.floor(100000 + Math.random() * 900000);
 }
 
-// Constantes de validación
-const valid = document.getElementsByClassName("verify-control")[0]; // Seleccionar el primer elemento de la colección
-const codigoInput = document.getElementById("codigo-input"); // Campo de entrada para el código de verificación
+// Obtener referencias a los elementos
+const valid = document.querySelector(".verify-control");
+const codigoInput = document.getElementById("codigo-input");
+const buttonVerify = document.getElementById("b-verify");
 
-let codigoGenerado = generarCodigo(); // Generar el código al inicio
+// Desactivar el botón de verificación
+buttonVerify.disabled = true;
 
-// Función para validar el código ingresado con el generado
-function validarCódigoIngresado() {
-    const codigoIngresado = codigoInput.value;
-    return codigoGenerado === parseInt(codigoIngresado); // Convertir el valor ingresado a entero para comparar
-}
+
+let codigoGenerado; // Variable para almacenar el código generado
 
 // Función para mostrar la alerta y solicitar el código
 function mostrarAlerta() {
-    // Generar un nuevo código
-    codigoGenerado = generarCodigo();
 
     // Mostrar una alerta con el código generado
     alert("Tu código de verificación es: " + codigoGenerado);
@@ -30,14 +27,28 @@ function mostrarAlerta() {
     codigoInput.style.display = "block";
 }
 
-// Agregar un evento de clic al elemento de validación
-valid.addEventListener("click", mostrarAlerta);
-
-// Agregar un evento de cambio al campo de entrada para validar el código ingresado
-codigoInput.addEventListener("input", () => {
-    if (validarCódigoIngresado()) {
-        alert("Código correcto. ¡Bienvenido!");
+// Función para validar el código ingresado
+function validarCodigoIngresado() {
+    const codigoIngresado = parseInt(codigoInput.value, 10);
+    console.log("Código generado:", codigoGenerado);
+    console.log("Código ingresado:", codigoIngresado);
+    if (codigoGenerado === codigoIngresado) {
+        // Si el código ingresado es correcto, activar el botón de verificación
+        buttonVerify.disabled = false;
     } else {
-        alert("Código incorrecto. Por favor, inténtalo de nuevo.");
+        // Si el código ingresado no es correcto, mantener el botón desactivado
+        buttonVerify.disabled = true;
     }
+}
+
+// Agregar un evento de clic al elemento de validación
+valid.addEventListener("click", function() {
+    // Generar un nuevo código de verificación
+    codigoGenerado = generarCodigo();
+    // Mostrar la alerta
+    mostrarAlerta();
 });
+
+// Agregar un evento de entrada al campo de entrada para validar el código ingresado y habilitar el botón
+codigoInput.addEventListener("input", validarCodigoIngresado);
+
