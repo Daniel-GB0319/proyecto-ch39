@@ -154,6 +154,25 @@ main {
     padding: 0 10px 0 10px;
 }
 
+.log-out:hover,
+.button-cancel:hover,
+.button-save:hover,
+.button--adress:hover,
+.edit--button:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.log-out:active,
+.button-cancel:active,
+.button-save:active,
+.button--adress:active,
+.edit--button:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
 .button--adress {
     margin-top: 0;
     /* Eliminar margen superior para que esté alineado con el formulario */

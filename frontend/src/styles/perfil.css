@@ -90,6 +90,19 @@ body {
     border-radius: 20px;
 }
 
+.button-cancel:hover,
+.button-save:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button-cancel:active,
+.button-save:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
 .button-save {
     margin-right: 10px;
 }

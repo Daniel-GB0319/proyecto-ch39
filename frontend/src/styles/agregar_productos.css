@@ -74,6 +74,18 @@ body {
     margin: 10px; /* Espacio entre los botones */
 }
 
+.boton--ad:hover, 
+.boton--reg:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.boton--ad:active, 
+.boton--reg:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
 /* un degradado para dar forma de boton */
 .active-prop
 {

@@ -38,6 +38,19 @@
     border-radius: 10px black !important;
     margin: 10px; /* Espacio entre los botones */
 }
+
+.btn-prop:hover {
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.btn-prop:active {
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
+
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
@@ -59,5 +72,15 @@
     border: none;
     border-radius: 20px;
     margin:10px 10px  !important;
-    
+
+}
+
+.btn-prop-card:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.btn-prop-card:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
 }
