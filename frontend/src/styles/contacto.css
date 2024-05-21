@@ -7,6 +7,10 @@ form {
     margin-top: 50px;
 }
 
+.form {
+    margin-top: 50px;
+}
+
 .form-label {
     font-family: 'Open Sans', sans-serif;
 }
@@ -15,14 +19,17 @@ form {
     margin-bottom: 20px;
 }
 
-.Contact--card{
+.Contact--card {
     display: flex;
     flex-direction: column;
 }
 
-.Imag-barro{
+.Imag-barro {
     width: 100%;
+    margin: -16px 0 0 0; /* Ajuste de margen negativo para eliminar separación */
+    padding: 0; /* Eliminar padding */
 }
+
 
 .Card-contact{
     display: flex;
@@ -59,58 +66,63 @@ form {
 }
 
 /* Estilos del botón de contacto */
-.button-contact {
-    display: block;
-    width: 160px;
-    height: 60px;
-    /* botones mejorados */
-    background: rgb(186,204,51) !important;
-    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
- adair
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;    color: #000;
-
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
-    color: #000;
- main
-    border: none;
-    border-radius: 20px;
-    margin: 20px auto; /* centrar horizontalmente */
-    line-height: 60px; /* centrar verticalmente */
-    text-align: center; /* centrar contenido horizontalmente */
-}
-
+.button-contact,
 .button-contact-gaiden {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 80px;
-    /* botones mejorados */
+    justify-content: center;
     background: rgb(186,204,51) !important;
     background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
- adair
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;    color: #000;
-
     box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
-    color: #000;
- main
+    color: #000000;
     border: none;
     border-radius: 20px;
-    margin: 20px auto; /* centrar horizontalmente */
-    line-height: 60px; /* centrar verticalmente */
-    text-align: center; /* centrar contenido horizontalmente */
+    margin: 0 auto; /* Centrar los botones horizontalmente */
 }
 
+.button-contact {
+    width: 160px;
+    height: 60px;
+}
 
+.button-contact-gaiden {
+    width: 200px;
+    height: 80px;
+}
 
+.button-contact,
+.button-contact-gaiden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(186,204,51) ;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto; /* Centrar los botones horizontalmente */
+}
+
+.button-contact {
+    width: 160px;
+    height: 60px;
+}
+
+.button-contact-gaiden {
+    width: 200px;
+    height: 80px;
+}
 
 main {
     margin-bottom: 40px; /* Espacio en la parte inferior */
 }
 
-
-.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+.barra-verde { /* Estilos para la barra verde abajo del nav-bar */
     font-size: 24px;
     color: black;
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
 }
