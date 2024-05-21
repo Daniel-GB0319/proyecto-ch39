@@ -51,8 +51,8 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - Correo Electrónico: daniel.gb0319@gmail.com
   - [Perfil de LinkedIn](https://www.linkedin.com/in/gdaniel-gonzalezb/)
 - Eduardo López Murillo
-  - Correo Electrónico: 
-  - [Perfil de LinkedIn]()
+  - Correo Electrónico: duarlo@yandex.com
+  - [Perfil de LinkedIn](www.linkedin.com/in/duarlo)
 - Montserrat Pérez García
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
