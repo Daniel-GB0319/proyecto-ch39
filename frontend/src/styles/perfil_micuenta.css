@@ -79,6 +79,16 @@ body {
     border-radius: 20px;
 }
 
+.link-modificar:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.link-modificar:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important; 
+}
+
 .button-save {
     width: 160px; /* Ancho de los botones */
     height: 60px; /* Alto de los botones */
@@ -94,6 +104,15 @@ body {
     text-decoration: none; /* Quitar subrayado del enlace */
 }
 
+.button-save:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button-save:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
 
 
 .link-cancel {
@@ -114,6 +133,16 @@ body {
     border-radius: 20px;
 }
 
+.link-cancel:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.link-cancel:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
 .log-out{
     min-width: 220px; /* Ancho mínimo del botón */
     width: auto; /* Permite que el ancho del botón se ajuste al tamaño del texto */
@@ -128,6 +157,16 @@ body {
     display: block; /* Convertir a bloque */
     margin: 0 auto; /* Margen automático para centrar horizontalmente */
     margin-top: 20px; /* Espacio superior */
+}
+
+.log-out:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.log-out:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
 }
 
 .imgText-return {
@@ -155,7 +194,20 @@ body {
 }
 
 /* Espacio en blanco después del hr */
+/* botn del panel latera */
+.active-prop
+{
+    background: rgb(214,211,0) !important;
+    background: linear-gradient(180deg, rgba(214,211,0,1) 5%, rgba(254,254,0,1) 30%, rgba(255,255,0,1) 49%, rgba(255,255,0,1) 70%, rgba(214,211,0,1) 95%) !important;
 
+    color: black !important; 
+}
+/* un ligero cambio de color para botones del panel lateral */
+.active-prop:hover
+{
+    background: rgb(215,212,0) !important;
+background: linear-gradient(180deg, rgba(215,212,0,1) 5%, rgba(215,212,0,1) 95%) !important;
+}
 
 /* Espaciado entre formulario y footer */
 main {

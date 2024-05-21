@@ -10,10 +10,19 @@
     height:150px !important;
 }
 
+/* un degradado para dar forma de boton */
 .active-prop
 {
-    background-color: yellow !important; 
+    background: rgb(214,211,0) !important;
+    background: linear-gradient(180deg, rgba(214,211,0,1) 5%, rgba(254,254,0,1) 30%, rgba(255,255,0,1) 49%, rgba(255,255,0,1) 70%, rgba(214,211,0,1) 95%) !important;
+
     color: black !important; 
+}
+/* un ligero cambio de color para botones del panel lateral */
+.active-prop:hover
+{
+    background: rgb(215,212,0) !important;
+    background: linear-gradient(180deg, rgba(215,212,0,1) 5%, rgba(215,212,0,1) 95%) !important;
 }
 
 .btn-prop
@@ -30,7 +39,18 @@
     margin: 10px; /* Espacio entre los botones */
 }
 
- montse
+.btn-prop:hover {
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.btn-prop:active {
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
+
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
@@ -52,5 +72,15 @@
     border: none;
     border-radius: 20px;
     margin:10px 10px  !important;
-    
+
+}
+
+.btn-prop-card:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.btn-prop-card:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
 }

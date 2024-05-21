@@ -80,6 +80,17 @@ form {
     border-radius: 20px;
     margin: 0 auto; /* Centrar los botones horizontalmente */
 }
+.button-contact:hover
+.button-contact-gaiden:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button-contact:active
+.button-contact-gaiden:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
 
 .button-contact {
     width: 160px;
@@ -104,6 +115,18 @@ form {
     border: none;
     border-radius: 20px;
     margin: 0 auto; /* Centrar los botones horizontalmente */
+}
+
+.button-contact:hover,
+.button-contact-gaiden:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button-contact:active,
+.button-contact-gaiden:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
 }
 
 .button-contact {

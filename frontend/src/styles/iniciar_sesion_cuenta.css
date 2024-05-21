@@ -40,6 +40,16 @@ body {
     margin-top: 10px; /* Espacio entre los botones */
 }
 
+.button--continue:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button--continue:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
 .buttons button {
     width: 100%; /* Ancho completo */
 }
