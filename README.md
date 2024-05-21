@@ -55,7 +55,7 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - [Perfil de LinkedIn]()
 - Montserrat Pérez García
   - Correo Electrónico: 
-  - [Perfil de LinkedIn]()
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/montserrat-p%C3%A9rez/)
 - Lino Alberto Aguilar Cano
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
