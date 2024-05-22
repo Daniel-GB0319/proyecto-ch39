@@ -31,7 +31,6 @@ body {
 }
 
 .button--register {
- lino
     background: rgb(186, 204, 51) !important;
     background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24);
@@ -46,15 +45,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
- main
     height: 50px;
     border: none;
     border-radius: 20px;
     margin-top: 10px; /* Espacio entre los botones */
- lino
-
     margin-left: 90px; /* Centrado en pantallas grandes */
- main
     margin-bottom: 10px;
     margin-left: 3px;
     padding: 10px 20px; /* Espaciado interno */
@@ -64,7 +59,7 @@ body {
     
 }
 
- lino
+
 
 .button--register:hover {
     background: rgb(159,176,33) !important;
