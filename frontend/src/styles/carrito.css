@@ -1,4 +1,3 @@
- montse
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
@@ -75,5 +74,32 @@ p{
     display: block; 
 }
 
- 
- 
+
+.producto-carrito {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    background-color:rgb(240, 194, 126); 
+    padding: 10px; /
+  }
+  
+  .producto-carrito .producto-container {
+    display: flex;
+    align-items: center; 
+    background-color: #FFF;
+    padding: 5px; 
+    border-radius: 8px;
+    max-width: 250px; 
+  }
+  
+  .producto-carrito .producto-container > * {
+    margin-right: 10px; 
+    
+  }
+  
+.producto-carrito .contorno-cafe img {
+    width: 20px; 
+    height: auto; 
+  }
+  
+  
