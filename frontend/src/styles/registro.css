@@ -2,7 +2,6 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 .Form--register {
     display: flex;
     flex-direction: column;
@@ -11,60 +10,38 @@ body {
     border: 1px solid #000000;
     border-radius: 10px;
     padding-bottom: 40px; /* Espacio en la parte inferior */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra*/
-    width: 100%; /* Ancho del 100% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    width: 100%;
+    max-width: 900px; /* Ancho máximo del formulario */
 }
-.Form--registerr { /*Se usó para alinear el formulario*/
-    display:flex;
-    /*flex-direction: column;*/
+
+.Form--registerr {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido sea columnar */
     margin: 0 auto; /* Centrar horizontalmente */
     padding: 20px; /* Espaciado interno */
     padding-bottom: 50px; /* Espacio en la parte inferior */
-    /*width: auto; /* Ancho automático basado en el contenido */
-    
+    width: 100%;
+    max-width: 900px; /* Ancho máximo basado en el contenido */
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px; /* Espacio superior */
+    width: 160px; /* Ancho del contenedor de los botones */
+    margin: 20px auto 0; /* Centrar horizontalmente con margen superior */
 }
 
 .button--register {
- lino
-    background: rgb(186, 204, 51) !important;
-    background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24);
-    color: #000000;
-
-    width: 160px;
+    width: 100%;
     height: 60px;
     background: rgb(186,204,51) !important;
     background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
- main
-    height: 50px;
     border: none;
     border-radius: 20px;
-    margin-top: 10px; /* Espacio entre los botones */
- lino
-
-    margin-left: 90px; /* Centrado en pantallas grandes */
- main
-    margin-bottom: 10px;
-    margin-left: 3px;
-    padding: 10px 20px; /* Espaciado interno */
-    width: 100%; /* Ancho completo */
-    max-width: 250px; /* Ancho máximo */
-    align-items: center;
-    
+    margin-bottom: 10px; /* Espacio inferior entre los botones */
+    text-align: center;
 }
-
- lino
 
 .button--register:hover {
     background: rgb(159,176,33) !important;
@@ -73,27 +50,33 @@ body {
 
 .button--register:active {
     background: rgb(122,135,26) !important;
-    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%) !important;
 }
 
-
-
-
-main
 /* Espaciado entre formulario y footer */
 main {
     margin-top: 40px; /* Espacio en la parte superior */
     margin-bottom: 40px; /* Espacio en la parte inferior */
 }
 
-.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
+.barra-verde { /* Estilos para la barra verde abajo del nav-bar */
     font-size: 24px;
     color: black;
 }
 
 /* Media query para dispositivos móviles */
 @media (max-width: 600px) {
+    .Form--register, .Form--registerr {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .buttons {
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        margin: 20px auto; /* Centrar horizontalmente */
+    }
+
     .button--register {
-        margin-left: 0; /* Quitar el margen izquierdo en pantallas pequeñas */
+        width: 100%; /* Ancho completo en pantallas pequeñas */
     }
 }

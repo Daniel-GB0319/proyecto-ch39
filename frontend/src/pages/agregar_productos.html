@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Productos</title>
-    <link rel="icon" type="image/jpg" href="../../public/assets/RedBarron.svg"/>
+    <link rel="icon" type="image/jpg" href="../../public/assets/RedBarron.svg" />
     <!-- conexión con la api de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,24 +45,24 @@
           </button>
       
           <!-- Logo -->
-          <a class="navbar-brand" href="../frontend/index.html">
-            <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../../public/assets/Barron On.svg" alt="Logo" width="120" height="60">
           </a>
       
           <!-- Secciones del navbar -->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/index.html">Inicio</a>
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/tienda.html">Tienda</a>
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./tienda.html">Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/nosotros.html">Nosotros</a>
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/contacto.html">Contacto</a>
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./contacto.html">Contacto</a>
               </li>
             </ul>
       
@@ -74,26 +74,25 @@
             </form>
       
             <!-- Icono de perfil -->
-            <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
-              <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+            <a class="navbar-brand" href="./iniciar_sesion.html">
+              <img src="../../public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
             </a>
       
             <!-- Icono de carrito -->
-            <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
-              <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+            <a class="navbar-brand" id="carritoicon" href="./carrito.html">
+              <img src="../../public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
             </a>
           </div>
         </div>
       </nav>
-          <!-- Barra con texto -->
-          <div class="barra-verde text-center" style="background-color: #BACC33 ">
-            <p>Agregar Productos</p>
-          </div>
-        </div>
-      <!--Todo el código de navbar se mejoró para la responsividad-->
-    <!-- navbar  fin-->
-    
-   
+    <!-- Barra con texto -->
+    <div class="barra-verde text-center" style="background-color: #BACC33 ">
+        <p>Inicio</p>
+    </div>
+    </div>
+    <!--Todo el código de navbar se mejoró para la responsividad-->
+
+
     <main>
         <div class="container-fluid">
             <div class="row">
@@ -104,9 +103,12 @@
                             <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow"
                                 style="width:220px;">
                                 <ul class="list-group list-group-flush sidebar-list">
-                                    <a href="inventario.html" class="list-group-item list-group-item-action active active-prop">Inventario</a>
-                                    <a href="estado_de_pedidos.html" class="list-group-item list-group-item-action">Estado de pedidos</a>
-                                    <a href="comentarios.html" class="list-group-item list-group-item-action">Comentarios</a>
+                                    <a href="inventario.html"
+                                        class="list-group-item list-group-item-action active active-prop">Inventario</a>
+                                    <a href="estado_de_pedidos.html"
+                                        class="list-group-item list-group-item-action">Estado de pedidos</a>
+                                    <a href="comentarios.html"
+                                        class="list-group-item list-group-item-action">Comentarios</a>
                                     <a href="disputas.html" class="list-group-item list-group-item-action">Disputas</a>
                                 </ul>
                             </div>
@@ -114,69 +116,78 @@
                     </div>
                 </div>
                 <!-- Fin del Menu lateral -->
-    
+
                 <!--Inicio de formulario-->
                 <div class="col-lg-7">
                     <div class="Card--profile border border-black rounded-4 mt-5">
                         <div class="card-header">
-                        <div class="card-body">
-                    <article class="form ">
-            <img class= "Image-preview" src="../../public/assets/385909632_913006630195349_46583177672829738_n.jpg" class="rounded" alt="...">
-            <fieldset>
-                <legend class="Info-product">Información del producto</legend>
+                            <div class="card-body">
+                                <article class="form ">
+                                    <img class="Image-preview"
+                                        src="../../public/assets/385909632_913006630195349_46583177672829738_n.jpg"
+                                        class="rounded" alt="...">
+                                    <fieldset>
+                                        <legend class="Info-product">Información del producto</legend>
 
-                <div class="mb-3">
-                    <label for="input--nombre" class="form-label">Nombre del producto</label>
-                    <input type="text" class="form-control" id="input--nombre"
-                        placeholder="Ingresa el nombre del producto" required>
-                </div>
+                                        <div class="mb-3">
+                                            <label for="input--nombre" class="form-label">Nombre del producto</label>
+                                            <input type="text" class="form-control" id="input--nombre"
+                                                placeholder="Ingresa el nombre del producto" required>
+                                        </div>
 
-                <div class="mb-3">
-                    <label for="input--descripcion" class="form-label">Descripción</label>
-                    <textarea class="form-control" id="input--descripcion" rows="3"
-                        placeholder="Agrega una breve descripción del producto" required></textarea>
-                </div>
+                                        <div class="mb-3">
+                                            <label for="input--descripcion" class="form-label">Descripción</label>
+                                            <textarea class="form-control" id="input--descripcion" rows="3"
+                                                placeholder="Agrega una breve descripción del producto"
+                                                required></textarea>
+                                        </div>
 
-                <div class="mb-3">
-                    <label for="input--precio" class="form-label">Precio Unitario</label>
-                    <input type="number" class="form-control" id="input--precio" placeholder="Ingresa el costo"
-                        required>
-                </div>
+                                        <div class="mb-3">
+                                            <label for="input--precio" class="form-label">Precio Unitario</label>
+                                            <input type="number" class="form-control" id="input--precio"
+                                                placeholder="Ingresa el costo" required>
+                                        </div>
 
-                <div class="mb-3">
-                    <label for="input--cantidad" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" id="input--cantidad"
-                        placeholder="Ingresa la cantidad que necesitas" required>
-                </div>
+                                        <div class="mb-3">
+                                            <label for="input--cantidad" class="form-label">Cantidad</label>
+                                            <input type="number" class="form-control" id="input--cantidad"
+                                                placeholder="Ingresa la cantidad que necesitas" required>
+                                        </div>
 
-                <div class="mb-3">
-                    <label for="input--descuento" class="form-label">Descuento (opcional)</label>
-                    <input type="number" class="form-control" id="input--descuento" placeholder="Ingresa descuento">
-                </div>
+                                        <div class="mb-3">
+                                            <label for="input--descuento" class="form-label">Descuento
+                                                (opcional)</label>
+                                            <input type="number" class="form-control" id="input--descuento"
+                                                placeholder="Ingresa descuento">
+                                        </div>
 
-                <div class="mb-3">
-                    <label for="select--categoria" class="form-label">Categoría</label>
-                    <select class="form-select" aria-label="Default select example" id="select--categoria" required>
-                        <option selected>Selecciona una categoría ...</option>
-                        <option value="joyeria">Joyeria</option>
-                        <option value="utilitario">Utilitario</option>
-                        <option value="arteObjeto">Arte Objeto</option>
-                        <option value="floreros">Floreros</option>
-                        <option value="velas">Velas</option>
-                    </select>
-                </div>
-            </fieldset>
+                                        <div class="mb-3">
+                                            <label for="select--categoria" class="form-label">Categoría</label>
+                                            <select class="form-select" aria-label="Default select example"
+                                                id="select--categoria" required>
+                                                <option selected>Selecciona una categoría ...</option>
+                                                <option value="joyeria">Joyeria</option>
+                                                <option value="utilitario">Utilitario</option>
+                                                <option value="arteObjeto">Arte Objeto</option>
+                                                <option value="floreros">Floreros</option>
+                                                <option value="velas">Velas</option>
+                                            </select>
+                                        </div>
+                                    </fieldset>
 
-            <div class="mb-3">
-                <button  class="boton--ad" type="submit" id="btn--crearProducto" aria-label="Añadir a tienda">Añadir a tienda</button>
-                <button  class="boton--reg" type="button" id="btn--regresar" aria-label="Regresar al inventario" formtarget="_self inventario.html">Inventario</button>
-            </div>
-        </form>
+                                    <div class="mb-3">
+                                        <button class="boton--ad" type="submit" id="btn--crearProducto"
+                                            aria-label="Añadir a tienda">Añadir a tienda</button>
+                                        <button class="boton--reg" type="button" id="btn--regresar"
+                                            aria-label="Regresar al inventario"
+                                            formtarget="_self inventario.html">Inventario</button>
+                                    </div>
+                                    </form>
     </main>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
+    </div>
     <!--Fin de formulario-->
 
     <!-- footer -->
