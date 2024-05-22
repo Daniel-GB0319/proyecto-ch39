@@ -51,6 +51,17 @@ body {
     width: auto; /* Ancho automático basado en el contenido */
 }
 
+.button--register:hover {
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button--register:active {
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
 
 
 /* Espaciado entre formulario y footer */

@@ -154,6 +154,25 @@ main {
     padding: 0 10px 0 10px;
 }
 
+.log-out:hover,
+.button-cancel:hover,
+.button-save:hover,
+.button--adress:hover,
+.edit--button:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.log-out:active,
+.button-cancel:active,
+.button-save:active,
+.button--adress:active,
+.edit--button:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
 .button--adress {
     margin-top: 0;
     /* Eliminar margen superior para que esté alineado con el formulario */
@@ -176,6 +195,20 @@ main {
     color: black;
 }
 
+/* botn del panel latera */
+.active-prop
+{
+    background: rgb(214,211,0) !important;
+    background: linear-gradient(180deg, rgba(214,211,0,1) 5%, rgba(254,254,0,1) 30%, rgba(255,255,0,1) 49%, rgba(255,255,0,1) 70%, rgba(214,211,0,1) 95%) !important;
+
+    color: black !important; 
+}
+/* un ligero cambio de color para botones del panel lateral */
+.active-prop:hover
+{
+    background: rgb(215,212,0) !important;
+background: linear-gradient(180deg, rgba(215,212,0,1) 5%, rgba(215,212,0,1) 95%) !important;
+}
 /* Ajustes para el main */
 @media (max-width: 768px) {
 

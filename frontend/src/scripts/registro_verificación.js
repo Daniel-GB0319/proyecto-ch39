@@ -30,8 +30,6 @@ function mostrarAlerta() {
 // Función para validar el código ingresado
 function validarCodigoIngresado() {
     const codigoIngresado = parseInt(codigoInput.value, 10);
-    console.log("Código generado:", codigoGenerado);
-    console.log("Código ingresado:", codigoIngresado);
     if (codigoGenerado === codigoIngresado) {
         // Si el código ingresado es correcto, activar el botón de verificación
         buttonVerify.disabled = false;
