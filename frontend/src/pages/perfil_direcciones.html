@@ -123,7 +123,7 @@
                         <!--Boton de editar dirección inicio-->
                         <article>
                             <section>
-                                <button class="button--adress">Añadir Dirección</button>
+                                <button class="button--adress" type="submit" >Añadir Dirección</button>
                             </section>
                         </article>
                         <!-- Botón de editar dirección fin -->
@@ -134,39 +134,40 @@
                                 alt="Icono de direccion" class="img-adress" width="200px">
                             <!--Icono de ubicación-->
                             <h2 class="default--adress">Dirección Predeterminada</h2>
+                            <form id="direccionesForm">
                             <section class="form-adress">
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Calle</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="calle">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Num. Exterior</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    <input type="number" class="form-control" id="exterior">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Num. Interior</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    <input type="number" class="form-control" id="interior">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Colonia</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="colonia">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1"
                                         class="form-label">Delegación/Municipio</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="delegacionM">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="ciudad">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Entidad Federativa</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="entidad">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Código Postal</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    <input type="number" class="form-control" id="codigo">
                                 </div>
                         <section>
                 </div>
@@ -176,10 +177,12 @@
                 <!--Inicio de botones-->
                 <article>
                     <section>
-                        <button class="button-cancel">Cancelar</button>
-                        <button class="button-save">Guardar</button>
+                        <button class="button-cancel" type="reset">Cancelar</button>
+                        <button class="button-save" type="submit">Guardar</button>
                     </section>
                 </article>
+
+            </form>
                 <!--Fin de botones-->
 
                 <hr>
