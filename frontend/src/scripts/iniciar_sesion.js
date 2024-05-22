@@ -14,7 +14,6 @@ emailInput.addEventListener("input", (event) => { // Agregar un evento de escuch
 
     if (emailRegex.test(email)) { // Verificar si el correo electrónico cumple con el patrón de la expresión regular
         buttonContinue.disabled = false; // Si el correo electrónico es válido, habilitar el botón
-        alert("El email que ingresaste es correcto"); // Mostrar una alerta indicando que el correo electrónico es válido
     } else {
         buttonContinue.disabled = true; // Si el correo electrónico no es válido, desactivar el botón 
     }
