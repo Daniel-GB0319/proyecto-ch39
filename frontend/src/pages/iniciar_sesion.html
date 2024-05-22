@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
-    <link rel="icon" type="image/jpg" href="../../public/assets/RedBarron.svg"/>
+    <link rel="icon" type="image/jpg" href="../../public/assets/RedBarron.svg" />
     <!-- conexión con la api de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,59 +39,63 @@
     <!-- navbar inicio -->
     <nav class="navbar navbar-expand-lg navbarbg">
         <div class="container-fluid">
-      
-          <!-- Botón de hamburguesa para pantallas pequeñas -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- Logo -->
-          <a class="navbar-brand" href="../frontend/index.html">
-            <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
-          </a>
-      
-          <!-- Secciones del navbar -->
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../frontend/src/pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-      
-            <!-- Formulario de búsqueda -->
-            <form class="d-flex" role="buscar">
-              <input class="form-control me-2" type="buscar" id="inputbusquedablanco" placeholder="Buscar en Barro.On..."
-                aria-label="Buscar">
-              <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
-            </form>
-      
-            <!-- Icono de perfil -->
-            <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
-              <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+
+            <!-- Botón de hamburguesa para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="../frontend/index.html">
+                <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
             </a>
-      
-            <!-- Icono de carrito -->
-            <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
-              <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
-            </a>
-          </div>
+
+            <!-- Secciones del navbar -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
+                            href="../frontend/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
+                            href="../frontend/src/pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
+                            href="../frontend/src/pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
+                            href="../frontend/src/pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Formulario de búsqueda -->
+                <form class="d-flex" role="buscar">
+                    <input class="form-control me-2" type="buscar" id="inputbusquedablanco"
+                        placeholder="Buscar en Barro.On..." aria-label="Buscar">
+                    <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
+                </form>
+
+                <!-- Icono de perfil -->
+                <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
+                    <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+                </a>
+
+                <!-- Icono de carrito -->
+                <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
+                    <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+                </a>
+            </div>
         </div>
-      </nav>
-          <!-- Barra con texto -->
-          <div class="barra-verde text-center" style="background-color: #BACC33 ">
-            <p>Iniciar Sesión</p>
-          </div>
-        </div>
+    </nav>
+    <!-- Barra con texto -->
+    <div class="barra-verde text-center" style="background-color: #BACC33 ">
+        <p>Iniciar Sesión</p>
+    </div>
+    </div>
     <!-- navbar  fin-->
 
     <!--Inicio de formulario-->
@@ -101,18 +105,19 @@
             <h2>Iniciar Sesión</h2>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Dirección de Correo Electrónico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" >
+                <input type="email" class="form-control" id="exampleFormControlInput1">
             </div>
             <div class="form-floating mb-3">
 
-                <section >
+                <section>
                     <a href="./inciar_sesion_cuenta.html">
-                    <button class="button--continue" id="b-continue">
-                        Continuar
-                    </button></a>
+                        <button class="button--continue" id="b-continue">
+                            Continuar
+                        </button></a>
                 </section>
                 <p class="Terms">
-                    Al crear una cuenta aceptas las <a style="color: blue;">Condiciones de uso</a> y el <a style="color: blue;">Aviso de Privacidad</a> de
+                    Al crear una cuenta aceptas las <a style="color: blue;">Condiciones de uso</a> y el <a
+                        style="color: blue;">Aviso de Privacidad</a> de
                     Barro.On
                 </p>
                 <p class="You--arenew">
@@ -120,9 +125,9 @@
                 </p>
                 <section>
                     <a href="./registro.html">
-                    <button class="button--create">
-                        Crear tu cuenta
-                    </button></a>
+                        <button class="button--create">
+                            Crear tu cuenta
+                        </button></a>
                 </section>
         </article>
 
