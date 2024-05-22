@@ -9,7 +9,6 @@ const codigoInput = document.getElementById("codigo-input");
 const buttonVerify = document.getElementById("b-verify");
 
 // Desactivar el botón de verificación
-buttonVerify.disabled = true;
 
 
 let codigoGenerado; // Variable para almacenar el código generado
@@ -32,10 +31,8 @@ function validarCodigoIngresado() {
     const codigoIngresado = parseInt(codigoInput.value, 10);
     if (codigoGenerado === codigoIngresado) {
         // Si el código ingresado es correcto, activar el botón de verificación
-        buttonVerify.disabled = false;
     } else {
         // Si el código ingresado no es correcto, mantener el botón desactivado
-        buttonVerify.disabled = true;
     }
 }
 
