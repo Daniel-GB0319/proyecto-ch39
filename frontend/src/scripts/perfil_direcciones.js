@@ -74,7 +74,7 @@ document.getElementById ('direccionesForm').addEventListener('submit', function(
             const alertDiv = document.createElement('div');
             alertDiv.className = 'alert alert-danger mt-3';
             alertDiv.textContent = error;
-            document.querySelector('.Form--register').prepend(alertDiv);
+            document.querySelector('.Form--direcciones').prepend(alertDiv);
         });
     } else {
         //Se crea un objeto con los datos del formulario
@@ -88,17 +88,18 @@ document.getElementById ('direccionesForm').addEventListener('submit', function(
             entidad: entidad,
             codigo: codigo
         };
-//Se utiliza la función JSON.stringify para convertir el objeto usuario en una cadena JSON.
+//Se utiliza la función JSON.stringify para convertir el objeto direccion en una cadena JSON.
         console.log(JSON.stringify(direccion));
 
 //Se crean mensaje de registro exitoso mediante clases de Bootstrap
         const successAlert = document.createElement('div');
         successAlert.className = 'alert alert-success mt-3';//clase de Bootstrap
         successAlert.textContent = 'Registro completado con éxito.'
+        document.querySelector('.Form--direcciones').prepend(successAlert);
 
 //Limpiamos formulario
         document.getElementById('direccionesForm').reset();
-        document.querySelector('.Form--register').prepend(successAlert);
+        
     }
 });
 
