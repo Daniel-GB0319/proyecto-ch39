@@ -1,21 +1,24 @@
 function mostrarInventario(){
     // productos guardados de localStorage
     const productos = JSON.parse(localStorage.getItem("productos"));
-
+    //
 
     if (productos==null){
-        document.getElementsByClassName("inventario").innerHTML=
+        document.getElementsByClassName("inventario");
         // si no hay inventario mostrara el mensaje "El inventario esta vacio"
-        `
-        <div class="container.fluid d-flex justify-content-center">
-        <h5> El inventario está vacio</h5>
-        </div>
-        `
+        document.createElement("div");
+        
+
     }
     else {
         
     }
 }
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded",function() { 
     productosfalsosAleatorios();
