@@ -31,14 +31,30 @@ body {
 }
 
 .button--register {
+ lino
     background: rgb(186, 204, 51) !important;
     background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24);
     color: #000000;
+
+    width: 160px;
+    height: 60px;
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24);
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ main
     height: 50px;
     border: none;
     border-radius: 20px;
     margin-top: 10px; /* Espacio entre los botones */
+ lino
+
+    margin-left: 90px; /* Centrado en pantallas grandes */
+ main
     margin-bottom: 10px;
     margin-left: 3px;
     padding: 10px 20px; /* Espaciado interno */
@@ -48,6 +64,22 @@ body {
     
 }
 
+ lino
+
+.button--register:hover {
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.button--register:active {
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+
+
+
+main
 /* Espaciado entre formulario y footer */
 main {
     margin-top: 40px; /* Espacio en la parte superior */
@@ -57,4 +89,11 @@ main {
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .button--register {
+        margin-left: 0; /* Quitar el margen izquierdo en pantallas pequeñas */
+    }
 }

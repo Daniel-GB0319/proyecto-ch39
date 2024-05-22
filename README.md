@@ -51,11 +51,11 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - Correo Electrónico: daniel.gb0319@gmail.com
   - [Perfil de LinkedIn](https://www.linkedin.com/in/gdaniel-gonzalezb/)
 - Eduardo López Murillo
-  - Correo Electrónico: 
-  - [Perfil de LinkedIn]()
+  - Correo Electrónico: duarlo@yandex.com
+  - [Perfil de LinkedIn](www.linkedin.com/in/duarlo)
 - Montserrat Pérez García
   - Correo Electrónico: 
-  - [Perfil de LinkedIn]()
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/montserrat-p%C3%A9rez/)
 - Lino Alberto Aguilar Cano
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
@@ -66,8 +66,8 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
 - Juan Pablo Piña Suárez
-  - Correo Electrónico: 
-  - [Perfil de LinkedIn]()
+  - Correo Electrónico: juanpsuarez.pia@gmail.com
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/bcjuanpablo/)
 - Edgar Alejandro Luna Celis
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
