@@ -97,22 +97,21 @@
             <div class="row">
                 <!-- Menu lateral inicio -->
                 <div class="col-lg-3">
-                    <div class="card border border-black rounded-4 mt-5">
+                    <div class="card border border-1 border-black rounded-4">
                         <div class="card-body" style="width:310px;height:200px;">
                             <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow"
                                 style="width:220px;">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Datos Generales</li>
-                                    <li class="list-group-item">Cuenta y seguridad</li>
-                                    <li class="list-group-item">Mis direcciones</li>
+                                <ul class="list-group list-group-flush sidebar-list">
+                                    <a href="perfil.html" class="list-group-item list-group-item-action">Datos Generales</a>
+                                    <a href="perfil_micuenta.html" class="list-group-item list-group-item-action">Cuenta y seguridad</a>
+                                    <a href="perfil_direcciones.html" class="list-group-item list-group-item-action">Mis direcciones</a>
+                                    <a href="perfil_metodos_de_pago.html" class="list-group-item list-group-item-action active active-prop">Métodos de pago</a>
                                 </ul>
-                                <div class="card-header">
-                                    Métodos de pago
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            <!-- Menu lateral fin -->
                 <!--Menu lateral final-->
 
                 <!--Boton de añadir método de pago-->
@@ -170,23 +169,23 @@
                                 <section>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Tipo Débito/Crédito</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" >
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" >
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Num.Tarjeta</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" >
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" >
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Mes de Caducidad</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1" >
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" >
                                         </div>
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label">Año de Caducidad</label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput1" >
+                                                <input type="number" class="form-control" id="exampleFormControlInput1" >
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label">Titular de la Tarjeta</label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput1" >
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" >
                                             </div>
                                 </section>
                             </article>

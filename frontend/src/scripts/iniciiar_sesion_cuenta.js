@@ -1,22 +1,30 @@
-//Constantes de cada elemento de html
-const emailInput = document.getElementById("exampleFormControlInput1");
-const passwordInput = document.getElementById("exampleFormControlInput2");
-const buttonContinue = document.querySelector(".button-continue"); // Cambiado getElementsByClassName a querySelector
+// Obtener referencias a los elementos del DOM
+const emailInput = document.getElementById("exampleFormControlInput1"); // Campo de entrada para el correo electrónico
+const passwordInput = document.getElementById("password"); // Campo de entrada para la contraseña
+const buttonLogin = document.getElementById("button-login"); // Botón de inicio de sesión
 
-// Boton desactivado hasta que se valide el correo
-buttonContinue.disabled = true;
+// Desactivar el botón de inicio de sesión inicialmente
+buttonLogin.disabled = true;
 
-// Crear regex para que se cumpla el patrón
-const emailRegex = /^[\w.+\-]+@[\w.+\-]+\.com$/; // Corregido el patrón de regex
+// Expresión regular para validar direcciones de correo electrónico
+const emailRegex = /^[\w.+\-]+@[\w.+\-]+\.com$/;
 
-// Validar Email
-emailInput.addEventListener("input", (event) => {
-    const email = event.target.value;
-    const password = passwordInput.value.length
+// Función para validar los campos de correo electrónico y contraseña
+function validarCampos() {
+    // Obtener los valores actuales de correo electrónico y contraseña
+    const email = emailInput.value;
+    const password = passwordInput.value;
 
-    if(emailRegex.test(email) && password >= 7) { // Corregido passwordInput.length a passwordInput.value.length
-        buttonContinue.disabled = false;
-    } else {
-        buttonContinue.disabled = true;
-    }
-});
+    // Verificar si el correo electrónico y la contraseña cumplen con los criterios de validación
+    const emailValido = emailRegex.test(email); // Verificar si el correo electrónico coincide con la expresión regular
+    const passwordValido = password.length >= 7; // Verificar si la longitud de la contraseña es al menos 7 caracteres
+
+    // Desactivar el botón de inicio de sesión si alguna de las validaciones falla
+    buttonLogin.disabled = !(emailValido && passwordValido);
+}
+
+// Agregar un evento de escucha para el evento de entrada en el campo de correo electrónico
+emailInput.addEventListener("input", validarCampos);
+
+// Agregar un evento de escucha para el evento de entrada en el campo de contraseña
+passwordInput.addEventListener("input", validarCampos);

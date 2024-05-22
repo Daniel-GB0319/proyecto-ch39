@@ -1,4 +1,4 @@
-DROP DATABASE barro_db;
+-- DROP DATABASE barro_db;
 
 CREATE DATABASE barro_db;
 
@@ -13,7 +13,7 @@ ap_materno VARCHAR(20) NOT NULL,
 sexo CHAR NOT NULL,
 fec_nac DATE NOT NULL,
 correo VARCHAR(30) NULL,
-contrasena VARCHAR(128) NOT NULL,
+contrasena CHAR(64) NOT NULL,
 telefono VARCHAR(15) NOT NULL,
 tipo_usuario VARCHAR(10) NOT NULL,
 PRIMARY KEY (id_usuario)
@@ -29,64 +29,64 @@ PRIMARY KEY (id_categoria)
 
 CREATE TABLE carrito
 (
-id_carrito INT NOT NULL,
-id_usuario INT NOT NULL,
+id_carrito INT NOT NULL AUTO_INCREMENT,
+id_cliente INT NOT NULL,
 PRIMARY KEY (id_carrito),
-FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+FOREIGN KEY (id_cliente) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
-CREATE TABLE estatus
+CREATE TABLE estatus_pedido
 (
-id_estatus INT NOT NULL,
-estado VARCHAR(20) NOT NULL,
+id_estado INT AUTO_INCREMENT NOT NULL,
+nombre VARCHAR(30) NOT NULL,
 descripcion TEXT NOT NULL,
-PRIMARY KEY (id_estatus)
+PRIMARY KEY (id_estado)
 );
 
 CREATE TABLE usuario_direcciones
 (
 id_direcciones INT NOT NULL AUTO_INCREMENT,
-calle VARCHAR(20) NOT NULL,
+calle VARCHAR(50) NOT NULL,
 num_ext INT NOT NULL,
-num_int INT NOT NULL,
-colonia VARCHAR(20) NOT NULL,
-municipio VARCHAR(20) NOT NULL,
-ciudad VARCHAR(20) NOT NULL,
-estado VARCHAR(20) NOT NULL,
-cp INT NOT NULL,
-id_usuario INT NOT NULL,
-PRIMARY KEY (id_direcciones, id_usuario),
-FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+num_int INT,
+colonia VARCHAR(50) NOT NULL,
+municipio VARCHAR(50) NOT NULL,
+ciudad VARCHAR(50) NOT NULL,
+estado VARCHAR(50) NOT NULL,
+cp VARCHAR(5) NOT NULL,
+id_cliente INT NOT NULL,
+PRIMARY KEY (id_direcciones, id_cliente),
+FOREIGN KEY (id_cliente) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
 CREATE TABLE usuario_metodos_pago
 (
 id_metodos_pago INT NOT NULL AUTO_INCREMENT,
-tipo VARCHAR(10) NOT NULL,
+tipo VARCHAR(20) NOT NULL,
 numero_tarjeta VARCHAR(16) NOT NULL,
-mes INT NOT NULL,
-anio INT NOT NULL,
-cvv INT NOT NULL,
+mes INT,
+anio INT,
+cvv INT,
 titular VARCHAR(50) NOT NULL,
 dir_facturacion TEXT NOT NULL,
-id_usuario INT NOT NULL,
-PRIMARY KEY (id_metodos_pago, id_usuario),
-FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+id_cliente INT NOT NULL,
+PRIMARY KEY (id_metodos_pago, id_cliente),
+FOREIGN KEY (id_cliente) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
 CREATE TABLE producto
 (
 id_producto INT NOT NULL AUTO_INCREMENT,
-nombre VARCHAR(20) NOT NULL,
+nombre VARCHAR(30) NOT NULL,
 descripcion TEXT NOT NULL,
 precio DECIMAL(10,2) NOT NULL,
 cantidad INT NOT NULL,
 descuento INT,
 id_categoria INT NOT NULL,
-id_usuario INT NOT NULL,
+id_vendedor INT NOT NULL,
 PRIMARY KEY (id_producto),
 FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria),
-FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+FOREIGN KEY (id_vendedor) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 
 CREATE TABLE pedido
@@ -94,11 +94,11 @@ CREATE TABLE pedido
 id_pedido INT NOT NULL AUTO_INCREMENT,
 fecha DATETIME NOT NULL,
 costo_total DECIMAL(10,2) NOT NULL,
-id_usuario INT NOT NULL,
-id_estatus INT NOT NULL,
+id_cliente INT NOT NULL,
+estado_pedido INT NOT NULL,
 PRIMARY KEY (id_pedido),
-FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario),
-FOREIGN KEY (id_estatus) REFERENCES estatus(id_estatus)
+FOREIGN KEY (id_cliente) REFERENCES usuario(id_usuario) ON DELETE CASCADE,
+FOREIGN KEY (estado_pedido) REFERENCES estatus_pedido(id_estado)
 );
 
 CREATE TABLE pedido_producto
@@ -115,7 +115,7 @@ CREATE TABLE carrito_producto
 id_carrito INT NOT NULL,
 id_producto INT NOT NULL,
 PRIMARY KEY (id_carrito, id_producto),
-FOREIGN KEY (id_carrito) REFERENCES carrito(id_carrito),
+FOREIGN KEY (id_carrito) REFERENCES carrito(id_carrito) ON DELETE CASCADE,
 FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 );
 
@@ -125,6 +125,28 @@ id_imagen INT NOT NULL,
 id_producto INT NOT NULL,
 imagen_url VARCHAR(2083)  NOT NULL,
 PRIMARY KEY (id_imagen, id_producto),
-FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
+FOREIGN KEY (id_producto) REFERENCES producto(id_producto) ON DELETE CASCADE
 );
 
+-- TRIGGERS
+-- Genera carrito a cada cliente nuevo
+DELIMITER //
+CREATE TRIGGER after_generar_carrito AFTER INSERT ON usuario 
+FOR EACH ROW
+BEGIN
+    IF NEW.tipo_usuario = 'cliente'
+THEN
+    INSERT INTO carrito(id_cliente) VALUES (NEW.id_usuario);
+    END IF;
+END;//
+DELIMITER ;
+
+-- Almacena la contraseña con un hash Sha256 de la cadena ingresada en lugar de la cadena en si misma
+DELIMITER //
+CREATE TRIGGER before_insert_usuario
+BEFORE INSERT ON usuario
+FOR EACH ROW
+BEGIN
+   SET NEW.contrasena = SHA2(NEW.contrasena, 256);
+END;//
+DELIMITER ;

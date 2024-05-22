@@ -11,10 +11,10 @@
 ## Indice
 - [Descripción del proyecto](#descripción-del-proyecto)
   - [Diseño de la interfaz](#diseño-de-interfaz)
-  - [Tecnologías utilizadas](#tecnologias-utilizadas)
-  - [Metodología utilizada](#metodologia-utilizada)   
+  - [Tecnologías utilizadas](#tecnologías-utilizadas)
+  - [Metodología utilizada](#metodología-utilizada)   
 - [Integrantes del equipo](#integrantes-del-equipo-de-desarrollo-code-gaiden-developers)
-- [Requisitos mínimos del sistema](#requisítos-mínimos-del-sistema)
+- [Requisitos mínimos del sistema](#requisitos-mínimos-del-sistema)
   - [Hardware](#hardware)
   - [Software](#software)  
 - [Funcionamiento](#funcionamiento)
@@ -28,12 +28,12 @@
 <p align="justify">Barro.on es más que una simple comunidad de artesanos; es un testimonio del poder de la tecnología moderna y la creatividad humana. Nuestra plataforma de comercio electrónico, meticulosamente diseñada con <b>Figma</b>, es el resultado de un proceso cuidadoso de visualización y perfeccionamiento de la experiencia del usuario.</p>
 
 
-### Tecnologias utilizadas
+### Tecnologías utilizadas
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 <p align="justify">El sitio web, construido con una combinación de <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b>, ofrece una interfaz de usuario rica y dinámica. Con el uso de <b>Bootstrap 5</b>, garantizamos un diseño receptivo que se ve y funciona bien en una variedad de dispositivos. En el lado del servidor, <b>Spring Boot</b> maneja las solicitudes y respuestas, mientras que <b>MySQL</b> gestiona nuestra base de datos. Estos componentes tecnológicos, trabajando en conjunto, nos permiten ofrecer una experiencia de compra en línea segura, eficiente y agradable.</p>
 
 
-### Metodologia utilizada
+### Metodología utilizada
 ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white)
 <p align="justify">En Barro.on, adoptamos la metodología Scrum para la gestión de nuestro proyecto, lo que refleja nuestra creencia en la eficiencia y la adaptabilidad. Este enfoque ágil nos permitió trabajar en ciclos cortos y regulares, conocidos como ‘sprints’, facilitando una rápida adaptación a los cambios y una mejora continua. Con el apoyo de <b>Jira</b>, una herramienta de gestión de proyectos, pudimos organizar nuestras tareas, seguir el progreso y colaborar de manera efectiva. Gracias a Scrum y Jira, hemos logrado entregar un producto de alta calidad que refleja las necesidades y deseos de nuestros clientes.</p>
 
@@ -46,18 +46,35 @@
 
 El equipo de desarrollo de esta plataforma esta compuesto por los siguientes integrantes:
 
-- Geovanni Daniel González Barrientos   
+<!-- Agreguen los medios de contacto que ustedes quieran. -->
+- Geovanni Daniel González Barrientos  
+  - Correo Electrónico: daniel.gb0319@gmail.com
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/gdaniel-gonzalezb/)
 - Eduardo López Murillo
+  - Correo Electrónico: duarlo@yandex.com
+  - [Perfil de LinkedIn](www.linkedin.com/in/duarlo)
 - Montserrat Pérez García
+  - Correo Electrónico: 
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/montserrat-p%C3%A9rez/)
 - Lino Alberto Aguilar Cano
+  - Correo Electrónico: 
+  - [Perfil de LinkedIn]()
 - César Adair Aguilar Perfecto
+  - Correo Electrónico: 
+  - [Perfil de LinkedIn]()
 - Mauricio Noe Guzman Martinez
+  - Correo Electrónico: 
+  - [Perfil de LinkedIn]()
 - Juan Pablo Piña Suárez
+  - Correo Electrónico: juanpsuarez.pia@gmail.com
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/bcjuanpablo/)
 - Edgar Alejandro Luna Celis
+  - Correo Electrónico: 
+  - [Perfil de LinkedIn]()
 
 
-## Requisítos mínimos del sistema
-Para asegurar un funcionamiento óptimo de nuestra ecommerce, sugerimos cumplir con los sigueintes requisitos mínimos:
+## Requisitos mínimos del sistema
+Para asegurar un funcionamiento óptimo de nuestra ecommerce, sugerimos cumplir con los siguientes requisitos mínimos:
 
 ### Hardware
 - Procesador Intel Core i5-2500k / AMD Ryzen 7 1700 o superior que incluya soporte para SSE33.
@@ -69,14 +86,23 @@ Para asegurar un funcionamiento óptimo de nuestra ecommerce, sugerimos cumplir 
 
 
 ## Funcionamiento
-Para utilizar nuestra plataforma, puede visitar nuestro [Sitio Web Oficial](https://cdn.dribbble.com/users/10336/screenshots/2607763/404-chicken.gif) en su navegador web de confianza desde cualquier computadora de escritorio o dispositivo movil compatible.
+Para utilizar nuestra plataforma, puede visitar nuestro [Sitio Web Oficial](https://cdn.dribbble.com/users/10336/screenshots/2607763/404-chicken.gif) en su navegador web de confianza desde cualquier computadora de escritorio o dispositivo móvil compatible.
 
-Si desea realizar... (OPCIONES PARA DESARROLLADORES)<!-- PONER OPCIONES PARA DESARROLLADORES (GIT CLONE, ABRIR INDEX.HTML, INSTALAR MYSQL, ETC) --> 
+<!-- PONER OPCIONES PARA DESARROLLADORES (GIT CLONE, ABRIR INDEX.HTML, INSTALAR MYSQL, ETC) -->
+Si desea probar el sistema de manera local para cuestiones de desarrollo y testing, puede realizar los siguientes pasos:
+1. Descargue el código del proyecto a su maquina con ayuda de Git usando el siguiente comando:
+  - `git clone `  
+2. Una vez descargado el proyecto del repositorio, (Completar instrucciones cuando se tenga SQL Y Backend funcionales)
 
 
 ## Notas y consideraciones 
-<p align="justify">El uso de esta plataforma se proporciona ‘tal cual’, sin garantía de ningún tipo, ya sea expresa o implícita. Esto incluye, pero no se limita a, las garantías implícitas de comerciabilidad, idoneidad para un propósito particular y no infracción. En ningún caso, los propietarios o colaboradores de la plataforma serán responsables de cualquier reclamo, daño u otra responsabilidad, ya sea en una acción de contrato, agravio o de otro tipo, que surja de, esté en conexión con el software o el uso u otros tratos en el software.</p> (CHECAR)
+<p align="justify">El uso de esta plataforma se proporciona ‘tal cual’, sin garantía de ningún tipo, ya sea expresa o implícita. Esto incluye, pero no se limita a, las garantías implícitas de comerciabilidad, idoneidad para un propósito particular y no infracción. En ningún caso, los propietarios o colaboradores de la plataforma serán responsables de cualquier reclamo, daño u otra responsabilidad, ya sea en una acción de contrato, agravio o de otro tipo, que surja de, esté en conexión con el software o el uso u otros tratos en el software.</p> (CHECAR LA SECCIÓN SOBRE GARANTÍAS, TÉRMINOS, CONDICIONES Y COPYRIGHT, ENTRE OTROS)
 
 
 ## Contactanos
-Para contactarnos puedes mandar un email a ... (BARRO ON Y CODE GAIDEN)
+Para contactarnos puedes mandar un email a ***correo@example.com*** o visitar nuestra redes oficiales: (Links de ejemplo, falta poner los reales)
+  - [Facebook](https://cdn.svgator.com/images/2024/04/walking-investigator-animation-in-404-error-page.gif)
+  - [X (Twitter)](https://cdn.dribbble.com/users/1138875/screenshots/4669703/404_animation.gif)
+  - [Instagram](https://www.scopycode.com/includes/images/blog/error_404.gif)
+  - [Discord](https://freefrontend.com/assets/img/html-funny-404-pages/SVG-Animation-404-Page.gif)
+  - [WhatsApp](https://user.credo.science/user-interface/404.gif)
