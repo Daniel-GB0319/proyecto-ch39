@@ -5,16 +5,6 @@ body {
 }
 
 /* Estilos para el main */
-main {
-    display: flex;
-    /* Utiliza flexbox para alinear elementos */
-    justify-content: left;
-    /* Centra horizontalmente */
-    align-items: flex-start;
-    /* Alinea los elementos al inicio verticalmente */
-    margin-top: 20px;
-    /* Agrega un poco de espacio superior */
-}
 
 .col-lg-3 {
     margin-right: 20px;
@@ -84,7 +74,7 @@ main {
     justify-content: center;
     width: 70%;
     /* Ancho relativo del formulario */
-    max-width: 600px;
+    max-width: 500px;
     /* Ancho máximo del formulario */
     margin: 0 auto;
     /* Centrar horizontalmente */

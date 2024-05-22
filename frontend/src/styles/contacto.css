@@ -3,21 +3,6 @@ body {
 }
 
 /* Estilos del formulario */
-form {
-    margin-top: 50px;
-}
-
-.form {
-    margin-top: 50px;
-}
-
-.form-label {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.form-control {
-    margin-bottom: 20px;
-}
 
 .Contact--card {
     display: flex;
