@@ -63,8 +63,8 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - Correo Electrónico: 
   - [Perfil de LinkedIn]()
 - Mauricio Noe Guzman Martinez
-  - Correo Electrónico: 
-  - [Perfil de LinkedIn]()
+  - Correo Electrónico: gnoe8799@gmail.com
+  - [Perfil de LinkedIn](https://www.linkedin.com/in/noe-guzman-3403372b6/)
 - Juan Pablo Piña Suárez
   - Correo Electrónico: juanpsuarez.pia@gmail.com
   - [Perfil de LinkedIn](https://www.linkedin.com/in/bcjuanpablo/)
