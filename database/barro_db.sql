@@ -1,6 +1,9 @@
 -- DROP DATABASE barro_db;
 
-CREATE DATABASE barro_db;
+CREATE DATABASE IF NOT EXISTS barro_db;
+
+-- Modificar base de datos existente para usar UTF-8
+ALTER DATABASE barro_db CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE `barro_db`;
 
