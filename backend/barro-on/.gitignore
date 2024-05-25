@@ -35,3 +35,6 @@ nbdist/
 
 ### VS Code ###
 .vscode/
+
+####### configuracion de springboot ######
+/src/main/resources/application.properties

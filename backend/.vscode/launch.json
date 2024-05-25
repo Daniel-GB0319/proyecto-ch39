@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BarroOnApplication<barro-on>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.codegaiden.barro_on.BarroOnApplication",
+            "projectName": "barro-on",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
