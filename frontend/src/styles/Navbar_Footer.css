@@ -67,6 +67,7 @@
     font-size: 36px;
     font-weight: bolder;
     font-family: Ubuntu;
+    text-decoration: none;
 }
 
 .list-style { /*Cambia el formato de las secciones*/
@@ -76,6 +77,10 @@
     font-family: Ubuntu;
     text-decoration: none;
     text-align: center;
+}
+
+.nav-item mb-2{
+    text-decoration: none;
 }
 
 .white-link { /*Formato de los links en las secciones*/

@@ -82,3 +82,24 @@
 .carousel-control-prev-icon:after {
     content: '<';
 }
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 575.98px) {
+    .carousel-inner {
+        padding: 0 0 0 70px;
+    }
+    
+    .img-categorias {
+        width: 100%;
+        height: auto;
+    }
+    
+    .button--change {
+        width: 100%;
+        height: auto;
+    }
+    
+    .barra-verde {
+        font-size: 18px;
+    }
+}
