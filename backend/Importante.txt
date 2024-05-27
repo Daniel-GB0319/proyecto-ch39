@@ -1,5 +1,0 @@
-Para probar el back, primero deben levantar la base de datos en MySQL (Puede ser en local o con 
-el contenedor de Docker ). Una vez levantado la base de datos, asegurarse que los datos de la 
-base estén configurados en el archivo "/backend/barro/src/main/resources/application.properties".
-
-Pueden usar postman para las peticiones HTTP según los controller de la carpeta ./main/java/controller
