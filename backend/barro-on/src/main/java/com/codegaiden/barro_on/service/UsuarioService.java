@@ -7,13 +7,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/*
- * En Service se define la funcionalidad de cada una de las rutas o controllers que habrá con respecto al entity.
- * Básicamente se crean los métodos para CRUD y demás operaciones que se necesiten dentro de ellas.
- */
+// Funcionalidad de las distintas peticiones
 @Service
 public class UsuarioService {
-
+    // Inyectamos el repositorio de Usuario
     @Autowired
     private UsuarioRepository usuarioRepository;
 
@@ -34,8 +31,10 @@ public class UsuarioService {
 
     // Actualizar un usuario por su id
     public Usuario updateUsuario(Long id, Usuario usuarioDetails) {
+        // Verifica que el usuario exista
         Usuario usuario = usuarioRepository.findById(id).orElse(null);
         if (usuario != null) {
+            // Usuario existe y actualiza sus datos
             usuario.setNombre(usuarioDetails.getNombre());
             usuario.setApPaterno(usuarioDetails.getApPaterno());
             usuario.setApMaterno(usuarioDetails.getApMaterno());
@@ -47,6 +46,7 @@ public class UsuarioService {
             usuario.setTipoUsuario(usuarioDetails.getTipoUsuario());
             return usuarioRepository.save(usuario);
         }
+        // Retorna null si el usuario no existe
         return null;
     }
 
