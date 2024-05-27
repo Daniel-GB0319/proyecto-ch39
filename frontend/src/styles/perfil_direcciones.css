@@ -1,30 +1,21 @@
-/* Estilos para el main */
+/* Estilos del sidebar */
 body {
-    font-family: 'Open Sans', sans-serif;
-    /* Corregido para usar la fuente Open Sans */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Estilos para el main */
+/* Estilos del sidebar */
+.col-lg-3 {
+    padding: 0 0 50px 0;
+}
 
 .col-lg-3 {
-    margin-right: 20px;
-    /* Agrega espacio a la derecha para separar del menú lateral */
+    padding: 0 0 50px 0;
 }
 
-/* Estilos de la tarjeta del menú lateral */
 .sidebar-card {
     border: 1px solid black;
     background-color: yellow;
     width: 220px;
-    margin-top: 20px;
-    /* Agrega espacio superior */
-}
-
-.sidebar-card .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* Alinea el contenido al inicio verticalmente */
 }
 
 .sidebar-card .card-header {
@@ -36,20 +27,15 @@ body {
 .sidebar-list .list-group-item {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    text-align: center;
-    /* Alinea el texto al centro */
-    padding: 10px 0;
-    /* Ajusta el espaciado del elemento de la lista */
 }
 
-.button--change {
-    width: auto;
-    /* Ancho automático */
+.btn--añadirpago{
+    width: 160px;
     height: 60px;
     /* botones mejorados */
-    background: rgb(186, 204, 51) !important;
-    background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24) !important;
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -58,12 +44,29 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: flex-start;
-    /* Alinea los elementos hacia la izquierda */
-    max-width: 400px;
-    /* Ancho máximo de los botones */
-    margin: 20px auto;
-    /* Centrado horizontal */
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+    width: auto; /* Ancho automático */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 200px; /* Margen automático a la izquierda */
+}
+.btn--añadirpago:hover{
+    background: rgb(159,176,33) !important;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+}
+
+.btn--añadirpago:active{
+    background: rgb(122,135,26) !important;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
+}
+
+.Image-preview {
+    width: 300px; /* Ancho del contenedor */
+    height: 300px; /* Alto del contenedor */
+    margin: 20px auto; /* Centrar horizontalmente */
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Estilos de la tarjeta del perfil */
@@ -72,119 +75,70 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    /* Ancho relativo del formulario */
-    max-width: 500px;
-    /* Ancho máximo del formulario */
-    margin: 0 auto;
-    /* Centrar horizontalmente */
-    padding: 20px;
-    /* Espaciado interno */
+    width: 70%; /* Ancho relativo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
     border: 3px solid #000000;
-    padding-bottom: 40px;
-    /* Espacio en la parte inferior */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* Sombra */
+    padding-bottom: 40px; /* Espacio en la parte inferior */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con desplazamiento x=0, y=0, desenfoque=10px, color=rgba(0, 0, 0, 0.5) */
 }
+/* Estilos del icono-perfil */
 
-.img-adress {
-    width: 100px;
-    /* Ancho del icono */
-    height: 100px;
-    /* Alto del icono */
-    margin: 20px auto;
-    /* Centrado horizontal */
-    display: block;
-    /* Convertir a bloque para centrar */
-}
 
-.devices {
+
+h3 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 36px;
+    font-size: 36px; /* Tamaño del título */
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio entre el título y el formulario */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px;
+    width: 100%; /* Ancho completo */
+    max-width: 400px; /* Ancho máximo de los botones */
+    margin-top: 20px; /* Espacio superior */
 }
 
 /* Estilos de los botones */
-.buttons-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    /* Centrar los botones horizontalmente */
-    gap: 10px;
-    /* Espacio entre botones */
-    width: 100%;
-    /* Ancho completo */
-    max-width: 400px;
-    /* Ancho máximo de los botones */
-    margin: 20px auto;
-    /* Centrar y espacio entre el formulario y los botones */
-    padding: 0 10px 0 10px;
-}
-
-.log-out,
-.button-cancel,
-.button-save,
-.button--adress,
-.edit--button {
+.delete {
     width: 160px;
-    /* Ancho de los botones */
     height: 60px;
-    /* Alto de los botones */
     /* botones mejorados */
-    background: rgb(186, 204, 51) !important;
-    background: linear-gradient(180deg, rgba(186, 204, 51, 1) 37%, rgba(172, 190, 36, 1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.24) !important;
+    background: rgb(186,204,51) !important;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
     color: #000000;
     border: none;
     border-radius: 20px;
-    margin: 20px 20px 20px 20px;
-    /* Margen automático para centrar horizontalmente */
-    padding: 0 10px 0 10px;
+    margin-bottom: 20px;
+
 }
 
-.log-out:hover,
-.button-cancel:hover,
-.button-save:hover,
-.button--adress:hover,
-.edit--button:hover{
+.delete:hover {
     background: rgb(159,176,33) !important;
     background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
 }
 
-.log-out:active,
-.button-cancel:active,
-.button-save:active,
-.button--adress:active,
-.edit--button:active{
+.delete:active {
     background: rgb(122,135,26) !important;
     background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
 }
 
-
-.button--adress {
-    margin-top: 0;
-    /* Eliminar margen superior para que esté alineado con el formulario */
-}
-
-/* Espacio en blanco después del hr */
-hr+article {
-    margin-top: 20px;
-}
-
 /* Espaciado entre formulario y footer */
 main {
-    margin-bottom: 50px;
-    /* Espacio en la parte inferior */
+    margin-bottom: 40px; /* Espacio en la parte inferior */
 }
 
-.barra-verde {
-    /*Estilos para la barra verde abajo del nav-bar*/
+.barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
     color: black;
 }
-
 /* botn del panel latera */
 .active-prop
 {
@@ -199,70 +153,41 @@ main {
     background: rgb(215,212,0) !important;
 background: linear-gradient(180deg, rgba(215,212,0,1) 5%, rgba(215,212,0,1) 95%) !important;
 }
-/* Ajustes para el main */
-@media (max-width: 768px) {
 
-    /* Ajustes para el main */
-    main {
-        flex-direction: column;
-        /* Cambiar la dirección a columna */
-        align-items: center;
-        /* Centrar los elementos horizontalmente */
-    }
-
-    /* Ajustes para el menú lateral */
-    .col-lg-3 {
-        width: 100%;
-        /* Ajustar el ancho al 100% */
-        max-width: none;
-        /* Eliminar el ancho máximo */
-        margin-bottom: 20px;
-        /* Agregar espacio inferior */
-    }
-
-    /* Ajustes para el formulario */
+@media only screen and (max-width: 768px) {
     .Card--profile {
-        width: 100%;
-        /* Ajustar el ancho al 100% */
-        max-width: 100%;
-        /* Ajustar el ancho máximo al 100% */
-        margin-left: 0;
-        /* Ajustar el margen izquierdo a 0 */
+        width: 90%; /* Ancho relativo del formulario */
+        max-width: 400px; /* Ancho máximo del formulario */
     }
-}
 
-.button--adress {
-    padding: 0 20px; /* Ajustar el padding horizontal */
-    font-size: 14px; /* Reducir el tamaño de la fuente */
-}
+    .Image-preview {
+        width: 80%; /* Ancho del contenedor */
+        height: auto; /* Altura automática */
+    }
 
+    .btn--añadirpago {
+        margin-left: auto; /* Centrar el botón horizontalmente */
+        margin-right: auto; /* Centrar el botón horizontalmente */
+    }
 
-/* Ajustes para los botones */
-.buttons-container {
-    flex-direction: column;
-    /* Cambiar la dirección a columna */
-    align-items: center;
-    /* Centrar los elementos */
-}
+    h3 {
+        font-size: 24px; /* Reducir tamaño del título */
+        margin-bottom: 10px; /* Reducir espacio entre el título y el formulario */
+    }
 
-.log-out,
-.button-cancel,
-.button-save,
-.button--adress,
-.edit--button,
-.button--change {
-    width: 100%;
-    /* Ajustar el ancho al 100% */
-    max-width: 100%;
-    /* Ajustar el ancho máximo al 100% */
-}
+    .buttons {
+        flex-direction: column; /* Cambiar la disposición a columna */
+        align-items: center; /* Centrar los botones horizontalmente */
+        justify-content: center; /* Centrar los botones verticalmente */
+        padding: 0; /* Eliminar el relleno */
+    }
 
-/* Ajustes para la tarjeta del perfil */
-.Card--profile {
-    width: 100%;
-    /* Ajustar el ancho al 100% */
-    max-width: 100%;
-    /* Ajustar el ancho máximo al 100% */
-    margin: 20px 0;
-    /* Reducir el margen superior e inferior */
+    .delete {
+        width: 100%; /* Ancho completo */
+        max-width: 280px; /* Ancho máximo de los botones */
+    }
+
+    main {
+        margin-bottom: 20px; /* Reducir espacio en la parte inferior */
+    }
 }
