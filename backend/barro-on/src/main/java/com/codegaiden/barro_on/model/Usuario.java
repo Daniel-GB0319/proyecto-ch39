@@ -3,24 +3,21 @@ package com.codegaiden.barro_on.model;
 import lombok.Getter;
 import lombok.Setter;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 import java.util.Date;
+import java.util.Set;
 
-/* 
-    1) Anotaciones @Getter y @Setter son de la dependencia Lombok y generan dichos métodos de acceso
-       para ahorrarnos el tener que escribirlos.
-    2) @Table es para indicar la tabla de SQL sobre la cual trabajaremos
-    3) @Id es para indicar cual es la llave primaria de la entidad o modelo
-    4) @GeneratedValue es para indicar el tipo de generación de la llave primaria, donde identity 
-       es para que la llave primaria se genere automáticamente en la base de datos.
-    5) @Column es para indicar el nombre de la columna en la tabla de SQL.
-*/
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+// Getter y Setter generados por Lombok
 @Getter
 @Setter
 @Entity
@@ -29,7 +26,9 @@ import java.util.Date;
 // Clase para representar la tabla de SQL de usuarios
 public class Usuario {
 
+    // ID de la tabla
     @Id
+    // Estrategia de Spring Boot 3 para indicar que MySQL se encarga de los ID
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
     private Long id;
@@ -61,4 +60,9 @@ public class Usuario {
     @Column(name = "tipo_usuario")
     private String tipoUsuario;
 
+    // Relacion uno a muchos con borrado en cascada
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+    // Evita recursividad con JSON de usuario y direcciones
+    @JsonIgnore
+    private Set<Direccion> direccion;
 }
