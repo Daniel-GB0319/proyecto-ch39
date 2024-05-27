@@ -26,43 +26,49 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 // Clase para representar la tabla de SQL de usuarios
 public class Usuario {
 
-    // ID de la tabla
-    @Id
-    // Estrategia de Spring Boot 3 para indicar que MySQL se encarga de los ID
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_usuario")
-    private Long id;
+  // ID de la tabla
+  @Id
+  // Estrategia de Spring Boot 3 para indicar que MySQL se encarga de los ID
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id_usuario")
+  private Long id;
 
-    @Column(name = "nombre")
-    private String nombre;
+  @Column(name = "nombre")
+  private String nombre;
 
-    @Column(name = "ap_paterno")
-    private String apPaterno;
+  @Column(name = "ap_paterno")
+  private String apPaterno;
 
-    @Column(name = "ap_materno")
-    private String apMaterno;
+  @Column(name = "ap_materno")
+  private String apMaterno;
 
-    @Column(name = "sexo")
-    private char sexo;
+  @Column(name = "sexo")
+  private char sexo;
 
-    @Column(name = "fec_nac")
-    private Date fecNac;
+  @Column(name = "fec_nac")
+  private Date fecNac;
 
-    @Column(name = "correo")
-    private String correo;
+  @Column(name = "correo")
+  private String correo;
 
-    @Column(name = "contrasena")
-    private String contrasena;
+  @Column(name = "contrasena")
+  private String contrasena;
 
-    @Column(name = "telefono")
-    private String telefono;
+  @Column(name = "telefono")
+  private String telefono;
 
-    @Column(name = "tipo_usuario")
-    private String tipoUsuario;
+  @Column(name = "tipo_usuario")
+  private String tipoUsuario;
 
-    // Relacion uno a muchos con borrado en cascada
-    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
-    // Evita recursividad con JSON de usuario y direcciones
-    @JsonIgnore
-    private Set<Direccion> direccion;
+  // Relacion uno a muchos con borrado en cascada
+  @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+  // Evita recursividad con JSON de usuario y direcciones
+  @JsonIgnore
+  private Set<Direccion> direccion;
+
+  // Relacion uno a muchos con borrado en cascada
+  @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+  // Evita recursividad con JSON de usuario y direcciones
+  @JsonIgnore
+  private Set<Pagos> pagos;
 }
