@@ -47,3 +47,6 @@ Aquí hay unos comandos que les pueden servir para manejar los contenedores:
 
 * Para borrar el contenedor: 
     - "docker rm <nombre-contenedor> "
+
+* Para borrar una imagen: 
+    - "docker image rm <nombre-imagen> "

@@ -7,20 +7,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/*
- * En @RestController se definen las rutas de la API sobre las cuales el front podrá acceder. Se indica 
- * tipo de petición con las anotaciones @GetMapping, @PostMapping, @DeleteMapping,@PutMapping y se asocia
- * a los servicios o métodos del @Service a utilizar.
- * 
- * @RequestMapping es para indicar la ruta que llamara a dicho controller desde la URL.
- * 
- * @PathVariable indica que recibiremos un valor de la URL como parámetro para un @Service.
- * En la URL la variable se indica entre llaves "{variable}".
- */
+// Rutas para las diferentes peticiones de Usuarios
 @RestController
 @RequestMapping("/api/usuarios")
 public class UsuarioController {
-
+    // Inyectamos los servicios de Usuarios
     @Autowired
     private UsuarioService usuarioService;
 
