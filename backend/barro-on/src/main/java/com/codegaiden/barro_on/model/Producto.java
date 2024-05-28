@@ -25,7 +25,7 @@ import jakarta.persistence.Table;
     5) @Column es para indicar el nombre de la columna en la tabla de SQL.
 */
 
-
+//Getter y Setter generadps por Lombok
 @Getter
 @Setter
 @Entity
@@ -33,8 +33,9 @@ import jakarta.persistence.Table;
 
 // Clase para representar  la tabla de SQL de producto
 public class Producto {
-
+   //ID de la tabla
    @Id
+   //Para indicar que MySql se encarga de los ID
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    @Column(name = "id_producto")
    private Long id;
@@ -59,7 +60,7 @@ public class Producto {
    //Evita recursividad al mandar json
    @JsonIgnore
    //Indica la columna de la llave foránea
-   @JoinColumn(name = "id_usuario")
+   @JoinColumn(name = "id_cliente")
    private Usuario usuario;
 
 }

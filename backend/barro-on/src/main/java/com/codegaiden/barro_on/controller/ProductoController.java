@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  */
 
 @RestController
-@RequestMapping("/api/productos/")
+@RequestMapping("/api/usuarios/{idUsuario}/productos")
 public class ProductoController {
 
     @Autowired

@@ -68,7 +68,13 @@ public class Usuario {
 
   // Relacion uno a muchos con borrado en cascada
   @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
-  // Evita recursividad con JSON de usuario y direcciones
+  // Evita recursividad con JSON de usuario y pagos
   @JsonIgnore
   private Set<Pagos> pagos;
+
+  //Relacion de uno a muchos con borrado en cascada
+  @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+  // Evita recursividad con JSON de usuario y productos
+  @JsonIgnore
+  private Set<Producto> producto;
 }
