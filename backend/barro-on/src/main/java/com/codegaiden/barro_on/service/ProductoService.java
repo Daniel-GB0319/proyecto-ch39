@@ -3,13 +3,15 @@ package com.codegaiden.barro_on.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.codegaiden.barro_on.model.Categoria;
 import com.codegaiden.barro_on.model.Producto;
 import com.codegaiden.barro_on.model.Usuario;
+import com.codegaiden.barro_on.repository.CategoriaRepository;
 import com.codegaiden.barro_on.repository.ProductoRepository;
 import com.codegaiden.barro_on.repository.UsuarioRepository;
 
 import java.util.List;
-import java.util.ArrayList;
+
 
 @Service
 public class ProductoService {
@@ -20,16 +22,13 @@ public class ProductoService {
     @Autowired
     private ProductoRepository productoRepository;
 
+    @Autowired
+    private CategoriaRepository categoriaRepository;
+
     // Obtener todos los productos de un usuario
-    public List<Producto> getAllProductos(Long idUsuario) {
-        // Verificar que el usuario ingresado existe
-        Usuario usuario = usuarioRepository.findById(idUsuario).orElse(null);
-        if (usuario != null) {
-            // Si el usuario existe, regresa todos los productos asociados
-            return new ArrayList<>(usuario.getProducto());
-        }
-        // Retorna null si el usuario ingresado no existe 
-        return null;
+    public List<Producto> getAllProductos() {
+        return productoRepository.findAll();
+        
     }
 
     // Obtener un producto de un usuario
@@ -39,18 +38,27 @@ public class ProductoService {
     }
 
     // Crear un producto para un usuario
-    public Producto createProducto(Long idUsuario, Producto producto) {
-        // Verifica que un usuario ingresado existe
-        Usuario usuario = usuarioRepository.findById(idUsuario).orElse(null);
-        if (usuario != null) {
-            // Usuario existe y asigna su id al nuevo producto
-            producto.setUsuario(usuario);
+    public Producto createProducto(Producto productoDetails) {
+        // Verifica que el usuario y la categoría existen en la base de datos
+        Usuario usuario = usuarioRepository.findById(productoDetails.getUsuario().getId()).orElse(null);
+        Categoria categoria = categoriaRepository.findById(productoDetails.getCategorias().getId()).orElse(null);
+    
+        if (usuario != null && categoria != null) {
+            // Asigna el usuario y la categoría confirmados al producto
+            productoDetails.setUsuario(usuario);
+            productoDetails.setCategorias(categoria);
+    
             // Guarda el nuevo producto
-            return productoRepository.save(producto);
+            return productoRepository.save(productoDetails);
         }
-        // Regresa null si no existe el usuario
+    
+        // Regresa null si no existe el usuario o la categoría
         return null;
     }
+    
+
+
+
 
     // Actualizar un producto de un usuario
     public Producto putProducto(Long idProducto, Producto productoDetails) {
@@ -62,6 +70,7 @@ public class ProductoService {
             producto.setPrecio(productoDetails.getPrecio());
             producto.setCantidad(productoDetails.getCantidad());
             producto.setDescuento(productoDetails.getDescuento());
+            producto.setCategorias(productoDetails.getCategorias());            
             return productoRepository.save(producto);
         }
         // Regresa null si no existe el producto

@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  */
 
 @RestController
-@RequestMapping("/api/usuarios/{idUsuario}/productos")
+@RequestMapping("/api/productos")
 public class ProductoController {
 
     @Autowired
@@ -34,27 +34,27 @@ public class ProductoController {
 
     //Obtener todos los productos de un usuario
     @GetMapping
-    public List<Producto> getAllProductos(@PathVariable Long idUsuario) {
-        return productoService.getAllProductos(idUsuario);
+    public List<Producto> getAllProductos() {
+        return productoService.getAllProductos();
     }
 
     //Obtener un producto por su id
     @GetMapping("/{idProducto}")
-    public Producto getProducto(@PathVariable Long idUsuario, @PathVariable Long idProducto) {
-        return productoService.getProducto(idUsuario, idProducto);
+    public Producto getProducto(@PathVariable Long idProducto) {
+        return productoService.getProducto(idProducto);
     }
 
     //Crear un nuevo producto para un usuario
     @PostMapping
-    public Producto postProducto(@PathVariable Long idUsuario, @RequestBody Producto producto) {
-        return productoService.createProducto(idUsuario, producto);
+    public Producto postProducto( @RequestBody Producto producto) {
+        return productoService.createProducto(producto);
     }
     
     //Actualizar un producto de un usuario
     @PutMapping("/{idProducto}")
-    public Producto putProducto(@PathVariable Long idUsuario, @PathVariable Long idProducto,
+    public Producto putProducto( @PathVariable Long idProducto,
             @RequestBody Producto producto) {
-        return productoService.putProducto(idUsuario, idProducto, producto);
+        return productoService.putProducto(idProducto, producto);
     }
     
     //Borrar un producto

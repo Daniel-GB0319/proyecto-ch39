@@ -60,7 +60,14 @@ public class Producto {
    //Evita recursividad al mandar json
    @JsonIgnore
    //Indica la columna de la llave foránea
-   @JoinColumn(name = "id_cliente")
+   @JoinColumn(name = "id_vendedor")
    private Usuario usuario;
+
+   //Relación de Muchos a uno
+   @ManyToOne
+   //Evita recursividad al mandar json
+   @JsonIgnore
+   @JoinColumn(name = "id_categoria")
+   private Categoria categorias;
 
 }
