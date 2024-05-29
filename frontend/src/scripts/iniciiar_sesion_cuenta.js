@@ -1,3 +1,6 @@
+// Importar axios
+import axios from 'axios';
+
 // Obtener referencias a los elementos del DOM
 const emailInput = document.getElementById("exampleFormControlInput1"); // Campo de entrada para el correo electrónico
 const passwordInput = document.getElementById("password"); // Campo de entrada para la contraseña
@@ -6,7 +9,7 @@ const buttonLogin = document.getElementById("button-login"); // Botón de inicio
 // Desactivar el botón de inicio de sesión inicialmente
 buttonLogin.disabled = true;
 
-// Función para validar los campos de correo electrónico y contraseña usando Fetch API
+// Función para validar los campos de correo electrónico y contraseña usando Axios
 async function validarCampos() {
     // Obtener los valores actuales de correo electrónico y contraseña
     const email = emailInput.value;
@@ -15,16 +18,10 @@ async function validarCampos() {
     // Solo proceder si ambos campos no están vacíos
     if (email && password) {
         try {
-            const response = await fetch('http://localhost:8080/api/usuarios', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ email: correo, password: contraseña }) // Enviar el correo electrónico y la contraseña en el cuerpo de la solicitud
-            });
+            const response = await axios.post('http://localhost:8080/api/usuarios', { email, password }); // Enviar el correo electrónico y la contraseña a la API utilizando Axios
 
-            if (response.ok) { // Si la respuesta es satisfactoria
-                const data = await response.json(); // Obtener los datos de la respuesta
+            if (response.status === 200) { // Si la respuesta es satisfactoria
+                const data = response.data; // Obtener los datos de la respuesta
                 console.log("Respuesta de la API:", data);
                 if (data.valid) { // Suponiendo que la respuesta contiene una propiedad 'valid' para indicar si las credenciales son válidas
                     buttonLogin.disabled = false; // Si las credenciales son válidas, habilitar el botón

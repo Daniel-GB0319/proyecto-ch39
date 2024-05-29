@@ -20,9 +20,9 @@ document.getElementById ('direccionesForm').addEventListener('submit', function(
     let errors = [];
 
 //Validación de calle si la calle es un elemento vacío se resalta alerta.
-    if(calle === ""){
+    if(tarjeta === ""){
         valid = false;
-        errors.push("La calle es obligatoria.");
+        errors.push("Necesitas un numero de tarjeta obligatorio.");
     }
 
 //Validación de exterior si el exterior es un elemento vacío se resalta alerta.
