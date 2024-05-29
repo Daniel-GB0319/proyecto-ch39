@@ -1,24 +1,41 @@
 
 .contenedor{
-    max-width: 1200px;
-    padding: 10px;
-    margin: auto;
-    display:flex;
-    justify-content: space-between;
-    text-align: center;
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.mercancia{
+   display: flex;
+  flex-wrap: wrap;
+ gap: 20px;
+ margin: auto;
+box-shadow: #333;
+}
+.Product{
+   
+     max-width: 400px;
+     margin: auto;
+     text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     display: grid;
+     grid-row-gap: 20px;
+     width: 100%;
 
+  box-shadow: 0 0 5px rgba(0,0,0,0.228);
+  transition: 200ms;
 }
-.contenedor .mercancia {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap: 30px;
-    grid-row-gap: 30px;
-    width: 100%;
-    
-    transition: .3s;
+.Product:hover{
+  translate: 0 -10px;
+  box-shadow: 0 10px 5px rgba(0,0,0,0.228);
+  
 }
-  .contenedor .mercancia .Product{
+   
+
+  .contenedor  .Product{
     max-width: 200px;
     padding: 10%;
     margin: auto;
@@ -60,31 +77,28 @@
     background: rgb(122,135,26) !important;
     background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
  }
- 
- .navbar2 {
-  background-color: #333;
-  overflow: hidden;
-  display: flex;
-  justify-content: center; /* Opcional: para centrar el contenido de la barra de navegación */
-}
 
-.navbar2 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  height: 60px; /* Ajusta este valor según la altura de tu navbar */
-}
-
-.navbar2 a:hover {
-  background-color: #ddd;
-  color: rgb(159,176,33);
-}
-
+  .subnavbar {
+    background-color: #333;
+    overflow: hidden;
+    padding-top: 0%;
+    margin-top: 0%;
+    text-align: center; /* Centra el texto */
+  }
+  
+  .subnavbar a {
+    display: inline-block; /* Hace que los elementos de la barra de navegación sean bloques en línea */
+    color: white;
+    text-align: center; /* Asegura que el texto esté centrado dentro de los elementos de la barra de navegación */
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnavbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
 
   /* Estilos para el menú desplegable */
   .dropdown {
@@ -103,7 +117,7 @@
     margin: 0;
   }
   
-  .navbar a, .dropdown .dropbtn {
+  .subnavbar a, .dropdown .dropbtn {
     cursor: pointer;
   }
   
@@ -137,6 +151,7 @@
   .contador{
     display: flex;
     justify-content: center;
+    text-align: center;
   }
   .num-paginas {
     list-style-type: none;
@@ -168,3 +183,4 @@
   h4{
     text-align: center;
   }
+  
