@@ -1,5 +1,7 @@
 package com.codegaiden.barro_on.model;
 
+import java.util.Set;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
@@ -29,11 +31,10 @@ public class Categoria {
     @Column(name = "descripcion")
     private String descripcion;
 
-    /*
-     * @OneToMany(mappedBy = "categorias")
-     * 
-     * @JsonIgnore
-     * private Set<Producto> producto
-     */
+    
+    @OneToMany(mappedBy = "categorias")  
+    @JsonIgnore
+    private Set<Producto> producto;
+     
 
 }
