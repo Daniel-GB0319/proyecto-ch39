@@ -6,21 +6,44 @@ const buttonLogin = document.getElementById("button-login"); // Botón de inicio
 // Desactivar el botón de inicio de sesión inicialmente
 buttonLogin.disabled = true;
 
-// Expresión regular para validar direcciones de correo electrónico
-const emailRegex = /^[\w.+\-]+@[\w.+\-]+\.com$/;
-
-// Función para validar los campos de correo electrónico y contraseña
-function validarCampos() {
+// Función para validar los campos de correo electrónico y contraseña usando Fetch API
+async function validarCampos() {
     // Obtener los valores actuales de correo electrónico y contraseña
     const email = emailInput.value;
     const password = passwordInput.value;
 
-    // Verificar si el correo electrónico y la contraseña cumplen con los criterios de validación
-    const emailValido = emailRegex.test(email); // Verificar si el correo electrónico coincide con la expresión regular
-    const passwordValido = password.length >= 7; // Verificar si la longitud de la contraseña es al menos 7 caracteres
+    // Solo proceder si ambos campos no están vacíos
+    if (email && password) {
+        try {
+            const response = await fetch('http://localhost:8080/api/usuarios', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: correo, password: contraseña }) // Enviar el correo electrónico y la contraseña en el cuerpo de la solicitud
+            });
 
-    // Desactivar el botón de inicio de sesión si alguna de las validaciones falla
-    buttonLogin.disabled = !(emailValido && passwordValido);
+            if (response.ok) { // Si la respuesta es satisfactoria
+                const data = await response.json(); // Obtener los datos de la respuesta
+                console.log("Respuesta de la API:", data);
+                if (data.valid) { // Suponiendo que la respuesta contiene una propiedad 'valid' para indicar si las credenciales son válidas
+                    buttonLogin.disabled = false; // Si las credenciales son válidas, habilitar el botón
+                    console.log("Credenciales válidas.");
+                } else {
+                    buttonLogin.disabled = true; // Si las credenciales no son válidas, desactivar el botón
+                    console.log("Credenciales no válidas.");
+                }
+            } else {
+                console.error('Error en la validación de las credenciales:', response.statusText);
+                buttonLogin.disabled = true; // Si hay un error en la solicitud, desactivar el botón
+            }
+        } catch (error) {
+            console.error('Error en la solicitud de validación:', error);
+            buttonLogin.disabled = true; // Si hay un error en la solicitud, desactivar el botón
+        }
+    } else {
+        buttonLogin.disabled = true; // Si algún campo está vacío, desactivar el botón
+    }
 }
 
 // Agregar un evento de escucha para el evento de entrada en el campo de correo electrónico
