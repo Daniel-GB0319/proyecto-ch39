@@ -1,7 +1,5 @@
-// Importar axios
-import axios from 'axios';
-
 // Constantes de cada elemento de HTML
+const axios = require('axios').default;
 const emailInput = document.getElementById("exampleFormControlInput1"); // Obtener el campo de entrada de correo electrónico
 const buttonContinue = document.getElementById("b-continue"); // Obtener el botón de continuar
 

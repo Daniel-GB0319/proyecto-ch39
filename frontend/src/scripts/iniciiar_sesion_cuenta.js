@@ -1,7 +1,5 @@
-// Importar axios
-import axios from 'axios';
-
 // Obtener referencias a los elementos del DOM
+const axios = require('axios').default;
 const emailInput = document.getElementById("exampleFormControlInput1"); // Campo de entrada para el correo electrónico
 const passwordInput = document.getElementById("password"); // Campo de entrada para la contraseña
 const buttonLogin = document.getElementById("button-login"); // Botón de inicio de sesión
