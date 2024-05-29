@@ -11,14 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- adición de open sans -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-  <!-- adicción de ubuntu -->
+  <!-- adición de ubuntu -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
   <!-- reset CSS -->
   <link rel="stylesheet" href="../styles/reset.css" type="text/css">
   <!-- conexión con la hoja CSS de registro y fonts -->
   <link rel="stylesheet" href="../styles/registro.css" type="text/css">
   <link rel="stylesheet" href="../styles/fonts.css" type="text/css">
-
+  <!--IDK-->
+  <link rel="stylesheet" type="text/css" href="./src/styles/index.css">
+  <link rel="stylesheet" type="text/css" href="./src/styles/Navbar_Footer.css">
   <!-- API BS 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -33,70 +35,74 @@
     rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!--IDK-->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="./src/styles/fonts.css">
+<!-- conexión con la api de google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 </head>
 
 <body>
-  <!-- Navbar -->
+  <!-- navbar inicio -->
   <nav class="navbar navbar-expand-lg navbarbg">
     <div class="container-fluid">
-
+  
       <!-- Botón de hamburguesa para pantallas pequeñas -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
       <!-- Logo -->
-      <a class="navbar-brand" href="../frontend/index.html">
+      <a class="navbar-brand" href="../../index.html">
         <img src="../../public/assets/Barron On.svg" alt="Logo" width="120" height="60">
       </a>
-
+  
       <!-- Secciones del navbar -->
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-              href="../frontend/index.html">Inicio</a>
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-              href="../frontend/src/pages/tienda.html">Tienda</a>
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./tienda.html">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-              href="../frontend/src/pages/nosotros.html">Nosotros</a>
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-              href="../frontend/src/pages/contacto.html">Contacto</a>
+            <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./contacto.html">Contacto</a>
           </li>
         </ul>
-
+  
         <!-- Formulario de búsqueda -->
         <form class="d-flex" role="buscar">
           <input class="form-control me-2" type="buscar" id="inputbusquedablanco" placeholder="Buscar en Barro.On..."
             aria-label="Buscar">
           <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
         </form>
-
+  
         <!-- Icono de perfil -->
-        <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
+        <a class="navbar-brand" href="./iniciar_sesion.html">
           <img src="../../public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
         </a>
-
+  
         <!-- Icono de carrito -->
-        <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
+        <a class="navbar-brand" id="carritoicon" href="./carrito.html">
           <img src="../../public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
         </a>
       </div>
     </div>
   </nav>
-  <!-- Barra con texto -->
-  <div class="barra-verde text-center" style="background-color: #BACC33 ">
-    <p>Registro</p>
+    <!-- Barra con texto -->
+    <div class="barra-verde text-center" style="background-color: #BACC33 ">
+      <p>Registro</p>
+    </div>
   </div>
-  </div>
-  <!--Todo el código de navbar se mejoró para la responsividad-->
+<!--Todo el código de navbar se mejoró para la responsividad-->
 
   <!--Registro-->
   <div class="d-flex mt-5 ">
@@ -122,14 +128,14 @@
               espacios)</label>
             <input type="password" style="background-color: #D9D9D9;" class="form-control body--font2 " id="contrasena"
               name="contrasena">
-          </div>
+          <a href="./registro_verificacion.html"></div>
           <button type="submit" class="button--register body--font2">Registrar</button>
-          <div class="">
+          <div class=""></a>
             <p>
               Al crear una cuenta, acepta las <b button type="button" style="color: #67A1F8 ;">Condiciones de uso</b> y
               el <b button type="button" style="color: #67A1F8;">Aviso de Privacidad</b> de Barro.On.
             </p>
-            <p>¿Ya tienes una cuenta? <b button type="button" style="color: #67A1F8 ;">Inicia Sesión.</b></p>
+            <p>¿Ya tienes una cuenta? <b button type="button" style="color: #67A1F8 ;"><a href="./iniciar_sesion.html">Inicia Sesión.</a></b></p>
 
           </div>
         </form>
@@ -234,12 +240,12 @@
     </footer>
   </div>
 
-
+<!--Scripts-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="../scripts/registro.js"></script>
-  <script src="../scripts/registro_verificación.js"></script>
+  <script src="./src/scripts/index.js"></script>
 </body>
 
 </html>

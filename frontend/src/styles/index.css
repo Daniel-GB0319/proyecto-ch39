@@ -4,9 +4,9 @@
     height: 60px;
     /* Alto de los botones */
     /* botones mejorados */
-    background: rgb(186,204,51) !important;
-    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) !important;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) !important;
+    background: rgb(186,204,51) ;
+    background: linear-gradient(180deg, rgba(186,204,51,1) 37%, rgba(172,190,36,1) 91%) ;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.24) ;
     color: #000000;
     border: none;
     border-radius: 20px;
@@ -14,13 +14,13 @@
 }
 
 .button--change:hover{
-    background: rgb(159,176,33) !important;
-    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) !important;
+    background: rgb(159,176,33) ;
+    background: linear-gradient(180deg, rgba(159,176,33,1) 37%, rgba(143,158,25,1) 91%) ;
 }
 
 .button--change:active{
-    background: rgb(122,135,26) !important;
-    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important; 
+    background: rgb(122,135,26) ;
+    background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  ; 
 }
 
 .container-new-product {
@@ -53,6 +53,10 @@
     z-index: 10;
 }
 
+.container-fluid {
+    padding: 0 0 50px 0;
+}
+
 /* Color de texto en botones */
 .carousel-control-prev,
 .carousel-control-next {
@@ -82,3 +86,33 @@
 .carousel-control-prev-icon:after {
     content: '<';
 }
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 575.98px) {
+    .carousel-inner {
+        padding: 0 0 0 70px;
+    }
+    
+    .img-categorias {
+        width: 100%;
+        height: auto;
+    }
+    
+    .button--change {
+        width: 100%;
+        height: auto;
+    }
+    
+    .barra-verde {
+        font-size: 18px;
+    }
+
+    .container-fluid {
+        padding: 10px 0 0 0;
+    }
+
+}
+
+
+
+

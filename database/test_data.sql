@@ -62,27 +62,27 @@ VALUES
    
 INSERT INTO usuario_metodos_pago (tipo, numero_tarjeta, mes, anio, cvv, titular, dir_facturacion, id_cliente)
 VALUES
-    ('Debito/Crédito', '2345678901234567', 11, 26, 234, 'Roberto Mendoza', 'Calle Secundaria 321', 5),
+    ('Debito/Crédito', '2345678901234567', '11', '26', '234', 'Roberto Mendoza', 'Calle Secundaria 321', 5),
     ('Mercado Pago', '8765432109876543', NULL, NULL, NULL, 'Roberto Mendoza', 'Calle Secundaria 321', 5),
-    ('Debito/Crédito', '7890123456789012', 5, 25, 789, 'Liliana Ortiz', 'Avenida Central 654', 6),
+    ('Debito/Crédito', '7890123456789012', '05', '25', '789', 'Liliana Ortiz', 'Avenida Central 654', 6),
     ('PayPal', '2222333344445555', NULL, NULL, NULL, 'Liliana Ortiz', 'Avenida Central 654', 6),
-    ('Debito/Crédito', '3456789012345678', 10, 27, 345, 'Javier Guzmán', 'Calle Principal 432', 7),
+    ('Debito/Crédito', '3456789012345678', '10', '27', '345', 'Javier Guzmán', 'Calle Principal 432', 7),
     ('Mercado Pago', '7654321098765432', NULL, NULL, NULL, 'Javier Guzmán', 'Calle Principal 432', 7),
-    ('Debito/Crédito', '8901234567890123', 4, 26, 890, 'Gabriela Medina', 'Avenida Secundaria 765', 8),
+    ('Debito/Crédito', '8901234567890123', '04', '26', '890', 'Gabriela Medina', 'Avenida Secundaria 765', 8),
     ('PayPal', '3333444455556666', NULL, NULL, NULL, 'Gabriela Medina', 'Avenida Secundaria 765', 8),
-    ('Debito/Crédito', '4567890123456789', 9, 28, 456, 'Ricardo Castillo', 'Calle Central 543', 9),
+    ('Debito/Crédito', '4567890123456789', '09', '28', '456', 'Ricardo Castillo', 'Calle Central 543', 9),
     ('Mercado Pago', '6543210987654321', NULL, NULL, NULL, 'Ricardo Castillo', 'Calle Central 543', 9),
-    ('Debito/Crédito', '9012345678901234', 3, 27, 901, 'Patricia Romero', 'Avenida Principal 876', 10),
+    ('Debito/Crédito', '9012345678901234', '03', '27', '901', 'Patricia Romero', 'Avenida Principal 876', 10),
     ('PayPal', '4444555566667777', NULL, NULL, NULL, 'Patricia Romero', 'Avenida Principal 876', 10),
-    ('Debito/Crédito', '5678901234567890', 8, 29, 567, 'Luis Torres', 'Calle Secundaria 654', 11),
+    ('Debito/Crédito', '5678901234567890', '08', '29', '567', 'Luis Torres', 'Calle Secundaria 654', 11),
     ('Mercado Pago', '5432109876543210', NULL, NULL, NULL, 'Luis Torres', 'Calle Secundaria 654', 11),
-    ('Debito/Crédito', '6789012345678901', 7, 30, 678, 'Sofía Ruiz', 'Avenida Central 987', 12),
+    ('Debito/Crédito', '6789012345678901', '07', '30', '678', 'Sofía Ruiz', 'Avenida Central 987', 12),
     ('PayPal', '5555666677778888', NULL, NULL, NULL, 'Sofía Ruiz', 'Avenida Central 987', 12),
-    ('Debito/Crédito', '7890123456789012', 6, 31, 789, 'Daniel Moreno', 'Calle Principal 765', 13),
+    ('Debito/Crédito', '7890123456789012', '06', '31', '789', 'Daniel Moreno', 'Calle Principal 765', 13),
     ('Mercado Pago', '4321098765432109', NULL, NULL, NULL, 'Daniel Moreno', 'Calle Principal 765', 13),
-    ('Debito/Crédito', '8901234567890123', 5, 32, 890, 'Mariana Jimenez', 'Avenida Secundaria 098', 14),
+    ('Debito/Crédito', '8901234567890123', '05', '32', '890', 'Mariana Jimenez', 'Avenida Secundaria 098', 14),
     ('PayPal', '6666777788889999', NULL, NULL, NULL, 'Mariana Jimenez', 'Avenida Secundaria 098', 14),
-    ('Debito/Crédito', '9012345678901234', 4, 33, 901, 'Alejandro Perez', 'Calle Central 876', 15),
+    ('Debito/Crédito', '9012345678901234', '04', '33', '901', 'Alejandro Perez', 'Calle Central 876', 15),
     ('Mercado Pago', '3210987654321098', NULL, NULL, NULL, 'Alejandro Perez', 'Calle Central 876', 15);
 
 

@@ -36,6 +36,7 @@
 <body>
     <!-- navbar -->
 
+    <!-- navbar inicio -->
     <nav class="navbar navbar-expand-lg navbarbg">
         <div class="container-fluid">
 
@@ -46,8 +47,8 @@
             </button>
 
             <!-- Logo -->
-            <a class="navbar-brand" href="../frontend/index.html">
-                <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../public/assets/Barron On.svg" alt="Logo" width="120" height="60">
             </a>
 
             <!-- Secciones del navbar -->
@@ -55,19 +56,19 @@
                 <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="../frontend/index.html">Inicio</a>
+                            href="../../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="../frontend/src/pages/tienda.html">Tienda</a>
+                            href="./tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="../frontend/src/pages/nosotros.html">Nosotros</a>
+                            href="./nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="../frontend/src/pages/contacto.html">Contacto</a>
+                            href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
 
@@ -79,167 +80,161 @@
                 </form>
 
                 <!-- Icono de perfil -->
-                <a class="navbar-brand" href="../frontend/src/pages/perfil.html">
-                    <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
+                <a class="navbar-brand" href="./iniciar_sesion.html">
+                    <img src="../../public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
                 </a>
 
                 <!-- Icono de carrito -->
-                <a class="navbar-brand" id="carritoicon" href="../frontend/src/pages/carrito.html">
-                    <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+                <a class="navbar-brand" id="carritoicon" href="./carrito.html">
+                    <img src="../../public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
                 </a>
             </div>
         </div>
     </nav>
     <!-- Barra con texto -->
     <div class="barra-verde text-center" style="background-color: #BACC33 ">
-        <p>Perfil Direcciones</p>
+        <p>Mis Direcciones</p>
     </div>
     </div>
 
     <main>
-                <!-- Menu lateral inicio -->
-                <div class="col-lg-3">
-                    <div class="card border border-1 border-black rounded-4">
-                        <div class="card-body" style="width:310px;height:200px;">
-                            <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow"
-                                style="width:220px;">
-                                <ul class="list-group list-group-flush sidebar-list">
-                                    <a href="perfil.html" class="list-group-item list-group-item-action">Datos Generales</a>
-                                    <a href="perfil_micuenta.html" class="list-group-item list-group-item-action">Cuenta y seguridad</a>
-                                    <a href="perfil_direcciones.html" class="list-group-item list-group-item-action active active-prop">Mis direcciones</a>
-                                    <a href="perfil_metodos_de_pago.html" class="list-group-item list-group-item-action">Métodos de pago</a>
-                                </ul>
-                            </div>
-                        </div>
+        <!-- Menu lateral inicio -->
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col-lg-3">
+            <div class="card border border-1 border-black rounded-4">
+                <div class="card-body" style="width:310px;height:200px;">
+                    <div class="card d-flex flex-wrap align-content-around border border-primary border-0 bg-yellow"
+                        style="width:220px;">
+                        <ul class="list-group list-group-flush sidebar-list">
+                            <a href="perfil.html" class="list-group-item list-group-item-action">Datos Generales</a>
+                            <a href="perfil_micuenta.html" class="list-group-item list-group-item-action">Cuenta y
+                                seguridad</a>
+                            <a href="perfil_direcciones.html"
+                                class="list-group-item list-group-item-action active active-prop">Mis direcciones</a>
+                            <a href="perfil_metodos_de_pago.html" class="list-group-item list-group-item-action">Métodos
+                                de pago</a>
+                        </ul>
                     </div>
                 </div>
-            <!-- Menu lateral fin -->
+            </div>
+        </div>
+        <!-- Menu lateral fin -->
 
         <!--Menu lateral final-->
         <div class="col-lg-7">
             <div class="Card--profile border border-black rounded-4 mt-5">
                 <div class="card-body ">
-                    <article class="form ">
-                        <!--Boton de editar dirección inicio-->
-                        <article>
-                            <section>
-                                <button class="button--adress">Añadir Dirección</button>
-                            </section>
-                        </article>
-                        <!-- Botón de editar dirección fin -->
+                    <article>
+                        <section>
+                            <button class="btn--añadirpago">Añadir Dirección</button>
+                        </section>
+                    </article>
 
-                        <!--Inicia formulario 1 dirección principal-->
-                        <section><!--Aqui empieza el formulario-card-->
-                            <img src="../../public/assets/noun-adress-5245693.svg"
-                                alt="Icono de direccion" class="img-adress" width="200px">
-                            <!--Icono de ubicación-->
-                            <h2 class="default--adress">Dirección Predeterminada</h2>
-                            <section class="form-adress">
+                    <!--Aqui empieza el formulario-card-->
+                    <article class="form ">
+                        <img class="Icono-direccion" src="../../public/assets/noun-adress-5245693.svg"
+                            alt="Icono de direccion" class="img-thumbnail rounded-circle border border-2 border-black"
+                            width="200px"><!--Icono de direcciones-->
+
+                        <article><!--Inicio de formulario-->
+                            <section>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Calle</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="calle"
+                                        placeholder="Ingresa tu calle">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Num. Exterior</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    <label for="exampleFormControlInput1" class="form-label">Num.Exterior</label>
+                                    <input type="number" class="form-control" id="exterior"
+                                        placeholder="Ingresa el número exterior">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Num. Interior</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    <input type="number" class="form-control" id="interior"
+                                        placeholder="Ingresa el número interior">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Colonia</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label">Delegación/Municipio</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="number" class="form-control" id="colonia"
+                                        placeholder="Ingresa tu colonia">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="ciudad"
+                                        placeholder="Ingresa tu ciudad">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Entidad Federativa</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="entidad"
+                                        placeholder="Ingresa tu entidad Federativa">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Código Postal</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                                    <input type="text" class="form-control" id="codigo"
+                                        placeholder="Ingresa tu código postal">
                                 </div>
-                        <section>
+                            </section>
+                        </article>
+                        <!--Boton de eliminar datos -->
+                        <article>
+                            <section>
+                                <button class="delete">Eliminar</button>
+                            </section>
+                        </article>
+
+                        <h3>Dirección Alternativa </h3>
+                        <hr>
+                        <article><!--Inicio de formulario-->
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Calle</label>
+                                <input type="text" class="form-control" id="input--tipo" placeholder="Ingresa tu calle">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Num.Exterior</label>
+                                <input type="number" class="form-control" id="input--numerotarjeta"
+                                    placeholder="Ingresa el número exterior">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Num. Interior</label>
+                                <input type="number" class="form-control" id="input--mes"
+                                    placeholder="Ingresa el número interior">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Colonia</label>
+                                <input type="number" class="form-control" id="input--año"
+                                    placeholder="Ingresa tu colonia">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="input--titular"
+                                    placeholder="Ingresa tu ciudad">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Entidad Federativa</label>
+                                <input type="text" class="form-control" id="input--titular"
+                                    placeholder="Ingresa tu entidad Federativa">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Código Postal</label>
+                                <input type="text" class="form-control" id="input--titular"
+                                    placeholder="Ingresa tu código postal">
+                            </div>
+                            </section>
+                        </article>
+
+                        <!--Boton de eliminar datos -->
+                        <article>
+                            <section>
+                                <button class="delete">Eliminar</button>
+                            </section>
+                        </article>
                 </div>
-                </section>
-                <!--Termina formulario 1 dirección principal-->
-
-                <!--Inicio de botones-->
-                <article>
-                    <section>
-                        <button class="button-cancel">Cancelar</button>
-                        <button class="button-save">Guardar</button>
-                    </section>
-                </article>
-                <!--Fin de botones-->
-
-                <hr>
-                <!--Inicia segundo formulario para dirección alternativa-->
-                </article>
-                <section>
-                    <h2 class="alternate--adress">Dirección Alternativa</h2>
-                </section>
-
-                <section class="alternate--form--adress">
-
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Calle</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Num. Exterior</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Num. Interior</label>
-                        <input type="number" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Colonia</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Delegación/Municipio</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Entidad Federativa</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Código Postal</label>
-                        <input type="numer" class="form-control" id="exampleFormControlInput1">
-                    </div>
-
-                </section>
-                <!--Termina segundo formulario para dirección alternativa-->
-
-                <!--Boton de editar-->
-                <article>
-                    <section>
-                        <button class="edit--button">Editar</button>
-                    </section>
-                </article>
-            </article>
             </div>
         </div>
-    </div>
-</div>
-</div>
-</main>
+        </div>
+        </div>
+    </main>
 
 
     <!-- footer -->

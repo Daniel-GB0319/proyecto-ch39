@@ -1,6 +1,9 @@
 -- DROP DATABASE barro_db;
 
-CREATE DATABASE barro_db;
+CREATE DATABASE IF NOT EXISTS barro_db;
+
+-- Modificar base de datos existente para usar UTF-8
+ALTER DATABASE barro_db CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE `barro_db`;
 
@@ -64,9 +67,9 @@ CREATE TABLE usuario_metodos_pago
 id_metodos_pago INT NOT NULL AUTO_INCREMENT,
 tipo VARCHAR(20) NOT NULL,
 numero_tarjeta VARCHAR(16) NOT NULL,
-mes INT,
-anio INT,
-cvv INT,
+mes VARCHAR(2),
+anio VARCHAR(2),
+cvv VARCHAR(3),
 titular VARCHAR(50) NOT NULL,
 dir_facturacion TEXT NOT NULL,
 id_cliente INT NOT NULL,

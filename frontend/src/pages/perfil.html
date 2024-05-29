@@ -34,61 +34,57 @@
 </head>
 
 <body>
-    <!-- Navbar inicio -->
+    <!-- navbar inicio -->
     <nav class="navbar navbar-expand-lg navbarbg">
         <div class="container-fluid">
-
-            <!-- Botón de hamburguesa para pantallas pequeñas -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Logo -->
-            <a class="navbar-brand" href="/frontend/index.html">
-                <img src="/frontend/public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+      
+          <!-- Botón de hamburguesa para pantallas pequeñas -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Logo -->
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../../public/assets/Barron On.svg" alt="Logo" width="120" height="60">
+          </a>
+      
+          <!-- Secciones del navbar -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="../../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id='navbrcolorletras' aria-current="page" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+      
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex" role="buscar">
+              <input class="form-control me-2" type="buscar" id="inputbusquedablanco" placeholder="Buscar en Barro.On..."
+                aria-label="Buscar">
+              <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
+            </form>
+      
+            <!-- Icono de perfil -->
+            <a class="navbar-brand" href="./iniciar_sesion.html">
+              <img src="../../public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
             </a>
-
-            <!-- Secciones del navbar -->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="/frontend/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="/frontend/src/pages/tienda.html">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="/frontend/src/pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" id='navbrcolorletras' aria-current="page"
-                            href="/frontend/src/pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-
-                <!-- Formulario de búsqueda -->
-                <form class="d-flex" role="buscar">
-                    <input class="form-control me-2" type="buscar" id="inputbusquedablanco"
-                        placeholder="Buscar en Barro.On..." aria-label="Buscar">
-                    <button class="btn btn-outline-success" id="botonbuscarcolor" type="submit">Buscar</button>
-                </form>
-
-                <!-- Icono de perfil -->
-                <a class="navbar-brand" href="/frontend/src/pages/perfil.html">
-                    <img src="/frontend/public/assets/iconoperfilnavbar.webp" alt="Perfil" width="70" height="70">
-                </a>
-
-                <!-- Icono de carrito -->
-                <a class="navbar-brand" id="carritoicon" href="/frontend/src/pages/carrito.html">
-                    <img src="/frontend/public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
-                </a>
-            </div>
+      
+            <!-- Icono de carrito -->
+            <a class="navbar-brand" id="carritoicon" href="./carrito.html">
+              <img src="../../public/assets/iconocarritonavbar.webp" alt="Carrito" width="65" height="60">
+            </a>
+          </div>
         </div>
-    </nav>
+      </nav>
     <!-- Barra con texto -->
     <div class="barra-verde text-center" style="background-color: #BACC33 ">
         <p>Perfil</p>
@@ -122,7 +118,11 @@
             <div class="col-lg-7">
                 <div class="Card--profile border border-black rounded-4 mt-5">
                     <div class="card-body ">
+
+                        <article class="Form--perfil ">
+
                         <article class="form ">
+
                             <img class="Icono-Perfil" src="https://vectorified.com/images/profile-picture-icon-27.png"
                                 alt="Icono de perfil" class="img-thumbnail rounded-circle border border-2 border-black"
                                 width="200px">
@@ -154,9 +154,14 @@
                                     <input type="date" class="form-control" id="fecNacimiento">
                                 </div>
                                 <!-- Sexo -->
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Sexo</label>
-                                    <input type="text" class="form-control" id="Sexo">
+
+                                    <label for="sexo" class="form-label">Sexo</label>
+                                    <select class="form-select" id="sexo">
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                    </select>
+                            
+
                                 </div>
                                 <!-- telefono -->
                                 <div class="mb-3">
@@ -278,10 +283,10 @@
     </div>
 
     <!-- scripts -->
-    <script src="/frontend/src/scripts/perfil.js"></script>
+    <script src="../scripts/perfil.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html>–

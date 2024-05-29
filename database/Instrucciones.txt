@@ -1,0 +1,52 @@
+### Creación del contenedor de MySQL en Docker
+Para levantar una base de datos en MySQL con un contenedor de Docker, realizar los siguientes pasos,
+aclarando que deben sustituir <nombre-imagen> y <nombre-contenedor> con nombres descriptivos de su 
+elección (yo sugiero "mysql-image" para la imagen y "barro-db-container" para el contenedor, pero 
+puede ser cualquiera) :
+
+1) Descargar e instalar Docker Desktop si aun no lo tienen (https://www.docker.com/products/docker-desktop/)
+
+2) Abrir una terminal y moverse al directorio actual (./proyecto-ch39/database)
+
+3) Crear una imagen de MySQL con los scripts de SQL a partir del dockerfile.yaml (script para Docker) 
+   utilizando el comando: 
+    - " docker build -t <nombre-imagen> . "
+
+4) Crear un contenedor a partir de la imagen creada con el comando: 
+    - " docker run --name <nombre-contenedor> -p 3306:3306 -d <nombre-imagen> "
+
+Realizados los pasos anteriores ya se tiene un contenedor con MySQL funcionando y listo para poder conectarse 
+y realizar distintas pruebas (Workbench, DBeaver, Spring Boot, etc.). 
+
+Dicho contenedor ya tiene cargados y ejecutados los scripts para crear la base de datos (barro_db.sql) y 
+llenar con datos de ejemplo (test_data.sql).
+
+
+### Comandos útiles para Docker
+Aquí hay unos comandos que les pueden servir para manejar los contenedores:
+
+* Verificar si un contenedor esta activo o ejecutándose : 
+    - " docker ps "
+
+* Obtener una lista de todas las imágenes de Docker en sus maquinas:
+    - "docker images"
+
+* Obtener lista de todos los contenedores creados (activos e inactivos):
+    - "docker ps -a"
+
+* Para obtener IP y Puerto del contenedor para realizar la conexión en Workbench u otros lados :
+    - IP: " docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <nombre-contenedor> " 
+    
+    - Puerto: " docker inspect -f '{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}' <nombre-contenedor> "
+
+* Para detener o apagar el contenedor: 
+    - " docker stop <nombre-contenedor> "
+
+* Para iniciar o reactivar el contenedor: 
+    - "docker start <nombre-contenedor> "
+
+* Para borrar el contenedor: 
+    - "docker rm <nombre-contenedor> "
+
+* Para borrar una imagen: 
+    - "docker image rm <nombre-imagen> "

@@ -77,7 +77,7 @@ box-shadow: #333;
     background: rgb(122,135,26) !important;
     background: linear-gradient(180deg, rgba(122,135,26,1) 37%, rgba(76,84,11,1) 91%)  !important;
  }
- 
+
   .subnavbar {
     background-color: #333;
     overflow: hidden;
@@ -99,6 +99,7 @@ box-shadow: #333;
     color: black;
   }
   
+
   /* Estilos para el menú desplegable */
   .dropdown {
     float: left;

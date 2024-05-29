@@ -99,4 +99,6 @@ document.getElementById ('direccionesForm').addEventListener('submit', function(
         document.getElementById('direccionesForm').reset();
         
     }
+
 });
+
