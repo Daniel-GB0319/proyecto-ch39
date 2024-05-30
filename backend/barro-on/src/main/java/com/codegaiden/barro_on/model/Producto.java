@@ -28,7 +28,7 @@ import jakarta.persistence.Table;
     5) @Column es para indicar el nombre de la columna en la tabla de SQL.
 */
 
-//Getter y Setter generadps por Lombok
+//Getter y Setter generadas por Lombok
 @Getter
 @Setter
 @Entity
