@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Getter;
 import lombok.Setter;
-
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -73,8 +73,9 @@ public class Producto {
    @JoinColumn(name = "id_categoria")
    private Categoria categorias;
 
-   @OneToMany(mappedBy = "Producto")  
-    @JsonIgnore
-    private Set<ProductoIma> productoima;
+
+   @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL)
+   @JsonIgnore
+   private Set<ProductoIma> productoima;
 
 }
