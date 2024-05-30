@@ -1,4 +1,6 @@
 package com.codegaiden.barro_on.model;
+import java.util.Set;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Getter;
@@ -11,6 +13,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 
@@ -69,5 +72,9 @@ public class Producto {
    //@JsonIgnore
    @JoinColumn(name = "id_categoria")
    private Categoria categorias;
+
+   @OneToMany(mappedBy = "Producto")  
+    @JsonIgnore
+    private Set<ProductoIma> productoima;
 
 }
