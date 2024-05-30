@@ -5,12 +5,14 @@ import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -35,7 +37,7 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pedido")
-    private Long idPedido;
+    private Long id;
 
     @Column(name = "fecha_pedido")
     private Date fecPedido;
@@ -43,20 +45,22 @@ public class Pedido {
     @Column(name = "costo_total")
     private float costTotal;
    
-    // @Column(name = "id_usuario")
-    // private Long idUsuario;
-
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name ="pedido_producto",
+    joinColumns = @JoinColumn(name = "id_pedido"),
+    inverseJoinColumns = @JoinColumn(name = "id_producto",
+    referencedColumnName="id"))
     @JsonIgnore
-    @JoinColumn(name = "id_producto",nullable = false)
-    Set<productos> productospedido;
-
-    // @Column(name = "id_status")
-    // private Long idStatus;
+     private  Set<Producto> producto;
 
     @ManyToOne
     @JsonIgnore
     @JoinColumn(name= "id_estatus",nullable=false)
     private Estatus estatus;
+
+    public void setIdUsuario(Long idUsuarios) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setIdUsuario'");
+    }
     
     }

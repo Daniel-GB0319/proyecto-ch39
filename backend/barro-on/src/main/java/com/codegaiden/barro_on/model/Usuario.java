@@ -1,6 +1,9 @@
 package com.codegaiden.barro_on.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import jakarta.persistence.CascadeType;
@@ -20,6 +23,10 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 // Getter y Setter generados por Lombok
 @Getter
 @Setter
+// @Data
+// @Builder
+// @AllArgsConstructor
+// @NoArgsConstructor
 @Entity
 @Table(name = "usuario")
 

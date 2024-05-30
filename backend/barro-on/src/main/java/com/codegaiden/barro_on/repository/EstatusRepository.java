@@ -2,6 +2,8 @@ package com.codegaiden.barro_on.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EstatusRepository extends JpaRepository<EstatusRepository, Long>{
+import com.codegaiden.barro_on.model.Estatus;
+
+public interface EstatusRepository extends JpaRepository<Estatus, Long>{
     
 }
