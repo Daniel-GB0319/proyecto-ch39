@@ -16,7 +16,7 @@ async function validarCampos() {
     // Solo proceder si ambos campos no están vacíos
     if (email && password) {
         try {
-            const response = await axios.post('http://localhost:8080/api/usuarios', { email, password }); // Enviar el correo electrónico y la contraseña a la API utilizando Axios
+            const response = await axios.post('http://localhost:8080/api/usuarios/login', { correo, contrasena }); // Enviar el correo electrónico y la contraseña a la API utilizando Axios
 
             if (response.status === 200) { // Si la respuesta es satisfactoria
                 const data = response.data; // Obtener los datos de la respuesta
