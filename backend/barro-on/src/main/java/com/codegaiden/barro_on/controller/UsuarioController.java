@@ -3,6 +3,8 @@ package com.codegaiden.barro_on.controller;
 import com.codegaiden.barro_on.model.LoginData;
 import com.codegaiden.barro_on.model.Usuario;
 import com.codegaiden.barro_on.service.UsuarioService;
+import com.fasterxml.jackson.annotation.JsonView;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,24 +22,28 @@ public class UsuarioController {
 
     // Obtener todos los usuarios
     @GetMapping
+    @JsonView(Usuario.VistaGet.class)
     public List<Usuario> getAllUsuarios() {
         return usuarioService.getAllUsuarios();
     }
 
     // Crear un usuario
     @PostMapping
+    @JsonView(Usuario.VistaPostPut.class)
     public Usuario createUsuario(@RequestBody Usuario usuario) {
         return usuarioService.postUsuario(usuario);
     }
 
     // Obtener un usuario por id
     @GetMapping("/{id}")
+    @JsonView(Usuario.VistaGet.class)
     public Usuario getUsuario(@PathVariable Long id) {
         return usuarioService.getUsuario(id);
     }
 
     // Actualizar un usuario por id
     @PutMapping("/{id}")
+    @JsonView(Usuario.VistaPostPut.class)
     public Usuario updateUsuario(@PathVariable Long id, @RequestBody Usuario usuario) {
         return usuarioService.updateUsuario(id, usuario);
     }
@@ -49,6 +55,7 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
+    @JsonView(Usuario.VistaPostPut.class)
     public ResponseEntity<Long> login(@RequestBody LoginData loginData) {
         Long id = usuarioService.login(loginData.getCorreo(), loginData.getContrasena());
         if (id != null) {

@@ -18,7 +18,7 @@ public class CorsGlobalConfig {
                         .allowedOrigins("*") // Permite acceso desde cualquier origen (http://172.0.0.1/8080...)
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*") // Permite todos los headers (content-type/json, etc)
-                        .allowCredentials(true) // Permite credenciales
+                        .allowCredentials(false) // Permite credenciales
                         .maxAge(3600); // Tiempo máximo que se pueden cachear las respuestas de preflight
             }
         };
