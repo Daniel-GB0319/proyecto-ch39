@@ -44,6 +44,23 @@ function productosfalsosAleatorios(){
     ];
 
     //guardar los productos aleatorios en ls
-    localStorage.setItem("productos", JSON.stringify(productos));
+    
+    const url = `https://barro-on.onrender.com/api/productos`;
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(productos)
+    })
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log('Guardado', data)
+        })
+        .catch(error => {
+            console.error(error);
+        })
 
 }
