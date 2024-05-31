@@ -1,4 +1,4 @@
-document.getElementById('direccionesForm').addEventListener('submit', function(event) {
+document.getElementById('metodosPago').addEventListener('submit', function(event) {
     event.preventDefault();
 
     document.querySelectorAll('.alert').forEach(alert => alert.remove());
@@ -56,7 +56,26 @@ document.getElementById('direccionesForm').addEventListener('submit', function(e
 
         console.log(JSON.stringify(tarjetaInfo));
 
-        document.getElementById('direccionesForm').reset();
+        document.getElementById('metodosPago').reset();
     }
+
+    const url = `https://barro-on.onrender.com/api/usuarios/{idUsuario}/metodosPago`;
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(tarjetaInfo)
+    })
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log('Guardado', data)
+        })
+        .catch(error => {
+            console.error(error);
+        })
+
 });
 

@@ -33,7 +33,9 @@ public class UsuarioService {
             throw new IllegalArgumentException("El correo ya existe");
         }
 
-        // Si el correo no existe, guardar el nuevo usuario
+        String contrasenaHash = hashPassword(usuario.getContrasena());
+        usuario.setContrasena(contrasenaHash);
+
         return usuarioRepository.save(usuario);
     }
 
@@ -68,8 +70,7 @@ public class UsuarioService {
         usuarioRepository.deleteById(id);
     }
 
-
-
+    // Login de un usuario
     public Long login(String correo, String contrasenaIngresada) {
         Usuario usuario = usuarioRepository.findByCorreo(correo);
         if (usuario != null && checkPassword(contrasenaIngresada, usuario.getContrasena())) {
@@ -78,16 +79,21 @@ public class UsuarioService {
         return null;
     }
 
-    private boolean checkPassword(String contrasenaIngresada, String contrasenaHash) {
+    // Método para crear el hash de la contraseña
+    public String hashPassword(String password) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
-            byte[] hash = md.digest(contrasenaIngresada.getBytes(StandardCharsets.UTF_8));
-            String contrasenaIngresadaHash = Hex.encodeHexString(hash);
-            return contrasenaIngresadaHash.equals(contrasenaHash);
+            byte[] hash = md.digest(password.getBytes(StandardCharsets.UTF_8));
+            return Hex.encodeHexString(hash);
         } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException(e);
         }
-}
+    }
 
-    
+    // Metodo para comparar contraseñas en login
+    private boolean checkPassword(String contrasenaIngresada, String contrasenaHash) {
+        String contrasenaIngresadaHash = hashPassword(contrasenaIngresada);
+        return contrasenaIngresadaHash.equals(contrasenaHash);
+    }
+
 }

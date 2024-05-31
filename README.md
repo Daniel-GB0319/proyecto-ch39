@@ -86,7 +86,7 @@ Para asegurar un funcionamiento óptimo de nuestra ecommerce, sugerimos cumplir 
 
 
 ## Funcionamiento
-Para utilizar nuestra plataforma, puede visitar nuestro [Sitio Web Oficial](https://cdn.dribbble.com/users/10336/screenshots/2607763/404-chicken.gif) en su navegador web de confianza desde cualquier computadora de escritorio o dispositivo móvil compatible.
+Para utilizar nuestra plataforma, puede visitar nuestro [Sitio Web](https://barro-on.onrender.com) en su navegador web de confianza desde cualquier computadora de escritorio o dispositivo móvil compatible.
 
 <!-- PONER OPCIONES PARA DESARROLLADORES (GIT CLONE, ABRIR INDEX.HTML, INSTALAR MYSQL, ETC) -->
 Si desea probar el sistema de manera local para cuestiones de desarrollo y testing, puede realizar los siguientes pasos:
@@ -101,7 +101,7 @@ Si desea probar el sistema de manera local para cuestiones de desarrollo y testi
 
 ## Contactanos
 Para contactarnos puedes mandar un email a ***correo@example.com*** o visitar nuestra redes oficiales: (Links de ejemplo, falta poner los reales)
-  - [Facebook](https://cdn.svgator.com/images/2024/04/walking-investigator-animation-in-404-error-page.gif)
+  - [Facebook](https://cdn.dribbble.com/users/10336/screenshots/2607763/404-chicken.gif)
   - [X (Twitter)](https://cdn.dribbble.com/users/1138875/screenshots/4669703/404_animation.gif)
   - [Instagram](https://www.scopycode.com/includes/images/blog/error_404.gif)
   - [Discord](https://freefrontend.com/assets/img/html-funny-404-pages/SVG-Animation-404-Page.gif)

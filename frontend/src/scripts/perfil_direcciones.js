@@ -101,6 +101,29 @@ document.getElementById ('direccionesForm').addEventListener('submit', function(
         document.getElementById('direccionesForm').reset();
         
     }
+
+    const url = `https://barro-on.onrender.com/api/usuarios/{idUsuario}/direcciones`;
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(direccion)
+    })
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log('Guardado', data)
+        })
+        .catch(error => {
+            console.error(error);
+        })
+
+    
+
+
+
 });
 
 
