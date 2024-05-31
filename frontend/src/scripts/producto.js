@@ -34,8 +34,16 @@ document.addEventListener("DOMContentLoaded", function() {
           updatePrincipalImage(0);
         }
       })
-      .catch(error => console.error('Error fetching product details:', error));
+      .catch(error => {
+        console.error('Error fetching product details:', error);
+        showDefaultImage();
+      });
   } else {
+    showDefaultImage();
+  }
+
+  function showDefaultImage() {
+    document.getElementById('principal-img').src = '../../public/assets/default-image.jpg';
     document.querySelector('.product-detail').innerHTML = '<p>Producto no encontrado.</p>';
   }
 
