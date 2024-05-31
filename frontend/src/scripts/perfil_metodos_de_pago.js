@@ -1,4 +1,4 @@
-document.getElementById('direccionesForm').addEventListener('submit', function(event) {
+document.getElementById('metodosPago').addEventListener('submit', function(event) {
     event.preventDefault();
 
     document.querySelectorAll('.alert').forEach(alert => alert.remove());
@@ -56,7 +56,7 @@ document.getElementById('direccionesForm').addEventListener('submit', function(e
 
         console.log(JSON.stringify(tarjetaInfo));
 
-        document.getElementById('direccionesForm').reset();
+        document.getElementById('metodosPago').reset();
     }
 });
 
