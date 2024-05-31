@@ -124,7 +124,7 @@ FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 
 CREATE TABLE producto_imagen
 (
-id_imagen INT NOT NULL,
+id_imagen INT NOT NULL AUTO_INCREMENT,
 id_producto INT NOT NULL,
 imagen_url VARCHAR(2083)  NOT NULL,
 PRIMARY KEY (id_imagen, id_producto),
@@ -141,15 +141,5 @@ BEGIN
 THEN
     INSERT INTO carrito(id_cliente) VALUES (NEW.id_usuario);
     END IF;
-END;//
-DELIMITER ;
-
--- Almacena la contraseña con un hash Sha256 de la cadena ingresada en lugar de la cadena en si misma
-DELIMITER //
-CREATE TRIGGER before_insert_usuario
-BEFORE INSERT ON usuario
-FOR EACH ROW
-BEGIN
-   SET NEW.contrasena = SHA2(NEW.contrasena, 256);
 END;//
 DELIMITER ;

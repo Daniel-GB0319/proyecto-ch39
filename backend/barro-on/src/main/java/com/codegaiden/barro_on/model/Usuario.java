@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 // Getter y Setter generados por Lombok
 @Getter
@@ -26,53 +27,71 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 // Clase para representar la tabla de SQL de usuarios
 public class Usuario {
 
+  // Define una vista para las solicitudes GET
+  public interface VistaGet {
+  }
+
+  // Define una vista para las solicitudes POST/PUT
+  public interface VistaPostPut {
+  }
+
   // ID de la tabla
   @Id
   // Estrategia de Spring Boot 3 para indicar que MySQL se encarga de los ID
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @JsonView(VistaGet.class)
   @Column(name = "id_usuario")
   private Long id;
 
-  @Column(name = "nombre")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "nombre", nullable = false, length = 20)
   private String nombre;
 
-  @Column(name = "ap_paterno")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "ap_paterno", nullable = false, length = 20)
   private String apPaterno;
 
-  @Column(name = "ap_materno")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "ap_materno", nullable = false, length = 20)
   private String apMaterno;
 
-  @Column(name = "sexo")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "sexo", nullable = false)
   private char sexo;
 
-  @Column(name = "fec_nac")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "fec_nac", nullable = false)
   private Date fecNac;
 
-  @Column(name = "correo")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "correo", nullable = false, length = 30)
   private String correo;
 
-  @Column(name = "contrasena")
+  @JsonView(VistaPostPut.class)
+  @Column(name = "contrasena", nullable = false, length = 64)
   private String contrasena;
 
-  @Column(name = "telefono")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "telefono", nullable = false, length = 15)
   private String telefono;
 
-  @Column(name = "tipo_usuario")
+  @JsonView({VistaPostPut.class, VistaGet.class})
+  @Column(name = "tipo_usuario", nullable = false, length = 10)
   private String tipoUsuario;
 
-  // Relacion uno a muchos con borrado en cascada
+  // Relación uno a muchos con borrado en cascada
   @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
   // Evita recursividad con JSON de usuario y direcciones
   @JsonIgnore
   private Set<Direccion> direccion;
 
-  // Relacion uno a muchos con borrado en cascada
+  // Relación uno a muchos con borrado en cascada
   @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
   // Evita recursividad con JSON de usuario y pagos
   @JsonIgnore
   private Set<Pagos> pagos;
 
-  //Relacion de uno a muchos con borrado en cascada
+  // Relación de uno a muchos con borrado en cascada
   @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
   // Evita recursividad con JSON de usuario y productos
   @JsonIgnore

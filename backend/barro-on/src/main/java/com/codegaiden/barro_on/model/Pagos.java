@@ -1,6 +1,7 @@
 package com.codegaiden.barro_on.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -19,32 +20,49 @@ import lombok.Setter;
 @Entity
 @Table(name = "usuario_metodos_pago")
 public class Pagos {
+
+     // Define una vista para las solicitudes GET
+  public interface VistaGet {
+}
+
+// Define una vista para las solicitudes POST/PUT
+public interface VistaPostPut {
+}
+
     // ID de la tabla
     @Id
     // Estrategia Identity para indicar que MySQL se encarga de generar ID
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonView(VistaGet.class)
     @Column(name = "id_metodos_pago")
     private Long id;
 
-    @Column(name = "tipo")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "tipo", nullable = false, length = 20)
     private String tipo;
 
-    @Column(name = "numero_tarjeta")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "numero_tarjeta", nullable = false, length = 16)
     private String numeroTarjeta;
 
-    @Column(name = "mes")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "mes", length = 2)
     private String mes;
 
-    @Column(name = "anio")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "anio", length = 2)
     private String anio;
 
-    @Column(name = "cvv")
+    @JsonView(VistaPostPut.class)
+    @Column(name = "cvv", length = 3)
     private String cvv;
 
-    @Column(name = "titular")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "titular", nullable = false, length = 50)
     private String titular;
 
-    @Column(name = "dir_facturacion")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "dir_facturacion", nullable = false, length = 80)
     private String dirFacturacion;
 
     // Relación Muchos a uno
