@@ -1,83 +1,63 @@
 package com.codegaiden.barro_on.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.codegaiden.barro_on.model.ProductoIma;
 import com.codegaiden.barro_on.model.Producto;
+import com.codegaiden.barro_on.model.ProductoIma;
 import com.codegaiden.barro_on.repository.ProductoImaRepository;
 import com.codegaiden.barro_on.repository.ProductoRepository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class ProductoImaService {
-    
+
     @Autowired
     private ProductoImaRepository productoImaRepository;
 
     @Autowired
     private ProductoRepository productoRepository;
 
-   //Obtener todas las imagenes de un producto
+    // Obtener todas las imágenes de un producto
     public List<ProductoIma> getAllProductosIma(Long idProducto) {
-      //Verificamos que el producto ingresado exista
-      Producto producto = productoRepository.findById(idProducto).orElse(null);
-      if (producto!=null) {
-          //Si el producto existe, regresa todas las imagenes asociadas
-          return new ArrayList <> (producto.getProductoima());
-      }
-      //Retorna null si el producto ingresado no existe (se podría cambiar por una exception)
-      return null;
+        Producto producto = productoRepository.findById(idProducto)
+                .orElseThrow(() -> new IllegalArgumentException("El producto no existe"));
+        return new ArrayList<>(producto.getProductoima());
     }
 
-    //Obtener una imagen de un producto
+    // Obtener una imagen de un producto
     public ProductoIma getProductoIma(Long idProducto, Long idProductoIma) {
-        //Verificamos que el producto ingresado exista
-        Producto producto = productoRepository.findById(idProducto).orElse(null);
-        if (producto!=null) {
-            //Imagen ingresada existe
-            return productoImaRepository.findById(idProductoIma).orElse(null);
-        }
-        //Retorna null si el producto ingresado no existe (se podría cambiar por una exception)
-        return null;
+        Producto producto = productoRepository.findById(idProducto)
+                .orElseThrow(() -> new IllegalArgumentException("El producto no existe"));
+        return productoImaRepository.findById(idProductoIma)
+                .orElseThrow(() -> new IllegalArgumentException("La imagen no existe"));
     }
 
-
-    //Crear una imagen del producto
+    // Crear una imagen del producto
     public ProductoIma createProductoIma(Long idProducto, ProductoIma productoIma) {
-        //Verificamos que el producto ingresado exista
-        Producto producto = productoRepository.findById(idProducto).orElse(null);
-        if (producto!=null) {
-            productoIma.setProducto(producto);
-            return productoImaRepository.save(productoIma);
-        }
-        //Retorna null si el producto ingresado no existe (se podría cambiar por una exception)
-        return null;
-    }
-    
-    //Actualizar una imagen de un producto
-    public ProductoIma putProductoIma(Long idProducto, Long idProductoIma, ProductoIma productoImaDetails) {
-        //Verificamos que el producto ingresado exista
-        Producto producto = productoRepository.findById(idProducto).orElse(null);
-        if (producto!=null) {
-            ProductoIma productoIma = productoImaRepository.findById(idProductoIma).orElse(null);
-            if (productoIma!=null) {
-                productoIma.setImagenUrl(productoImaDetails.getImagenUrl());
-                return productoImaRepository.save(productoIma);
-            }
-        }
-        //Retorna null si el producto ingresado no existe (se podría cambiar por una exception)
-        return null;
+        Producto producto = productoRepository.findById(idProducto)
+                .orElseThrow(() -> new IllegalArgumentException("El producto no existe"));
+        productoIma.setProducto(producto);
+        return productoImaRepository.save(productoIma);
     }
 
-    //Eliminar una imagen de un producto
+    // Actualizar una imagen de un producto
+    public ProductoIma updateProductoIma(Long idProducto, Long idProductoIma, ProductoIma productoImaDetails) {
+        Producto producto = productoRepository.findById(idProducto)
+                .orElseThrow(() -> new IllegalArgumentException("El producto no existe"));
+        ProductoIma productoIma = productoImaRepository.findById(idProductoIma)
+                .orElseThrow(() -> new IllegalArgumentException("La imagen no existe"));
+        productoIma.setImagenUrl(productoImaDetails.getImagenUrl());
+        return productoImaRepository.save(productoIma);
+    }
+
+    // Eliminar una imagen de un producto
     public void deleteProductoIma(Long idProducto, Long idProductoIma) {
-        //Elimina la imagen de la producto
+        Producto producto = productoRepository.findById(idProducto)
+                .orElseThrow(() -> new IllegalArgumentException("El producto no existe"));
         productoImaRepository.deleteById(idProductoIma);
     }
-        
-
-
 }
+

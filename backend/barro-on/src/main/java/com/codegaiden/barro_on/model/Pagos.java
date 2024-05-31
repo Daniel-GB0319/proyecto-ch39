@@ -38,31 +38,31 @@ public interface VistaPostPut {
     private Long id;
 
     @JsonView({VistaPostPut.class, VistaGet.class})
-    @Column(name = "tipo")
+    @Column(name = "tipo", nullable = false, length = 20)
     private String tipo;
 
     @JsonView({VistaPostPut.class, VistaGet.class})
-    @Column(name = "numero_tarjeta")
+    @Column(name = "numero_tarjeta", nullable = false, length = 16)
     private String numeroTarjeta;
 
     @JsonView({VistaPostPut.class, VistaGet.class})
-    @Column(name = "mes")
+    @Column(name = "mes", length = 2)
     private String mes;
 
     @JsonView({VistaPostPut.class, VistaGet.class})
-    @Column(name = "anio")
+    @Column(name = "anio", length = 2)
     private String anio;
 
     @JsonView(VistaPostPut.class)
-    @Column(name = "cvv")
+    @Column(name = "cvv", length = 3)
     private String cvv;
 
     @JsonView({VistaPostPut.class, VistaGet.class})
-    @Column(name = "titular")
+    @Column(name = "titular", nullable = false, length = 50)
     private String titular;
 
     @JsonView({VistaPostPut.class, VistaGet.class})
-    @Column(name = "dir_facturacion")
+    @Column(name = "dir_facturacion", nullable = false, length = 80)
     private String dirFacturacion;
 
     // Relación Muchos a uno

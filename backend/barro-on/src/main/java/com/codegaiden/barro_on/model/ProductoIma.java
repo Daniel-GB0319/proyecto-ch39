@@ -3,6 +3,7 @@ package com.codegaiden.barro_on.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -21,12 +22,23 @@ import lombok.Setter;
 @Entity
 @Table(name = "producto_imagen")
 public class ProductoIma {
+
+    // Define una vista para las solicitudes GET
+    public interface VistaGet {
+    }
+
+// Define una vista para las solicitudes POST/PUT
+    public interface VistaPostPut {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonView(VistaGet.class)
     @Column(name = "id_imagen")
     private Long id;
 
-    @Column(name = "imagen_url")
+    @JsonView({VistaPostPut.class, VistaGet.class})
+    @Column(name = "imagen_url", nullable = false, length = 2083)
     private String imagenUrl;
    
     //Relacion de Muchos a uno

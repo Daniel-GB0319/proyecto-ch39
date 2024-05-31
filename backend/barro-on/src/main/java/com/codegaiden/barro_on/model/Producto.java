@@ -2,6 +2,7 @@ package com.codegaiden.barro_on.model;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -36,26 +37,41 @@ import jakarta.persistence.Table;
 
 // Clase para representar  la tabla de SQL de producto
 public class Producto {
+
+   // Define una vista para las solicitudes GET
+  public interface VistaGet {
+}
+
+// Define una vista para las solicitudes POST/PUT
+public interface VistaPostPut {
+}
+
    //ID de la tabla
    @Id
    //Para indicar que MySql se encarga de los ID
    @GeneratedValue(strategy = GenerationType.IDENTITY)
+   @JsonView(VistaGet.class)
    @Column(name = "id_producto")
    private Long id;
 
-   @Column(name = "nombre")
+   @JsonView({VistaPostPut.class, VistaGet.class})
+   @Column(name = "nombre", nullable = false, length = 30)
    private String nombre;
 
-   @Column(name = "descripcion")
+   @JsonView({VistaPostPut.class, VistaGet.class})
+   @Column(name = "descripcion", nullable = false, length = 50)
    private String descripcion;
 
-   @Column(name = "precio")
+   @JsonView({VistaPostPut.class, VistaGet.class})
+   @Column(name = "precio", nullable = false)
    private Double precio;
 
-   @Column(name = "cantidad")
+   @JsonView({VistaPostPut.class, VistaGet.class})
+   @Column(name = "cantidad",nullable = false)
    private Integer cantidad;
 
-   @Column(name = "descuento")
+   @JsonView({VistaPostPut.class, VistaGet.class})
+   @Column(name = "descuento", nullable = false)
    private Double descuento;
     
    //Relación de Muchos a uno
