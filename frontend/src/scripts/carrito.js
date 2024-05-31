@@ -55,6 +55,9 @@ function mostrarProductosEnCarrito() {
     li.appendChild(productoContainer);
     carritoElemento.appendChild(li);
   });
+
+  
+
 }
 
 mostrarProductosEnCarrito();
