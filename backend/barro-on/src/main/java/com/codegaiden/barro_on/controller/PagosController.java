@@ -27,28 +27,28 @@ public class PagosController {
 
     // Obtener todos los métodos de pago de un usuario
     @GetMapping
-     @JsonView(Usuario.VistaGet.class)
+     @JsonView(Pagos.VistaGet.class)
     public List<Pagos> getAllPagos(@PathVariable Long idUsuario) {
         return pagoService.getAllPagos(idUsuario);
     }
 
     // Obtener un método de pago en especifico
     @GetMapping("/{idMetodoPago}")
-    @JsonView(Usuario.VistaGet.class)
+    @JsonView(Pagos.VistaGet.class)
     public Pagos getPago(@PathVariable Long idUsuario, @PathVariable Long idMetodoPago) {
         return pagoService.getPago(idUsuario, idMetodoPago);
     }
 
     // Crear un método de pago para un usuario
     @PostMapping
-    @JsonView(Usuario.VistaPostPut.class)
+    @JsonView(Pagos.VistaPostPut.class)
     public Pagos postPago(@PathVariable Long idUsuario, @RequestBody Pagos pago) {
         return pagoService.createPago(idUsuario, pago);
     }
 
     // Actualizar un método de pago de un usuario
     @PutMapping("/{idMetodoPago}")
-    @JsonView(Usuario.VistaPostPut.class)
+    @JsonView(Pagos.VistaPostPut.class)
     public Pagos putPagos(@PathVariable Long idUsuario, @PathVariable Long idMetodoPago,
             @RequestBody Pagos pago) {
         return pagoService.putPago(idUsuario, idMetodoPago, pago);
