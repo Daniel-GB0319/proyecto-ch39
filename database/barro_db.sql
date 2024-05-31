@@ -124,7 +124,7 @@ FOREIGN KEY (id_producto) REFERENCES producto(id_producto)
 
 CREATE TABLE producto_imagen
 (
-id_imagen INT NOT NULL,
+id_imagen INT NOT NULL AUTO_INCREMENT,
 id_producto INT NOT NULL,
 imagen_url VARCHAR(2083)  NOT NULL,
 PRIMARY KEY (id_imagen, id_producto),

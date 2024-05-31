@@ -96,3 +96,17 @@ VALUES
     ('Candelabro de alfarería', 'Candelabro de estilo mexicano para velas.', 24.99, 25, NULL, 2, 2),
     ('Plato hondo de barro', 'Plato profundo ideal para sopas y guisos.', 34.99, 40, NULL, 1, 3),
     ('Florero de cerámica', 'Florero decorativo para arreglos florales.', 44.99, 18, NULL, 3, 4);
+
+INSERT INTO producto_imagen(id_producto, imagen_url)
+VALUES
+    (1,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (1,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (2,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (2,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (2,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (3,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (4,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (5,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (5,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (5,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg"),
+    (6,"https://elsouvenir.com/wp-content/uploads/2016/10/Barro-Mexicano-Angelica-Portales-01.jpg");
