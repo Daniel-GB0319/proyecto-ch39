@@ -44,39 +44,39 @@ public class Usuario {
   private Long id;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "nombre")
+  @Column(name = "nombre", nullable = false, length = 20)
   private String nombre;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "ap_paterno")
+  @Column(name = "ap_paterno", nullable = false, length = 20)
   private String apPaterno;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "ap_materno")
+  @Column(name = "ap_materno", nullable = false, length = 20)
   private String apMaterno;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "sexo")
+  @Column(name = "sexo", nullable = false)
   private char sexo;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "fec_nac")
+  @Column(name = "fec_nac", nullable = false)
   private Date fecNac;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "correo")
+  @Column(name = "correo", nullable = false, length = 30)
   private String correo;
 
   @JsonView(VistaPostPut.class)
-  @Column(name = "contrasena")
+  @Column(name = "contrasena", nullable = false, length = 64)
   private String contrasena;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "telefono")
+  @Column(name = "telefono", nullable = false, length = 15)
   private String telefono;
 
   @JsonView({VistaPostPut.class, VistaGet.class})
-  @Column(name = "tipo_usuario")
+  @Column(name = "tipo_usuario", nullable = false, length = 10)
   private String tipoUsuario;
 
   // Relación uno a muchos con borrado en cascada
