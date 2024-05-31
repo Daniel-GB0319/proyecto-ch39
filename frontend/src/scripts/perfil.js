@@ -97,4 +97,27 @@ if (!fechaNacimientoRegex.test(fecNacimiento)) {
             //Limpiamos formulario
             document.getElementById('perfilForm').reset();
                }
+
+        const url = "";
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log('Guardado', data)
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    
+
+
+
     });

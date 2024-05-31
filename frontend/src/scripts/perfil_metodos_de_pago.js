@@ -58,5 +58,24 @@ document.getElementById('metodosPago').addEventListener('submit', function(event
 
         document.getElementById('metodosPago').reset();
     }
+
+    const url = "";
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(tarjetaInfo)
+    })
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log('Guardado', data)
+        })
+        .catch(error => {
+            console.error(error);
+        })
+
 });
 
