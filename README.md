@@ -54,7 +54,7 @@ El equipo de desarrollo de esta plataforma esta compuesto por los siguientes int
   - Correo Electrónico: duarlo@yandex.com
   - [Perfil de LinkedIn](www.linkedin.com/in/duarlo)
 - Montserrat Pérez García
-  - Correo Electrónico: 
+  - Correo Electrónico: montse.perez099@gmail.com
   - [Perfil de LinkedIn](https://www.linkedin.com/in/montserrat-p%C3%A9rez/)
 - Lino Alberto Aguilar Cano
   - Correo Electrónico: 
