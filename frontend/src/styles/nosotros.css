@@ -210,5 +210,9 @@ text-align: justify;
 
 .barra-verde{ /*Estilos para la barra verde abajo del nav-bar*/
     font-size: 24px;
-    color: black;
+    background-color:  #BACC33;
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 0%;
+    
 }
