@@ -71,4 +71,25 @@ if (!emailRegex.test(email)){
             document.getElementById('registroForm').reset();
         
         }
+
+        const url = `https://barro-on.onrender.com/api/usuarios`;
+        
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                console.log('Guardado', data)
+            })
+            .catch(error => {
+                console.error(error);
+            })
     }); 
+
+

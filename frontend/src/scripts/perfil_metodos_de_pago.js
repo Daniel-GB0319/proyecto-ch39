@@ -59,7 +59,7 @@ document.getElementById('metodosPago').addEventListener('submit', function(event
         document.getElementById('metodosPago').reset();
     }
 
-    const url = "";
+    const url = `https://barro-on.onrender.com/api/usuarios/{idUsuario}/metodosPago`;
     fetch(url, {
         method: 'POST',
         headers: {

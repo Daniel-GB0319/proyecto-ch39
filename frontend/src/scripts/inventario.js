@@ -45,9 +45,9 @@ function productosfalsosAleatorios(){
 
     //guardar los productos aleatorios en ls
     
-    const url = "";
+    const url = `https://barro-on.onrender.com/api/productos`;
     fetch(url, {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json'
         },

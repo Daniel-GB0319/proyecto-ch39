@@ -102,7 +102,7 @@ document.getElementById ('direccionesForm').addEventListener('submit', function(
         
     }
 
-    const url = "";
+    const url = `https://barro-on.onrender.com/api/usuarios/{idUsuario}/direcciones`;
     fetch(url, {
         method: 'POST',
         headers: {

@@ -98,7 +98,7 @@ if (!fechaNacimientoRegex.test(fecNacimiento)) {
             document.getElementById('perfilForm').reset();
                }
 
-        const url = "";
+        const url = "https://barro-on.onrender.com/api/usuarios";
 
         fetch(url, {
             method: 'POST',
@@ -116,8 +116,5 @@ if (!fechaNacimientoRegex.test(fecNacimiento)) {
             .catch(error => {
                 console.error(error);
             })
-    
-
-
 
     });
