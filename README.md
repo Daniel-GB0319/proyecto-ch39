@@ -47,9 +47,9 @@
 El equipo de desarrollo de esta plataforma esta compuesto por los siguientes integrantes:
 
 <!-- Agreguen los medios de contacto que ustedes quieran. -->
-- Geovanni Daniel González Barrientos  
-  - Correo Electrónico: daniel.gb0319@gmail.com
-  - [Perfil de LinkedIn](https://www.linkedin.com/in/gdaniel-gonzalezb/)
+- Geovanni Daniel González Barrientos
+  - [Sitio Web Personal](https://danielgonzalez.vercel.app/)
+  - [LinkedIn](https://www.linkedin.com/in/gdaniel-gonzalezb/)
 - Eduardo López Murillo
   - Correo Electrónico: duarlo@yandex.com
   - [Perfil de LinkedIn](www.linkedin.com/in/duarlo)
